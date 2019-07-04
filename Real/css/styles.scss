@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.body {
+    width: 1050px;
+    margin: 0 auto;
+
+    header {
+        .top_container {
+
+            h1 {
+                width: 100%;
+                background-size: cover;
+                background-image: url('../images/REALI.png');
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-image: linear-gradient(to top, #004aa6 0%, #055cc7 100%);
+            width: 100%;
+
+            .menu {
+                display: flex;
+
+                li {
+                    .active {
+                        background: linear-gradient(to top, #055cc7 0%, #004ba7 100%);
+                    }
+
+                    :hover {
+                        background: linear-gradient(to top, #055cc7 0%, #004ba7 100%);
+                    }
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        padding: 18px;
+                        color: white;
+
+                        i {
+                            margin-left: 5px;
+                            font-size: 11px;
+                        }
+                    }
+                }
+
+                .dropdown_menu {
+                    position: relative;
+
+                    .dropdown_content {
+                        width: 270px;
+                        display: none;
+                        z-index: 99;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        padding-left: 18px;
+                        box-shadow: 0px 0px 30px -20px rgba(0, 0, 0, 0.75);
+
+                        li {
+                            a {
+                                display: flex;
+                                padding: 0;
+                                color: #8b8b8b;
+                                font-size: 13px;
+                                font-weight: 400;
+                                letter-spacing: 0.13px;
+                                line-height: 15.6px;
+                                padding: 19px 0;
+                                border-bottom: 1px solid #eeeeee;
+                            }
+
+                            ::before {
+                                content: "\2022";
+                                color: #8b8b8b;
+                                margin-right: 5px;
+                            }
+
+                            ::after {
+                                content: "";
+                                border-right: 1px solid red;
+                                justify-content: flex-end;
+                            }
+
+                            :hover {
+                                background: transparent;
+                                color: #004aa6;
+                                border-right: 3px solid #004aa6;
+                                transition: .2s;
+                            }
+                        }
+                    }
+
+                    :hover {
+                        background: transparent;
+                    }
+                }
+            }
+
+            .authorization {
+                display: flex;
+                align-items: center;
+
+                .registration {
+                    a {
+                        display: block;
+                        color: #76a5de;
+                        font-size: 14px;
+                        font-weight: 400;
+                        letter-spacing: 0.14px;
+                        line-height: 16.8px;
+                        padding: 20px;
+
+                        :hover {
+                            background: transparent;
+                        }
+
+                        i {
+                            margin-right: 5px;
+                            font-size: 11px;
+                        }
+                    }
+
+                    :hover {
+                        background: linear-gradient(to top, #055cc7 0%, #004ba7 100%);
+                    }
+                }
+
+                .sign_in {
+                    a {
+                        display: block;
+                        color: #ffffff;
+                        font-size: 14px;
+                        font-weight: 400;
+                        letter-spacing: 0.14px;
+                        line-height: 16.8px;
+                        padding: 20px;
+
+                        :hover {
+                            background: transparent;
+                        }
+
+                        i {
+                            margin-right: 5px;
+                            font-size: 11px;
+                        }
+                    }
+
+                    :hover {
+                        background: linear-gradient(to top, #055cc7 0%, #004ba7 100%);
+                    }
+                }
+            }
+        }
+
+        .bottom_container {
+            border-bottom: 1px solid #eeeeee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .left_container {
+                display: flex;
+                align-items: center;
+
+                .social {
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        display: block;
+                        padding: 16px;
+                        border-right: 1px solid #eeeeee;
+                    }
+                }
+
+                .form {
+                    margin-left: 11px;
+
+                    form {
+                        button {
+                            border-radius: 50%;
+                            border: none;
+                            cursor: pointer;
+                            padding: 10px;
+                            background-color: #055bc6;
+                            outline: none;
+
+                            i {
+                                color: #ffffff;
+                            }
+                        }
+
+                        input {
+                            padding: 8px;
+                            border: none;
+                            outline: none;
+                        }
+
+                        ::placeholder {
+                            color: #bdbcb9;
+                            font-family: Arial;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 16.8px;
+                        }
+                    }
+                }
+            }
+
+            .right_container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .hover_container{
+                    border: 1px solid #eeeeee;
+                }
+                .blitz{
+                    display: flex;
+                    align-items: center;
+
+                    i{
+                        font-size: 20px;
+                        color: #004aa6;
+                        display: none;
+                    }
+                    a {
+                        display: block;
+                        padding: 10px 18px;
+                    }
+                    :hover{
+                        border-radius: 3px;
+                        background-color: #004aa6;
+                    }
+                }
+            }
+        }
+    }
+}

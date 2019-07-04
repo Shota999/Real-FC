@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.body {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.body header .top_container h1 {
+  width: 100%;
+  background-size: cover;
+  background-image: url("../images/REALI.png");
+}
+
+.body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#004aa6), to(#055cc7));
+  background-image: linear-gradient(to top, #004aa6 0%, #055cc7 100%);
+  width: 100%;
+}
+
+.body header nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body header nav .menu li .active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#055cc7), to(#004ba7));
+  background: linear-gradient(to top, #055cc7 0%, #004ba7 100%);
+}
+
+.body header nav .menu li :hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#055cc7), to(#004ba7));
+  background: linear-gradient(to top, #055cc7 0%, #004ba7 100%);
+}
+
+.body header nav .menu li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px;
+  color: white;
+}
+
+.body header nav .menu li a i {
+  margin-left: 5px;
+  font-size: 11px;
+}
+
+.body header nav .menu .dropdown_menu {
+  position: relative;
+}
+
+.body header nav .menu .dropdown_menu .dropdown_content {
+  width: 270px;
+  display: none;
+  z-index: 99;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-left: 18px;
+  -webkit-box-shadow: 0px 0px 30px -20px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 30px -20px rgba(0, 0, 0, 0.75);
+}
+
+.body header nav .menu .dropdown_menu .dropdown_content li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  color: #8b8b8b;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.13px;
+  line-height: 15.6px;
+  padding: 19px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.body header nav .menu .dropdown_menu .dropdown_content li ::before {
+  content: "\2022";
+  color: #8b8b8b;
+  margin-right: 5px;
+}
+
+.body header nav .menu .dropdown_menu .dropdown_content li ::after {
+  content: "";
+  border-right: 1px solid red;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.body header nav .menu .dropdown_menu .dropdown_content li :hover {
+  background: transparent;
+  color: #004aa6;
+  border-right: 3px solid #004aa6;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.body header nav .menu .dropdown_menu :hover {
+  background: transparent;
+}
+
+.body header nav .authorization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body header nav .authorization .registration a {
+  display: block;
+  color: #76a5de;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  line-height: 16.8px;
+  padding: 20px;
+}
+
+.body header nav .authorization .registration a :hover {
+  background: transparent;
+}
+
+.body header nav .authorization .registration a i {
+  margin-right: 5px;
+  font-size: 11px;
+}
+
+.body header nav .authorization .registration :hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#055cc7), to(#004ba7));
+  background: linear-gradient(to top, #055cc7 0%, #004ba7 100%);
+}
+
+.body header nav .authorization .sign_in a {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  line-height: 16.8px;
+  padding: 20px;
+}
+
+.body header nav .authorization .sign_in a :hover {
+  background: transparent;
+}
+
+.body header nav .authorization .sign_in a i {
+  margin-right: 5px;
+  font-size: 11px;
+}
+
+.body header nav .authorization .sign_in :hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#055cc7), to(#004ba7));
+  background: linear-gradient(to top, #055cc7 0%, #004ba7 100%);
+}
+
+.body header .bottom_container {
+  border-bottom: 1px solid #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body header .bottom_container .left_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body header .bottom_container .left_container .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body header .bottom_container .left_container .social a {
+  display: block;
+  padding: 16px;
+  border-right: 1px solid #eeeeee;
+}
+
+.body header .bottom_container .left_container .form {
+  margin-left: 11px;
+}
+
+.body header .bottom_container .left_container .form form button {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #055bc6;
+  outline: none;
+}
+
+.body header .bottom_container .left_container .form form button i {
+  color: #ffffff;
+}
+
+.body header .bottom_container .left_container .form form input {
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.body header .bottom_container .left_container .form form ::-webkit-input-placeholder {
+  color: #bdbcb9;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+}
+
+.body header .bottom_container .left_container .form form :-ms-input-placeholder {
+  color: #bdbcb9;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+}
+
+.body header .bottom_container .left_container .form form ::-ms-input-placeholder {
+  color: #bdbcb9;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+}
+
+.body header .bottom_container .left_container .form form ::placeholder {
+  color: #bdbcb9;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+}
+
+.body header .bottom_container .right_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body header .bottom_container .right_container .hover_container {
+  border: 1px solid #eeeeee;
+}
+
+.body header .bottom_container .right_container .blitz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body header .bottom_container .right_container .blitz i {
+  font-size: 20px;
+  color: #004aa6;
+  display: none;
+}
+
+.body header .bottom_container .right_container .blitz a {
+  display: block;
+  padding: 10px 18px;
+}
+
+.body header .bottom_container .right_container .blitz :hover {
+  border-radius: 3px;
+  background-color: #004aa6;
+}
+/*# sourceMappingURL=styles.css.map */
