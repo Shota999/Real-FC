@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -21,7 +22,7 @@
             </div>
 
             <nav>
-                <ul class="menu">
+                <div class="menu">
                     <li>
                         <a href="index.html" class="active"><img src="images/menu.png" alt="menu"></a>
                     </li>
@@ -37,7 +38,7 @@
                     </li>
                     <li><a href="#">საიტი</a></li>
                     <li><a href="#">ფანკლუბი</a></li>
-                </ul>
+                </div>
                 <div class="authorization">
                     <div class="registration">
                         <a href="#">
@@ -68,7 +69,15 @@
                 </div>
                 <div class="right_container">
                     <div class="hover_container">
-                        
+                        <div class="team">
+                            <a href="#"><img src="images/icons/juve.png" alt="juve">juve.ge</a>
+                        </div>
+                        <div class="team">
+                            <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                        </div>
+                        <div class="team">
+                            <a href="#"><img src="images/icons/milan.png" alt="juve">acmilan.ge</a>
+                        </div>
                     </div>
                     <div class="blitz">
                         <i class="fas fa-caret-left"></i>
@@ -77,9 +86,83 @@
                 </div>
             </div>
         </header>
+        <div class="container">
+            <div class="content">
+                <div class="left_container">
+                    <div class="swiper-container">
+                        <div class="parallax-bg"
+                            style="background-image:url(http://lorempixel.com/900/600/nightlife/2/)"
+                            data-swiper-parallax="-23%"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider_content">
+                                    <div class="text_container">
+                                        <p>მარსელომ შესაძლოა 2 კვირა დაისვენოს</p>
+                                    </div>
+                                    <div class="bottom_container">
+                                        <div class="info_container">
+                                            <p><i class="far fa-calendar-alt"></i>დღეს: 15:54</p>
+                                            <p><i class="far fa-eye"></i>ნანახია: 992/54</p>
+                                            <p><i class="far fa-user"></i>ბაჩო</p>
+                                        </div>
+                                        <div class="more">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <div class="slider_content">
+                                    <div class="text_container">
+                                        <p>მარსელომ შესაძლოა 2 კვირა დაისვენოს</p>
+                                    </div>
+                                    <div class="bottom_container">
+                                        <div class="info_container">
+                                            <p><i class="far fa-calendar-alt"></i>დღეს: 15:54</p>
+                                            <p><i class="far fa-eye"></i>ნანახია: 992/54</p>
+                                            <p><i class="far fa-user"></i>ბაჩო</p>
+                                        </div>
+                                        <div class="more">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide3">
+                                <div class="slider_content">
+                                    <div class="text_container">
+                                        <p>მარსელომ შესაძლოა 2 კვირა დაისვენოს</p>
+                                    </div>
+                                    <div class="bottom_container">
+                                        <div class="info_container">
+                                            <p><i class="far fa-calendar-alt"></i>დღეს: 15:54</p>
+                                            <p><i class="far fa-eye"></i>ნანახია: 992/54</p>
+                                            <p><i class="far fa-user"></i>ბაჩო</p>
+                                        </div>
+                                        <div class="more">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination swiper-pagination-white"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-prev navigation_button"><i class="fas fa-chevron-left"></i></div>
+                        <div class="swiper-button-next navigation_button"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+                <div class="right_container">
+
+                </div>
+            </div>
+
+        </div>
     </div>
 
-
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -88,15 +171,38 @@
                     $(this).children(".dropdown_content").stop().fadeToggle(200);
                 });
 
-            $('.blitz').hover(function(){
-                $('.onhover').attr('src' , 'images/blitz_hover.png');
-                $(this).children(".fa-caret-left").stop().toggle();
-            },
-            function(){
-                $('.onhover').attr('src' , 'images/blitz.png');
-                $(this).children(".fa-caret-left").stop().toggle();
-            }
+            $('.blitz').hover(function () {
+                    $('.onhover').attr('src', 'images/blitz_hover.png');
+                    $(this).children(".fa-caret-left").stop().toggle();
+                },
+                function () {
+                    $('.onhover').attr('src', 'images/blitz.png');
+                    $(this).children(".fa-caret-left").stop().toggle();
+                }
             );
+            $('.blitz').hover(function () {
+                $('.hover_container').stop().toggleClass('show');
+            });
+
+
+
+        });
+    </script>
+
+    <!-- Swiper -->
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            speed: 600,
+            parallax: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
     </script>
 </body>
