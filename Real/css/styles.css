@@ -10,6 +10,32 @@
   margin: 0 auto;
 }
 
+.body .popup_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.8;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body .popup_container .registration {
+  width: 400px;
+  height: 629px;
+  background: #ffffff;
+}
+
 .body header .top_container h1 {
   width: 100%;
   background-size: cover;
@@ -119,6 +145,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .body header nav .authorization .registration a {
@@ -400,14 +427,6 @@
 
 .body .container .content .left_container .navigation_button i {
   color: #004aa6;
-}
-
-.body .container .content .left_container .swiper-button-next {
-  background-color: #ffc200;
-}
-
-.body .container .content .left_container .swiper-button-next i {
-  color: #000000;
 }
 
 .body .container .content .left_container .swiper-slide {
