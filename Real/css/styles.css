@@ -18,9 +18,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   z-index: 99;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -31,8 +29,92 @@
 
 .body .popup_container .registration {
   width: 400px;
-  height: 629px;
   background: #ffffff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.body .popup_container .registration .close_container {
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  padding: 17px 20px;
+  background-color: #ffc200;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.body .popup_container .registration .close_container i {
+  color: #ffffff;
+}
+
+.body .popup_container .registration .registration_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.body .popup_container .registration .registration_content h3 {
+  color: #333333;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.body .popup_container .registration .inside_content {
+  padding: 30px;
+}
+
+.body .popup_container .registration .inside_content form {
+  font-family: "BPG Arial";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.14px;
+  color: #929292;
+}
+
+.body .popup_container .registration .inside_content form input {
+  width: 100%;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  padding: 16px 0;
+  border-radius: 5px;
+  margin-top: 13px;
+  margin-bottom: 20px;
+  outline: none;
+  padding-left: 10px;
+}
+
+.body .popup_container .registration .inside_content form :focus {
+  color: #929292;
+}
+
+.body .popup_container .registration .inside_content form button {
+  -webkit-box-shadow: 0 5px 5px rgba(66, 103, 178, 0.3);
+          box-shadow: 0 5px 5px rgba(66, 103, 178, 0.3);
+  background-color: #3767c9;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.15px;
+  padding: 20px 0;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.body .show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .body header .top_container h1 {
@@ -101,6 +183,14 @@
   background-color: white;
 }
 
+.body header nav .menu .dropdown_menu .dropdown_content:hover {
+  background: #ffffff;
+}
+
+.body header nav .menu .dropdown_menu .dropdown_content li:hover {
+  background: transparent;
+}
+
 .body header nav .menu .dropdown_menu .dropdown_content li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,7 +237,12 @@
   position: relative;
 }
 
-.body header nav .authorization .registration a {
+.body header nav .authorization .registration button {
+  border: none;
+  background: transparent;
+}
+
+.body header nav .authorization .registration button a {
   display: block;
   color: #76a5de;
   font-size: 14px;
@@ -157,11 +252,11 @@
   padding: 20px;
 }
 
-.body header nav .authorization .registration a :hover {
+.body header nav .authorization .registration button a :hover {
   background: transparent;
 }
 
-.body header nav .authorization .registration a i {
+.body header nav .authorization .registration button a i {
   margin-right: 5px;
   font-size: 11px;
 }
@@ -253,6 +348,10 @@
   padding: 8px;
   border: none;
   outline: none;
+}
+
+.body header .bottom_container .left_container .form form :focus {
+  color: #929292;
 }
 
 .body header .bottom_container .left_container .form form ::-webkit-input-placeholder {
@@ -452,7 +551,7 @@
   padding: 21px 25px;
 }
 
-.body .container .content .left_container .swiper-slide .slider_content .text_container p {
+.body .container .content .left_container .swiper-slide .slider_content .text_container h2 {
   color: #f7f7f8;
   font-size: 15px;
   font-weight: 400;
