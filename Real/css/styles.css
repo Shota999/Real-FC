@@ -658,7 +658,7 @@
 }
 
 .body .container .content .right_container .tab {
-  margin: 0 5px 5px 5px;
+  margin: 0 5px 10px 5px;
   padding: 5px;
   border-radius: 30px;
   background-color: #f2f2f2;
@@ -711,5 +711,153 @@
   font-weight: 400;
   line-height: 15.6px;
   background-color: #ffffff;
+}
+
+.body .container .content .right_container .tabcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 31px 0px 0px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body .container .content .right_container .tabcontent .inside_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .container .content .right_container .tabcontent .inside_content .container {
+  padding: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body .container .content .right_container .tabcontent .inside_content .container span {
+  display: block;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  line-height: 16.8px;
+  margin-top: 15px;
+}
+
+.body .container .content .right_container .tabcontent .inside_content .middle_side {
+  display: block;
+  text-align: center;
+}
+
+.body .container .content .right_container .tabcontent .inside_content .middle_side .score_container {
+  border: 1px solid #eeeeee;
+  padding: 12px 20px;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: #333333;
+  font-size: 18px;
+}
+
+.body .container .content .right_container .tabcontent .inside_content .middle_side .video_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.body .container .content .right_container .tabcontent .inside_content .middle_side .video_container a {
+  display: block;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+}
+
+.body .container .content .right_container .tabcontent .inside_content .middle_side .video_container a i {
+  font-size: 5px;
+  color: #004aa6;
+  border: 1px solid #777;
+  padding: 3px;
+  padding-left: 4px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.body .container .content .right_container .tabcontent .bottom_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 6px;
+}
+
+.body .container .content .right_container .tabcontent .bottom_side span {
+  display: block;
+  color: #999999;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  margin-left: 6px;
+}
+
+.body .container .content .right_container .tabcontent .bottom_container {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .container .content .right_container .tabcontent .bottom_container i {
+  font-size: 18px;
+  color: #9c9797;
+  margin-right: 10px;
+}
+
+.body .container .content .right_container .tabcontent .bottom_container span {
+  display: block;
+  color: #6d6d6d;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  line-height: 16.8px;
+}
+
+.body .container .content .right_container .hide_tab {
+  display: none;
+}
+
+.body .reclam_baner {
+  background-image: url("../images/reclam.png");
+  height: 100px;
 }
 /*# sourceMappingURL=styles.css.map */

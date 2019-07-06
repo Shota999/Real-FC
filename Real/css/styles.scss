@@ -554,7 +554,7 @@
                 }
 
                 .tab {
-                    margin: 0 5px 5px 5px;
+                    margin: 0 5px 10px 5px;
                     padding: 5px;
                     border-radius: 30px;
                     background-color: #f2f2f2;
@@ -599,7 +599,122 @@
 
                     }
                 }
+
+                .tabcontent {
+                    display: flex;
+                    padding: 31px 0px 0px 0;
+                    flex-direction: column;
+
+                    .inside_content {
+                        display: flex;
+
+                        .container {
+                            padding: 0;
+                            flex: 1;
+                            justify-content: center;
+                            align-items: center;
+                            display: flex;
+                            flex-direction: column;
+
+                            span {
+                                display: block;
+                                color: #555555;
+                                font-size: 14px;
+                                font-weight: 400;
+                                letter-spacing: 0.14px;
+                                line-height: 16.8px;
+                                margin-top: 15px;
+                            }
+                        }
+
+                        .middle_side {
+                            display: block;
+                            text-align: center;
+
+                            .score_container {
+                                border: 1px solid #eeeeee;
+                                padding: 12px 20px;
+                                margin: 0 auto;
+                                margin-top: 15px;
+                                color: #333333;
+                                font-size: 18px;
+                            }
+
+                            .video_container {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin-top: 12px;
+                                cursor: pointer;
+
+                                a {
+                                    display: block;
+                                    color: #777777;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    letter-spacing: 0.14px;
+
+                                    i {
+                                        font-size: 5px;
+                                        color: #004aa6;
+                                        border: 1px solid #777;
+                                        padding: 3px;
+                                        padding-left: 4px;
+                                        border-radius: 50%;
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .bottom_side {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 6px;
+
+                        span {
+                            display: block;
+                            color: #999999;
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 15.6px;
+                            margin-left: 6px;
+                        }
+                    }
+
+                    .bottom_container {
+                        padding: 25px;
+                        display: flex;
+                        border-top: 1px solid #eeeeee;
+                        margin-top: 16px;
+                        align-items: center;
+
+                        i {
+                            font-size: 18px;
+                            color: #9c9797;
+                            margin-right: 10px;
+                        }
+
+                        span {
+                            display: block;
+                            color: #6d6d6d;
+                            font-size: 14px;
+                            font-weight: 400;
+                            letter-spacing: 0.14px;
+                            line-height: 16.8px;
+                        }
+                    }
+                }
+
+                .hide_tab {
+                    display: none;
+                }
             }
         }
+    }
+    .reclam_baner{
+        background-image: url('../images/reclam.png');
+        height: 100px;
     }
 }
