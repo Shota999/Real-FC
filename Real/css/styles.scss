@@ -311,6 +311,7 @@
                             border: none;
                             outline: none;
                         }
+
                         :focus {
                             color: #929292;
                         }
@@ -543,9 +544,62 @@
             // End style
             .right_container {
                 width: 370px;
-                background: red;
+                border: 1px solid #eeeeee;
+
+                // Tabs style
+                .top_container {
+                    margin: 5px 0 0 0;
+                    border-bottom: 1px solid #eeeeee;
+
+                }
+
+                .tab {
+                    margin: 0 5px 5px 5px;
+                    padding: 5px;
+                    border-radius: 30px;
+                    background-color: #f2f2f2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    button {
+                        border: none;
+                        background: transparent;
+                        outline: none;
+                        cursor: pointer;
+                        color: #999999;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 15.6px;
+
+                        i {
+                            margin-right: 5px;
+                            font-size: 10px;
+                        }
+                    }
+
+                    .previous {
+                        border-radius: 20px;
+                        padding: 8px 0;
+                        flex: 1;
+                    }
+
+                    .next {
+                        border-radius: 20px;
+                        padding: 8px 0;
+                        flex: 1;
+                    }
+
+                    .active {
+                        color: #0559c1;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 15.6px;
+                        background-color: #ffffff;
+
+                    }
+                }
             }
         }
-
     }
 }

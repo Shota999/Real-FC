@@ -41,7 +41,7 @@
                 </ul>
                 <div class="authorization">
                     <div class="registration">
-                        <button>
+                        <button class="registration_popup">
                             <a href="#">
                                 <p><i class="fas fa-plus-circle"></i>რეგისტრაცია</p>
                             </a>
@@ -156,7 +156,24 @@
                     </div>
                 </div>
                 <div class="right_container">
+                    <div class="top_container">
+                        <div class="tab">
+                            <button class="tablinks active previous" onclick="openCity(event, 'London')"><i
+                                    class="fas fa-circle"></i>წინა მატჩი</button>
+                            <button class="tablinks next" onclick="openCity(event, 'Paris')"><i
+                                    class="fas fa-circle"></i>მომდევნო მატჩი</button>
+                        </div>
+                    </div>
 
+                    <div id="London" class="tabcontent">
+                        <h3>London</h3>
+                        <p>London is the capital city of England.</p>
+                    </div>
+
+                    <div id="Paris" class="tabcontent">
+                        <h3>Paris</h3>
+                        <p>Paris is the capital of France.</p>
+                    </div>
                 </div>
             </div>
 
@@ -179,7 +196,7 @@
                         გაიმეორე პაროლი
                         <input type="text">
 
-                        <button>ცვლილების შენახვა</button>
+                        <button>რეგისტრაცია</button>
                     </form>
                 </div>
                 <div class="close_container">
@@ -212,7 +229,7 @@
                 $('.hover_container').stop().toggleClass('show');
             });
 
-            $("button").click(function () {
+            $(".registration_popup").click(function () {
                 $(".popup_container").addClass("show");
             });
             $(".close_container").click(function () {
@@ -228,7 +245,7 @@
         var swiper = new Swiper('.swiper-container', {
             speed: 600,
             parallax: true,
-            loop : true,
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -238,6 +255,23 @@
                 prevEl: '.swiper-button-prev',
             },
         });
+    </script>
+
+    <!-- Table -->
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
     </script>
 </body>
 
