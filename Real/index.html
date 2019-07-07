@@ -6,8 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -170,9 +169,7 @@
             <div class="content">
                 <div class="left_container">
                     <div class="swiper-container">
-                        <div class="parallax-bg"
-                            style="background-image:url(http://lorempixel.com/900/600/nightlife/2/)"
-                            data-swiper-parallax="-23%"></div>
+                        <div class="parallax-bg" style="background-image:url(http://lorempixel.com/900/600/nightlife/2/)" data-swiper-parallax="-23%"></div>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="slider_content">
@@ -236,14 +233,14 @@
                 <div class="right_container">
                     <div class="top_container">
                         <div class="tab">
-                            <button class="tablinks active previous" onclick="openCity(event, 'match')"><i
+                            <button class="tablinks active previous openTabs" data-tab="previous-match"><i
                                     class="fas fa-circle"></i>წინა მატჩი</button>
-                            <button class="tablinks next" onclick="openCity(event, 'second_match')"><i
+                            <button class="tablinks next openTabs" data-tab="next-match"><i
                                     class="fas fa-circle"></i>მომდევნო მატჩი</button>
                         </div>
                     </div>
 
-                    <div id="match" class="tabcontent show_tab">
+                    <div id="previous-match" class="tabcontent show_tab active">
                         <div class="inside_content">
                             <div class="left_side container">
                                 <img src="images/teams/bayern.png" alt="barca">
@@ -275,7 +272,7 @@
                         </div>
                     </div>
 
-                    <div id="second_match" class="tabcontent hide_tab">
+                    <div id="next-match" class="tabcontent hide_tab">
                         <div class="inside_content">
                             <div class="left_side container">
                                 <img src="images/teams/real.png" alt="barca">
@@ -308,7 +305,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="reclam_baner"></div>
 
@@ -322,10 +318,8 @@
                 <div class="inside_content">
                     <form action="action.php" method="get">
                         ელ.ფოსტა
-                        <input type="text">
-                        პაროლი
-                        <input type="text">
-                        გაიმეორე პაროლი
+                        <input type="text"> პაროლი
+                        <input type="text"> გაიმეორე პაროლი
                         <input type="text">
 
                         <button>რეგისტრაცია</button>
@@ -402,9 +396,7 @@
                                     <img src="images/news_image.png" alt="news_image">
 
                                     <div class="comment">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15"
-                                            viewBox="0 0 15 15">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
                                             <defs>
                                                 <image id="7tdrb" width="15" height="15"
                                                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABPUlEQVQ4T5XSPUuWcRTH8c/xWSJBcYlWX0JOTdnkkI7O0txsToEIFvgCgpamkIgKnMTBhgZB34BjkzhYVJj2QEdOXLfIhd43/dfrfK/fwzmRmdNYxzj+InV/fTjFk8jMD3iF9xjsAQd+4y6WC97F/Yg46aF48Tkz6ydbBX/EfEQcZ+ZI2cFEy0ENl9WViPicmaN424YH8AA3m/wdtY7dzXLYwO/a8DAeN8pV3mX4DM8i4st1cBW20Chfbr2Uf+F1RHzvpryMyZbtWs8PrF2lPNcUMYRFjF1R2E+8jIhvTbH/Mu9hpuz856p2Cn6Dr3iB/Yj4k5nV+gyqwPbF1ZHcw52Cb9X+MIsp3MZz3MAh+luOKv8RnlaLGqVtbOARys1quegWpQPXZR2ghh9GRN17z9eB66KWKndEfOpJNQPnpkWkpPc5RDcAAAAASUVORK5CYII=" />
@@ -432,8 +424,7 @@
                                         <span>დღეს 10.06.2019</span>
                                     </div>
                                     <div class="author">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16"
-                                            viewBox="0 0 15 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16">
                                             <g>
                                                 <g>
                                                     <path fill="#a9a9a9"
@@ -450,9 +441,7 @@
                                     <img src="images/news_image.png" alt="news_image">
 
                                     <div class="comment">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15"
-                                            viewBox="0 0 15 15">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
                                             <defs>
                                                 <image id="7tdrb" width="15" height="15"
                                                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABPUlEQVQ4T5XSPUuWcRTH8c/xWSJBcYlWX0JOTdnkkI7O0txsToEIFvgCgpamkIgKnMTBhgZB34BjkzhYVJj2QEdOXLfIhd43/dfrfK/fwzmRmdNYxzj+InV/fTjFk8jMD3iF9xjsAQd+4y6WC97F/Yg46aF48Tkz6ydbBX/EfEQcZ+ZI2cFEy0ENl9WViPicmaN424YH8AA3m/wdtY7dzXLYwO/a8DAeN8pV3mX4DM8i4st1cBW20Chfbr2Uf+F1RHzvpryMyZbtWs8PrF2lPNcUMYRFjF1R2E+8jIhvTbH/Mu9hpuz856p2Cn6Dr3iB/Yj4k5nV+gyqwPbF1ZHcw52Cb9X+MIsp3MZz3MAh+luOKv8RnlaLGqVtbOARys1quegWpQPXZR2ghh9GRN17z9eB66KWKndEfOpJNQPnpkWkpPc5RDcAAAAASUVORK5CYII=" />
@@ -480,8 +469,7 @@
                                         <span>დღეს 10.06.2019</span>
                                     </div>
                                     <div class="author">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16"
-                                            viewBox="0 0 15 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16">
                                             <g>
                                                 <g>
                                                     <path fill="#a9a9a9"
@@ -505,9 +493,7 @@
                                     <img src="images/news_image.png" alt="news_image">
 
                                     <div class="comment">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15"
-                                            viewBox="0 0 15 15">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
                                             <defs>
                                                 <image id="7tdrb" width="15" height="15"
                                                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABPUlEQVQ4T5XSPUuWcRTH8c/xWSJBcYlWX0JOTdnkkI7O0txsToEIFvgCgpamkIgKnMTBhgZB34BjkzhYVJj2QEdOXLfIhd43/dfrfK/fwzmRmdNYxzj+InV/fTjFk8jMD3iF9xjsAQd+4y6WC97F/Yg46aF48Tkz6ydbBX/EfEQcZ+ZI2cFEy0ENl9WViPicmaN424YH8AA3m/wdtY7dzXLYwO/a8DAeN8pV3mX4DM8i4st1cBW20Chfbr2Uf+F1RHzvpryMyZbtWs8PrF2lPNcUMYRFjF1R2E+8jIhvTbH/Mu9hpuz856p2Cn6Dr3iB/Yj4k5nV+gyqwPbF1ZHcw52Cb9X+MIsp3MZz3MAh+luOKv8RnlaLGqVtbOARys1quegWpQPXZR2ghh9GRN17z9eB66KWKndEfOpJNQPnpkWkpPc5RDcAAAAASUVORK5CYII=" />
@@ -535,8 +521,7 @@
                                         <span>დღეს 10.06.2019</span>
                                     </div>
                                     <div class="author">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16"
-                                            viewBox="0 0 15 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16">
                                             <g>
                                                 <g>
                                                     <path fill="#a9a9a9"
@@ -553,9 +538,7 @@
                                     <img src="images/news_image.png" alt="news_image">
 
                                     <div class="comment">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15"
-                                            viewBox="0 0 15 15">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
                                             <defs>
                                                 <image id="7tdrb" width="15" height="15"
                                                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABPUlEQVQ4T5XSPUuWcRTH8c/xWSJBcYlWX0JOTdnkkI7O0txsToEIFvgCgpamkIgKnMTBhgZB34BjkzhYVJj2QEdOXLfIhd43/dfrfK/fwzmRmdNYxzj+InV/fTjFk8jMD3iF9xjsAQd+4y6WC97F/Yg46aF48Tkz6ydbBX/EfEQcZ+ZI2cFEy0ENl9WViPicmaN424YH8AA3m/wdtY7dzXLYwO/a8DAeN8pV3mX4DM8i4st1cBW20Chfbr2Uf+F1RHzvpryMyZbtWs8PrF2lPNcUMYRFjF1R2E+8jIhvTbH/Mu9hpuz856p2Cn6Dr3iB/Yj4k5nV+gyqwPbF1ZHcw52Cb9X+MIsp3MZz3MAh+luOKv8RnlaLGqVtbOARys1quegWpQPXZR2ghh9GRN17z9eB66KWKndEfOpJNQPnpkWkpPc5RDcAAAAASUVORK5CYII=" />
@@ -583,8 +566,7 @@
                                         <span>დღეს 10.06.2019</span>
                                     </div>
                                     <div class="author">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16"
-                                            viewBox="0 0 15 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16">
                                             <g>
                                                 <g>
                                                     <path fill="#a9a9a9"
@@ -605,7 +587,7 @@
                 <div class="right_side">
                     <div class="top_container">
                         <div class="tab">
-                            <button class="tablinks active previous" onclick="openCity(event, 'score')"><svg
+                            <button class="tablinks active previous openTabs" data-tab="score"><svg
                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="20" height="20" viewBox="0 0 20 20">
                                     <defs>
@@ -623,72 +605,15 @@
                                         </g>
                                     </g>
                                 </svg><span>ჩემპ ლიგა</span></button>
-                            <button class="tablinks next"
-                                onclick="openCity(event, 'score2')"><span>ბომბარდირები</span></button>
+                            <button class="tablinks next openTabs" data-tab="score2"><span>ბომბარდირები</span></button>
                         </div>
                     </div>
-                    <div id="score" class="tabcontent show_tab">
-                            <div class="inside_content">
-                                <div class="left_side container">
-                                    <img src="images/teams/bayern.png" alt="barca">
-                                    <span>ბაიერნი</span>
-                                </div>
-                                <div class="middle_side">
-                                    <img src="images/teams/Layer_27.png" alt="image">
-                                    <div class="score_container">
-                                        <span>0 : 2</span>
-                                    </div>
-                                    <div class="video_container">
-                                        <a href="#">
-                                            <i class="fas fa-play"></i>ვიდეო
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="right_side container">
-                                    <img src="images/teams/real.png" alt="real">
-                                    <span>რეალი</span>
-                                </div>
-                            </div>
-                            <div class="bottom_side">
-                                <img src="images/icons/stadium.png" alt="stadium">
-                                <span><b>სტადიონი:</b> ალიენს არენა</span>
-                            </div>
-                            <div class="bottom_container">
-                                <i class="far fa-clock"></i>
-                                <span>შეხვედრა გაიმართა <b>18.06.2018</b></span>
-                            </div>
-                        </div>
-                        <div id="score2" class="tabcontent show_tab">
-                                <div class="inside_content">
-                                    <div class="left_side container">
-                                        <img src="images/teams/bayern.png" alt="barca">
-                                        <span>ბაიერნი</span>
-                                    </div>
-                                    <div class="middle_side">
-                                        <img src="images/teams/Layer_27.png" alt="image">
-                                        <div class="score_container">
-                                            <span>0 : 2</span>
-                                        </div>
-                                        <div class="video_container">
-                                            <a href="#">
-                                                <i class="fas fa-play"></i>ვიდეო
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="right_side container">
-                                        <img src="images/teams/real.png" alt="real">
-                                        <span>რეალი</span>
-                                    </div>
-                                </div>
-                                <div class="bottom_side">
-                                    <img src="images/icons/stadium.png" alt="stadium">
-                                    <span><b>სტადიონი:</b> ალიენს არენა</span>
-                                </div>
-                                <div class="bottom_container">
-                                    <i class="far fa-clock"></i>
-                                    <span>შეხვედრა გაიმართა <b>18.06.2018</b></span>
-                                </div>
-                            </div>
+                    <div id="score" class="tabcontent show_tab active">
+                        tab 1
+                    </div>
+                    <div id="score2" class="tabcontent show_tab">
+                        tab 2
+                    </div>
                     <div class="score_content">
 
                     </div>
@@ -699,72 +624,7 @@
 
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $(".dropdown_menu").hover(
-                function () {
-                    $(this).children(".dropdown_content").stop().fadeToggle(200);
-                });
-
-            $('.blitz').hover(function () {
-                    $('.onhover').attr('src', 'images/blitz_hover.png');
-                    $(this).children(".fa-caret-left").stop().toggle();
-                },
-                function () {
-                    $('.onhover').attr('src', 'images/blitz.png');
-                    $(this).children(".fa-caret-left").stop().toggle();
-                }
-            );
-            $('.blitz').hover(function () {
-                $('.hover_container').stop().toggleClass('show');
-            });
-
-            $(".registration_popup").click(function () {
-                $(".popup_container").addClass("show");
-            });
-            $(".close_container").click(function () {
-                $(".popup_container").removeClass("show");
-            });
-
-        });
-    </script>
-
-    <!-- Swiper -->
-
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            speed: 600,
-            parallax: true,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            loop: true,
-        });
-    </script>
-
-    <!-- Table -->
-    <script>
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "flex";
-            evt.currentTarget.className += " active";
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
