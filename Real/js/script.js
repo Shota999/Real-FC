@@ -12,28 +12,10 @@ $(document).ready(function () {
         }
     });
 
-    $(".dropdown_menu").hover(
-        function () {
-            $(this).children(".dropdown_content").stop().fadeToggle(200);
-        });
-
-    $('.blitz').hover(function () {
-            $('.onhover').attr('src', 'images/blitz_hover.png');
-            $(this).children(".fa-caret-left").stop().toggle();
-        },
-        function () {
-            $('.onhover').attr('src', 'images/blitz.png');
-            $(this).children(".fa-caret-left").stop().toggle();
-        }
-    );
-    $('.blitz').hover(function () {
-        $('.hover_container').stop().toggleClass('show');
-    });
-
-    $(".registration_popup").click(function () {
+    $(".registration_popup").click(function() {
         $(".popup_container").addClass("show");
     });
-    $(".close_container").click(function () {
+    $(".close_container").click(function() {
         $(".popup_container").removeClass("show");
     });
 
@@ -51,7 +33,6 @@ $(document).ready(function () {
         },
         loop: true,
     });
-
     // Timer
     $('#getting-started').countdown('2019/07/09', function (event) {
         $(this).html(event.strftime('1 დღე 56 წთ : %S წამი'));
