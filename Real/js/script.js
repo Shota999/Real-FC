@@ -12,6 +12,8 @@ $(document).ready(function () {
         }
     });
 
+    // Popup
+
     $(".registration_popup").click(function() {
         $(".popup_container").addClass("show");
     });
@@ -19,6 +21,8 @@ $(document).ready(function () {
         $(".popup_container").removeClass("show");
     });
 
+    // Swiper
+    
     var swiper = new Swiper('.swiper-container', {
         speed: 600,
         parallax: true,
@@ -33,6 +37,7 @@ $(document).ready(function () {
         },
         loop: true,
     });
+
     // Timer
     $('#getting-started').countdown('2019/07/09', function (event) {
         $(this).html(event.strftime('1 დღე 56 წთ : %S წამი'));
