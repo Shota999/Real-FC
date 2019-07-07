@@ -18,9 +18,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   z-index: 99;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -31,8 +29,92 @@
 
 .body .popup_container .registration {
   width: 400px;
-  height: 629px;
   background: #ffffff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.body .popup_container .registration .close_container {
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  padding: 17px 20px;
+  background-color: #ffc200;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.body .popup_container .registration .close_container i {
+  color: #ffffff;
+}
+
+.body .popup_container .registration .registration_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.body .popup_container .registration .registration_content h3 {
+  color: #333333;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.body .popup_container .registration .inside_content {
+  padding: 30px;
+}
+
+.body .popup_container .registration .inside_content form {
+  font-family: "BPG Arial";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.14px;
+  color: #929292;
+}
+
+.body .popup_container .registration .inside_content form input {
+  width: 100%;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  padding: 16px 0;
+  border-radius: 5px;
+  margin-top: 13px;
+  margin-bottom: 20px;
+  outline: none;
+  padding-left: 10px;
+}
+
+.body .popup_container .registration .inside_content form :focus {
+  color: #929292;
+}
+
+.body .popup_container .registration .inside_content form button {
+  -webkit-box-shadow: 0 5px 5px rgba(66, 103, 178, 0.3);
+          box-shadow: 0 5px 5px rgba(66, 103, 178, 0.3);
+  background-color: #3767c9;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.15px;
+  padding: 20px 0;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.body .show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .body header .top_container h1 {
@@ -101,6 +183,14 @@
   background-color: white;
 }
 
+.body header nav .menu .dropdown_menu .dropdown_content:hover {
+  background: #ffffff;
+}
+
+.body header nav .menu .dropdown_menu .dropdown_content li:hover {
+  background: transparent;
+}
+
 .body header nav .menu .dropdown_menu .dropdown_content li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,7 +237,12 @@
   position: relative;
 }
 
-.body header nav .authorization .registration a {
+.body header nav .authorization .registration button {
+  border: none;
+  background: transparent;
+}
+
+.body header nav .authorization .registration button a {
   display: block;
   color: #76a5de;
   font-size: 14px;
@@ -157,11 +252,11 @@
   padding: 20px;
 }
 
-.body header nav .authorization .registration a :hover {
+.body header nav .authorization .registration button a :hover {
   background: transparent;
 }
 
-.body header nav .authorization .registration a i {
+.body header nav .authorization .registration button a i {
   margin-right: 5px;
   font-size: 11px;
 }
@@ -253,6 +348,10 @@
   padding: 8px;
   border: none;
   outline: none;
+}
+
+.body header .bottom_container .left_container .form form :focus {
+  color: #929292;
 }
 
 .body header .bottom_container .left_container .form form ::-webkit-input-placeholder {
@@ -468,7 +567,7 @@
   padding: 21px 25px;
 }
 
-.body .container .content .left_container .swiper-slide .slider_content .text_container p {
+.body .container .content .left_container .swiper-slide .slider_content .text_container h2 {
   color: #f7f7f8;
   font-size: 15px;
   font-weight: 400;
@@ -566,6 +665,215 @@
 
 .body .container .content .right_container {
   width: 370px;
-  background: red;
+  border: 1px solid #eeeeee;
+}
+
+.body .container .content .right_container .top_container {
+  margin: 5px 0 0 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.body .container .content .right_container .tab {
+  margin: 0 5px 10px 5px;
+  padding: 5px;
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body .container .content .right_container .tab button {
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  color: #999999;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+}
+
+.body .container .content .right_container .tab button i {
+  margin-right: 5px;
+  font-size: 10px;
+}
+
+.body .container .content .right_container .tab .previous {
+  border-radius: 20px;
+  padding: 8px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.body .container .content .right_container .tab .next {
+  border-radius: 20px;
+  padding: 8px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.body .container .content .right_container .tab .active {
+  color: #0559c1;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  background-color: #ffffff;
+}
+
+.body .container .content .right_container .tabcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 31px 0px 0px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body .container .content .right_container .tabcontent .inside_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .container .content .right_container .tabcontent .inside_content .container {
+  padding: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body .container .content .right_container .tabcontent .inside_content .container span {
+  display: block;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  line-height: 16.8px;
+  margin-top: 15px;
+}
+
+.body .container .content .right_container .tabcontent .inside_content .middle_side {
+  display: block;
+  text-align: center;
+}
+
+.body .container .content .right_container .tabcontent .inside_content .middle_side .score_container {
+  border: 1px solid #eeeeee;
+  padding: 12px 20px;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: #333333;
+  font-size: 18px;
+}
+
+.body .container .content .right_container .tabcontent .inside_content .middle_side .video_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.body .container .content .right_container .tabcontent .inside_content .middle_side .video_container a {
+  display: block;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+}
+
+.body .container .content .right_container .tabcontent .inside_content .middle_side .video_container a i {
+  font-size: 5px;
+  color: #004aa6;
+  border: 1px solid #777;
+  padding: 3px;
+  padding-left: 4px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.body .container .content .right_container .tabcontent .bottom_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 6px;
+}
+
+.body .container .content .right_container .tabcontent .bottom_side span {
+  display: block;
+  color: #999999;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  margin-left: 6px;
+}
+
+.body .container .content .right_container .tabcontent .bottom_container {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .container .content .right_container .tabcontent .bottom_container i {
+  font-size: 18px;
+  color: #9c9797;
+  margin-right: 10px;
+}
+
+.body .container .content .right_container .tabcontent .bottom_container span {
+  display: block;
+  color: #6d6d6d;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  line-height: 16.8px;
+}
+
+.body .container .content .right_container .hide_tab {
+  display: none;
+}
+
+.body .reclam_baner {
+  background-image: url("../images/reclam.png");
+  height: 100px;
 }
 /*# sourceMappingURL=styles.css.map */
