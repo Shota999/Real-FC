@@ -161,6 +161,7 @@
                 .dropdown_menu {
                     position: relative;
 
+
                     .dropdown_content {
                         width: 270px;
                         display: none;
@@ -210,19 +211,27 @@
                                 border-right: 3px solid #004aa6;
                                 transition: .2s;
                             }
-                        }  
+                        }
                     }
-                    .arrow_up{
+
+                    .arrow_up {
                         display: none;
                         transition: .3s;
                     }
-                    :hover .arrow_down{
+
+                    &:hover .arrow_down {
                         display: none;
                         transition: .3s;
                     }
-                    :hover .arrow_up{
+
+                    &:hover .arrow_up {
                         display: inline-block;
                         transition: .3s;
+                    }
+
+                    &:hover .dropdown_content {
+                        display: block;
+                        opacity: 1;
                     }
                 }
             }
@@ -367,7 +376,7 @@
                             transform: rotate(-90deg);
                             display: none;
 
-                            :hover {
+                            &:hover {
                                 display: inline-block;
                             }
                         }
@@ -398,7 +407,6 @@
                         top: 40px;
                         right: 0;
                         background: white;
-                        animation: moveDown 1s;
 
 
                         .team {
@@ -420,7 +428,7 @@
                             }
                         }
 
-                        :hover {
+                        &:hover {
                             display: flex;
                         }
                     }
@@ -437,10 +445,10 @@
                         }
                     }
 
-                }
-
-                .show {
-                    display: flex !important;
+                    &:hover .hover_container {
+                        display: flex;
+                        animation: moveDown 1s;
+                    }
                 }
             }
         }
@@ -468,15 +476,19 @@
                     width: auto;
                     height: 24px;
                 }
-                .swiper-button-next, .swiper-button-prev{
+
+                .swiper-button-next,
+                .swiper-button-prev {
                     width: auto;
                     height: auto;
                 }
-                .container .content .left_container .navigation_button{
-                    :hover{
+
+                .container .content .left_container .navigation_button {
+                    :hover {
                         background: red;
                     }
                 }
+
                 .swiper-pagination-bullet {
                     background-color: #f7f7f8;
                     opacity: 1;
@@ -506,7 +518,7 @@
                         padding: 15px;
                     }
 
-                    :hover{
+                    :hover {
                         background-color: #ffc200;
                         color: #000000;
                         transition: .2s;
@@ -733,9 +745,10 @@
                                 line-height: 16.8px;
                                 margin-top: 15px;
 
-                                i{
+                                i {
                                     margin-right: 5px;
                                 }
+
                                 a {
                                     display: block;
                                     color: #777777;
@@ -1079,6 +1092,33 @@
                             }
                         }
                     }
+                }
+
+                .tabcontent {
+                    display: none;
+                    padding: 26px 0px 0px 0;
+                    flex-direction: column;
+                }
+
+                .hide_tab {
+                    display: none;
+
+                }
+
+                .active {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .show_tab {
+                    align-items: initial;
+                    justify-content: initial;
+                }
+
+                .hide_tab {
+                    align-items: initial;
+                    justify-content: initial;
                 }
             }
         }

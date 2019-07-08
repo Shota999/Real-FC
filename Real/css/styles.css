@@ -243,16 +243,21 @@
   transition: .3s;
 }
 
-.body header nav .menu .dropdown_menu :hover .arrow_down {
+.body header nav .menu .dropdown_menu:hover .arrow_down {
   display: none;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
-.body header nav .menu .dropdown_menu :hover .arrow_up {
+.body header nav .menu .dropdown_menu:hover .arrow_up {
   display: inline-block;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+.body header nav .menu .dropdown_menu:hover .dropdown_content {
+  display: block;
+  opacity: 1;
 }
 
 .body header nav .authorization {
@@ -448,7 +453,7 @@
   display: none;
 }
 
-.body header .bottom_container .right_container .company_icons .blitz i :hover {
+.body header .bottom_container .right_container .company_icons .blitz i:hover {
   display: inline-block;
 }
 
@@ -477,8 +482,6 @@
   top: 40px;
   right: 0;
   background: white;
-  -webkit-animation: moveDown 1s;
-          animation: moveDown 1s;
 }
 
 .body header .bottom_container .right_container .company_icons .hover_container .team {
@@ -500,7 +503,7 @@
   cursor: pointer;
 }
 
-.body header .bottom_container .right_container .company_icons .hover_container :hover {
+.body header .bottom_container .right_container .company_icons .hover_container:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,10 +535,12 @@
   }
 }
 
-.body header .bottom_container .right_container .show {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+.body header .bottom_container .right_container .company_icons:hover .hover_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: moveDown 1s;
+          animation: moveDown 1s;
 }
 
 .body .container {
@@ -568,7 +573,8 @@
   height: 24px;
 }
 
-.body .container .content .left_container .swiper-button-next, .body .container .content .left_container .swiper-button-prev {
+.body .container .content .left_container .swiper-button-next,
+.body .container .content .left_container .swiper-button-prev {
   width: auto;
   height: auto;
 }
@@ -1309,6 +1315,49 @@
   font-size: 13px;
   font-weight: 400;
   line-height: 15.6px;
+}
+
+.body .web_content .left_right_side .right_side .tabcontent {
+  display: none;
+  padding: 26px 0px 0px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body .web_content .left_right_side .right_side .hide_tab {
+  display: none;
+}
+
+.body .web_content .left_right_side .right_side .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body .web_content .left_right_side .right_side .show_tab {
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+}
+
+.body .web_content .left_right_side .right_side .hide_tab {
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
 }
 
 .body .web_content .bottom_container {

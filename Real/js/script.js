@@ -39,7 +39,8 @@ $(document).ready(function () {
     });
 
     // Timer
-    $('#getting-started').countdown('2019/07/09', function (event) {
-        $(this).html(event.strftime('1 დღე 56 წთ : %S წამი'));
+    $('#getting-started').countdown('2019/12/29', function (event) {
+        $(this).html(event.strftime('%d დღე %M წთ : %S წამი'));
     });
+    
 });
