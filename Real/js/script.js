@@ -22,11 +22,11 @@ $(document).ready(function () {
     });
 
     // Swiper
-    
-    var swiper = new Swiper('.swiper-container', {
+
+    // First slider
+
+    var swiper = new Swiper('.slider_first', {
         speed: 600,
-        parallax: true,
-        loop: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -36,6 +36,21 @@ $(document).ready(function () {
             prevEl: '.swiper-button-prev',
         },
         loop: true,
+    });
+
+    // Second slider
+
+    var swiper = new Swiper('.slider_second', {
+        speed: 600,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        loop: false,
     });
 
     // Timer
