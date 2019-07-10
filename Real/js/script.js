@@ -12,13 +12,22 @@ $(document).ready(function () {
         }
     });
 
-    // Popup
+    // Registration popup
 
-    $(".registration_popup").click(function() {
-        $(".popup_container").addClass("show");
+    $(".registration_popup").click(function () {
+        $(".show_popup").addClass("show");
     });
-    $(".close_container").click(function() {
+    $(".close_container").click(function () {
         $(".popup_container").removeClass("show");
+    });
+
+    // Sign in popup
+
+    $(".sign_in_popup").click(function () {
+        $(".sign_in_popup_container").addClass("show");
+    });
+    $(".close_container").click(function () {
+        $(".sign_in_popup_container").removeClass("show");
     });
 
     // Swiper
@@ -57,5 +66,21 @@ $(document).ready(function () {
     $('#getting-started').countdown('2019/12/29', function (event) {
         $(this).html(event.strftime('%d დღე %M წთ : %S წამი'));
     });
-    
+
+
+    // Load more
+
+    $(".news").slice(0, 17).show();
+    $("#loadMore").on("click", function (e) {
+        e.preventDefault();
+        $(".news:hidden").slice(0, 4).slideDown();
+        if ($(".news:hidden").length == 0) {
+            $("#loadMore").text("No Content").addClass("noContent");
+        }
+    });
+
+    // ===== Scroll to Top ==== 
+    $('#return-to-top').click(function () { 
+        $('body,html').animate({ scrollTop: 0 }, 500);
+    });
 });
