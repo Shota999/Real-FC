@@ -62,6 +62,21 @@ $(document).ready(function () {
         loop: false,
     });
 
+    // Gallery slider
+
+    var swiper = new Swiper('.gallery_slider', {
+        speed: 600,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+    });
+    
     // Timer
     $('#getting-started').countdown('2019/12/29', function (event) {
         $(this).html(event.strftime('%d დღე %M წთ : %S წამი'));
@@ -80,7 +95,9 @@ $(document).ready(function () {
     });
 
     // ===== Scroll to Top ==== 
-    $('#return-to-top').click(function () { 
-        $('body,html').animate({ scrollTop: 0 }, 500);
+    $('#return-to-top').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
     });
 });

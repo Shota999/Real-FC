@@ -816,16 +816,6 @@
   box-sizing: border-box;
 }
 
-.body .container .content .left_container .parallax-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 130%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
 .body .container .content .right_container {
   width: 370px;
   border: 1px solid #eeeeee;
@@ -2195,6 +2185,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.body .web_content .bottom_container .video_container .swiper-container .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .body .web_content .bottom_container .video_container .video {
