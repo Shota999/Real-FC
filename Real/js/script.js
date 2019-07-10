@@ -12,35 +12,30 @@ $(document).ready(function () {
         }
     });
 
-    $(".dropdown_menu").hover(
-        function() {
-            $(this).children(".dropdown_content").stop().fadeToggle(200);
-        });
+    // Registration popup
 
-    $('.blitz').hover(function() {
-            $('.onhover').attr('src', 'images/blitz_hover.png');
-            $(this).children(".fa-caret-left").stop().toggle();
-        },
-        function() {
-            $('.onhover').attr('src', 'images/blitz.png');
-            $(this).children(".fa-caret-left").stop().toggle();
-        }
-    );
-    $('.blitz').hover(function() {
-        $('.hover_container').stop().toggleClass('show');
+    $(".registration_popup").click(function () {
+        $(".show_popup").addClass("show");
     });
-
-    $(".registration_popup").click(function() {
-        $(".popup_container").addClass("show");
-    });
-    $(".close_container").click(function() {
+    $(".close_container").click(function () {
         $(".popup_container").removeClass("show");
     });
 
-    var swiper = new Swiper('.swiper-container', {
+    // Sign in popup
+
+    $(".sign_in_popup").click(function () {
+        $(".sign_in_popup_container").addClass("show");
+    });
+    $(".close_container").click(function () {
+        $(".sign_in_popup_container").removeClass("show");
+    });
+
+    // Swiper
+
+    // First slider
+
+    var swiper = new Swiper('.slider_first', {
         speed: 600,
-        parallax: true,
-        loop: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -50,5 +45,59 @@ $(document).ready(function () {
             prevEl: '.swiper-button-prev',
         },
         loop: true,
+    });
+
+    // Second slider
+
+    var swiper = new Swiper('.slider_second', {
+        speed: 600,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        loop: false,
+    });
+
+    // Gallery slider
+
+    var swiper = new Swiper('.gallery_slider', {
+        speed: 600,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+    });
+    
+    // Timer
+    $('#getting-started').countdown('2019/12/29', function (event) {
+        $(this).html(event.strftime('%d დღე %M წთ : %S წამი'));
+    });
+
+
+    // Load more
+
+    $(".news").slice(0, 17).show();
+    $("#loadMore").on("click", function (e) {
+        e.preventDefault();
+        $(".news:hidden").slice(0, 4).slideDown();
+        if ($(".news:hidden").length == 0) {
+            $("#loadMore").text("No Content").addClass("noContent");
+        }
+    });
+
+    // ===== Scroll to Top ==== 
+    $('#return-to-top').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
     });
 });
