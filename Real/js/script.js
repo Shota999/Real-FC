@@ -3,6 +3,7 @@ $(document).ready(function () {
     // tabs
     $(".openTabs").click(function () {
         let active_element = $(this).parent().parent().nextAll('.active');
+        console.log(active_element)
         let next_active = $("#" + $(this).data('tab'));
         if (active_element && next_active) {
             $(active_element).removeClass('active');
@@ -37,46 +38,93 @@ $(document).ready(function () {
     var swiper = new Swiper('.slider_first', {
         speed: 600,
         pagination: {
-            el: '.swiper-pagination',
+            el: '.pagination-first',
             clickable: true,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.next-first',
+            prevEl: '.prev-first',
         },
         loop: true,
     });
 
-    // Second slider
+    // Second slider New pagination da isrebis klasebi shevcvale
 
     var swiper = new Swiper('.slider_second', {
-        speed: 600,
         pagination: {
-            el: '.swiper-pagination',
+            el: '.pagination-second',
             clickable: true,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.next-second',
+            prevEl: '.prev-second',
         },
         loop: false,
+    });
+
+    // Video slider
+
+    var swiper = new Swiper('.video_slider', {
+        slidesPerView: 4,
+        // slaidebs shoris dashoreba 
+        spaceBetween: 10,
+        speed: 600,
+        navigation: {
+            nextEl: '.next-third',
+            prevEl: '.prev-third',
+        },
+        loop: true,
+        breakpoints: {
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            }
+          }
     });
 
     // Gallery slider
 
     var swiper = new Swiper('.gallery_slider', {
+        slidesPerView: 4,
+        // slaidebs shoris dashoreba 
+        spaceBetween: 10,
         speed: 600,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.next-third',
+            prevEl: '.prev-third',
         },
         loop: true,
+        breakpoints: {
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            }
+          }
     });
-    
     // Timer
     $('#getting-started').countdown('2019/12/29', function (event) {
         $(this).html(event.strftime('%d დღე %M წთ : %S წამი'));

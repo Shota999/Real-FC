@@ -5,25 +5,14 @@
   text-decoration: none;
 }
 
-@font-face {
-  font-family: neuel;
-  src: url(../fonts/HelveticaNeueLTGEO-55Roman.otf);
-}
-
-@font-face {
-  font-family: neuel-bold;
-  src: url(../fonts/HelveticaNeueLTGEO-75Bold.otf);
-}
-
-@font-face {
-  font-family: arial;
-  src: url(../fonts/bpg_arial_0.ttf);
+:focus {
+  outline: none;
 }
 
 .body {
   width: 1050px;
   margin: 0 auto;
-  font-family: neuel;
+  font-family: 'Conv_bpg_arial_0';
 }
 
 .body .popup_container {
@@ -221,6 +210,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .body header nav .menu li .active {
@@ -342,66 +334,45 @@
   position: relative;
 }
 
-.body header nav .authorization .registration button {
+.body header nav .authorization button {
   border: none;
   background: transparent;
-}
-
-.body header nav .authorization .registration button a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #76a5de;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.14px;
   line-height: 16.8px;
   padding: 20px;
+  cursor: pointer;
 }
 
-.body header nav .authorization .registration button a :hover {
-  background: transparent;
-}
-
-.body header nav .authorization .registration button a p {
+.body header nav .authorization button p {
   margin-left: 6px;
 }
 
-.body header nav .authorization .registration :hover {
+.body header nav .authorization button:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(#055cc7), to(#004ba7));
   background: linear-gradient(to top, #055cc7 0%, #004ba7 100%);
+  color: #ffffff;
+}
+
+.body header nav .authorization .registration p :hover {
+  background: transparent;
 }
 
 .body header nav .authorization .sign_in button {
-  display: block;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.14px;
-  line-height: 16.8px;
-  padding: 20px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
   border-left: 1px solid #03479b;
   outline: none;
 }
 
 .body header nav .authorization .sign_in button :hover {
   background: transparent;
-}
-
-.body header nav .authorization .sign_in button i {
-  margin-right: 5px;
-  font-size: 11px;
-}
-
-.body header nav .authorization .sign_in :hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(#055cc7), to(#004ba7));
-  background: linear-gradient(to top, #055cc7 0%, #004ba7 100%);
 }
 
 .body header .bottom_container {
@@ -1389,6 +1360,9 @@
   border-radius: 2px;
   margin-left: 15px;
   background-color: #0559c1;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+  outline: none;
 }
 
 .body .web_content .left_right_side .right_side .swiper-pagination-white .swiper-pagination-bullet-active {
@@ -2185,12 +2159,33 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .body .web_content .bottom_container .video_container .swiper-container .swiper-wrapper .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.body .web_content .bottom_container .video_container .prev-third {
+  position: absolute;
+  top: -20px;
+  left: auto;
+  right: 40px;
+  font-size: 32px;
+  color: black;
+  background-image: none;
+}
+
+.body .web_content .bottom_container .video_container .next-third {
+  position: absolute;
+  top: -20px;
+  left: auto;
+  right: 10px;
+  font-size: 32px;
+  color: black;
+  background-image: none;
 }
 
 .body .web_content .bottom_container .video_container .video {
@@ -2200,7 +2195,6 @@
   background: #ffffff;
   margin-right: 15px;
   overflow: hidden;
-  width: 40%;
   cursor: pointer;
   -webkit-box-shadow: 0px 0px 30px -20px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 30px -20px rgba(0, 0, 0, 0.75);
@@ -2239,6 +2233,63 @@
   font-weight: 400;
   line-height: 20px;
   padding: 20px;
+}
+
+.body .web_content .bottom_container .video_container .swiper_arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .web_content .bottom_container .video_container .swiper_arrows i {
+  color: #000000;
+  font-size: 8px;
+  background-color: #eeeeee;
+  padding: 9px 11px 9px 11px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.body .web_content .bottom_container .video_container .swiper_arrows i:hover {
+  color: #ffffff;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#004aa6), to(#055cc7));
+  background-image: linear-gradient(to top, #004aa6 0%, #055cc7 100%);
+}
+
+.body .web_content .bottom_container .video_container .swiper_arrows .swiper-button-next i {
+  margin-right: 0;
+}
+
+.body .web_content .bottom_container .video_container .swiper-button-prev,
+.body .web_content .bottom_container .video_container .swiper-container-rtl .swiper-button-next {
+  background: none;
+}
+
+.body .web_content .bottom_container .video_container .swiper-button-next,
+.body .web_content .bottom_container .video_container .swiper-container-rtl .swiper-button-prev {
+  background: none;
+}
+
+.body .web_content .bottom_container .video_container .swiper-button-next,
+.body .web_content .bottom_container .video_container .swiper-button-prev {
+  width: auto;
+  height: auto;
+}
+
+.body .web_content .bottom_container .video_container .swiper-button-next.swiper-button-disabled {
+  opacity: 1;
+}
+
+.body .web_content .bottom_container .video_container .swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+}
+
+.body .web_content .bottom_container .video_container .navigation_button {
+  color: #000000;
+  font-size: 8px;
+  background-color: #eeeeee;
+  padding: 9px 11px 9px 11px;
+  border-radius: 50%;
 }
 
 .body .web_content .bottom_container .hide_tab {
@@ -2303,11 +2354,20 @@
   border-right: 1px solid #eeeeee;
 }
 
-.body .web_content .reclam .left .container img {
+.body .web_content .reclam .left .container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .web_content .reclam .left .container a img {
   margin-right: 5px;
 }
 
-.body .web_content .reclam .left .container span {
+.body .web_content .reclam .left .container a span {
   color: #888888;
   font-family: arial;
   font-size: 14px;
