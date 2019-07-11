@@ -96,35 +96,38 @@ $(document).ready(function () {
 
     // Gallery slider
 
-    var swiper = new Swiper('.gallery_slider', {
-        slidesPerView: 4,
-        // slaidebs shoris dashoreba 
-        spaceBetween: 10,
-        speed: 600,
-        navigation: {
-            nextEl: '.next-third',
-            prevEl: '.prev-third',
-        },
-        loop: true,
-        breakpoints: {
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 40,
+    $('.gallery').click(function() {
+        new Swiper('.gallery_slider', {
+            slidesPerView: 4,
+            // slaidebs shoris dashoreba 
+            spaceBetween: 10,
+            speed: 600,
+            navigation: {
+                nextEl: '.next-four',
+                prevEl: '.prev-four',
             },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            }
-          }
+            loop: true,
+            breakpoints: {
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                }
+              }
+        });
     });
+
     // Timer
     $('#getting-started').countdown('2019/12/29', function (event) {
         $(this).html(event.strftime('%d დღე %M წთ : %S წამი'));
@@ -148,4 +151,5 @@ $(document).ready(function () {
             scrollTop: 0
         }, 500);
     });
+
 });
