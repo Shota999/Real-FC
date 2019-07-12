@@ -31,6 +31,18 @@ $(document).ready(function () {
         $(".sign_in_popup_container").removeClass("show");
     });
 
+    // Grid
+    $(".change").click(function () {
+        $(".grid1").addClass("active");
+        $(".grid2").removeClass("active");
+        $(".news").removeClass("active");
+    });
+    $(".change1").click(function () {
+        $(".grid2").addClass("active");
+        $(".grid1").removeClass("active");
+        $(".news").addClass("active");
+    });
+
     // Swiper
 
     // First slider
@@ -136,14 +148,14 @@ $(document).ready(function () {
 
     // Load more
 
-    $(".news").slice(0, 17).show();
-    $("#loadMore").on("click", function (e) {
-        e.preventDefault();
-        $(".news:hidden").slice(0, 4).slideDown();
-        if ($(".news:hidden").length == 0) {
-            $("#loadMore").text("No Content").addClass("noContent");
-        }
-    });
+    // $(".news").slice(0, 17).show();
+    // $("#loadMore").on("click", function (e) {
+    //     e.preventDefault();
+    //     $(".news:hidden").slice(0, 4).slideDown();
+    //     if ($(".news:hidden").length == 0) {
+    //         $("#loadMore").text("No Content").addClass("noContent");
+    //     }
+    // });
 
     // ===== Scroll to Top ==== 
     $('#return-to-top').click(function () {
