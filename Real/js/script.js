@@ -43,6 +43,25 @@ $(document).ready(function () {
         $(".news").addClass("active");
     });
 
+    // Password
+    
+    // $('.see_password').click(function(){
+    //     $('#password').is(':checked') ? $('.password').attr('type', 'password') : $('.password').attr('type', 'text');
+
+    //     console.log($('#password').is(':checked'));
+    // });
+
+    $("#see_password").click(
+        function functionName() {
+          //Change the attribute to text
+          $("#password").attr("type", "password");
+        },
+        function() {
+          //Change the attribute back to password
+          $("#password").attr("type", "text");
+        }
+      );
+
     // Swiper
 
     // First slider
@@ -88,27 +107,27 @@ $(document).ready(function () {
         loop: true,
         breakpoints: {
             1024: {
-              slidesPerView: 4,
-              spaceBetween: 40,
+                slidesPerView: 4,
+                spaceBetween: 40,
             },
             768: {
-              slidesPerView: 3,
-              spaceBetween: 30,
+                slidesPerView: 3,
+                spaceBetween: 30,
             },
             640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
+                slidesPerView: 2,
+                spaceBetween: 20,
             },
             320: {
-              slidesPerView: 1,
-              spaceBetween: 10,
+                slidesPerView: 1,
+                spaceBetween: 10,
             }
-          }
+        }
     });
 
     // Gallery slider
 
-    $('.gallery').click(function() {
+    $('.gallery').click(function () {
         new Swiper('.gallery_slider', {
             slidesPerView: 4,
             // slaidebs shoris dashoreba 
@@ -121,22 +140,22 @@ $(document).ready(function () {
             loop: true,
             breakpoints: {
                 1024: {
-                  slidesPerView: 4,
-                  spaceBetween: 40,
+                    slidesPerView: 4,
+                    spaceBetween: 40,
                 },
                 768: {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
+                    slidesPerView: 3,
+                    spaceBetween: 30,
                 },
                 640: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
+                    slidesPerView: 2,
+                    spaceBetween: 20,
                 },
                 320: {
-                  slidesPerView: 1,
-                  spaceBetween: 10,
+                    slidesPerView: 1,
+                    spaceBetween: 10,
                 }
-              }
+            }
         });
     });
 

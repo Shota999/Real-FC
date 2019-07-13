@@ -22,7 +22,7 @@ body {
     background-color: #ffffff;
 
     .popup_container {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -88,8 +88,6 @@ body {
                         margin-bottom: 20px;
                         outline: none;
                         padding-left: 10px;
-
-
                     }
 
                     :focus {
@@ -99,6 +97,7 @@ body {
                     .input_container {
                         display: flex;
                         align-items: center;
+                        position: relative;
 
                         i {
                             background-color: #222428;
@@ -113,6 +112,19 @@ body {
                             border-bottom-right-radius: 5px;
                             margin-top: 10px;
                             margin-bottom: 10px;
+                        }
+
+                        .see_password {
+                            position: absolute;
+                            right: 0;
+                            cursor: pointer;
+
+                            i {
+                                background-color: transparent;
+                                border-top-left-radius: initial;
+                                border-bottom-left-radius: initial;
+                                color: #979797;
+                            }
                         }
                     }
 
@@ -738,6 +750,7 @@ body {
                     display: none;
                     padding: 26px 0px 0px 0;
                     flex-direction: column;
+                    border-radius: 5px;
 
                     .active {
                         display: flex;
@@ -909,6 +922,7 @@ body {
             .left_side {
                 border: 1px solid #eeeeee;
                 flex: 1;
+                border-radius: 5px;
 
                 .container {
                     width: 643px;
@@ -1072,18 +1086,21 @@ body {
                             align-items: center;
                             margin: 0;
                             justify-content: space-between;
-                            
-                            .text{
+
+                            .text {
                                 display: none;
                             }
-                            .time_author{
+
+                            .time_author {
                                 display: flex;
                                 justify-content: space-between;
                                 width: 100%;
                             }
-                            .time_grid2{
+
+                            .time_grid2 {
                                 display: none;
                             }
+
                             .time {
                                 i {
                                     color: #888888;
@@ -1099,7 +1116,7 @@ body {
                                     margin-left: 5px;
                                 }
                             }
-                            
+
                             .author {
                                 display: flex;
                                 align-items: center;
@@ -1127,25 +1144,27 @@ body {
                         border-bottom: 1px solid #eeeeee;
                         padding-bottom: 15px;
 
-                        .news_image_container{
+                        .news_image_container {
                             width: 260px;
 
-                            a{
-                                img{
+                            a {
+                                img {
                                     width: auto;
                                 }
                             }
-                            .comment{
+
+                            .comment {
                                 display: none;
                             }
                         }
-                        a{
+
+                        a {
                             h3 {
                                 padding: 0;
                                 padding-bottom: 13px;
                             }
                         }
-                        
+
                         .news_content {
                             flex: 1;
                             padding: 0 15px;
@@ -1154,18 +1173,21 @@ body {
                                 flex-direction: column;
                                 padding: 0;
 
-                                .time_author{
+                                .time_author {
                                     display: flex;
                                     width: 100%;
                                     justify-content: flex-start;
                                     margin-top: 10px;
                                 }
-                                .time:first-child{
+
+                                .time:first-child {
                                     display: none;
                                 }
-                                .time_grid2{
+
+                                .time_grid2 {
                                     display: block;
                                 }
+
                                 .comment {
                                     display: flex;
                                     align-items: center;
@@ -1197,7 +1219,382 @@ body {
                                 }
                             }
                         }
-                        
+
+                    }
+                }
+
+                // Inner Page
+
+                .inner_container {
+                    width: 643px;
+                    padding: 20px;
+
+                    h3 {
+                        color: #333333;
+                        font-family: "Conv_HelveticaNeueLTGEO-75Bold";
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 25px;
+                        text-transform: uppercase;
+                    }
+
+                    .image_container {
+                        border-radius: 3px;
+                        height: 399px;
+                        overflow: hidden;
+                        position: relative;
+                        margin-top: 20px;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid #eeeeee;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+
+                        .blitz_image {
+                            position: absolute;
+                            bottom: 55px;
+                            right: 35px;
+                        }
+                    }
+
+                    .text_container {
+                        border-bottom: 1px solid #eeeeee;
+
+                        p {
+                            color: #777777;
+                            font-family: "Conv_bpg_arial_0";
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 23px;
+                            margin: 20px 0;
+
+                            a {
+                                color: #055bc6;
+                            }
+                        }
+
+                        .quote {
+                            color: #111111;
+                            font-style: italic;
+                        }
+                    }
+
+                    .bottom_container {
+                        border: none;
+                        margin: 15px 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .social {
+                            display: flex;
+
+                            a {
+                                display: block;
+
+                                &:first-child {
+                                    margin-right: 5px;
+                                }
+
+                                i {
+                                    padding: 5px 15px;
+                                    border-radius: 3px;
+
+
+                                }
+
+                                .fa-facebook-square {
+                                    color: #ffffff;
+                                    background-color: #4267b2;
+
+
+                                }
+
+                                .fa-twitter {
+                                    color: #ffffff;
+                                    background-color: #1da1f2;
+                                }
+                            }
+                        }
+
+                        .time_author {
+                            display: flex;
+                            align-items: center;
+
+                            .time {
+                                display: flex;
+                                align-items: center;
+
+                                i {
+                                    color: #888888;
+                                    font-size: 15px;
+                                }
+
+                                span {
+                                    color: #888888;
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    letter-spacing: 0.21px;
+                                    line-height: 20px;
+                                    margin-left: 5px;
+                                }
+                            }
+
+                            .author {
+                                display: flex;
+                                align-items: center;
+
+                                span {
+                                    color: #a9a9a9;
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    letter-spacing: 0.13px;
+                                    line-height: 20px;
+                                    margin-left: 5px;
+                                }
+                            }
+
+                            .comment {
+                                display: flex;
+                                align-items: center;
+                                margin: 0 30px;
+
+                                i {
+                                    color: #a9a9a9;
+                                }
+
+                                span {
+                                    display: block;
+                                    color: #a9a9a9;
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    letter-spacing: 0.13px;
+                                    line-height: 20px;
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+
+                        .edit {
+                            display: flex;
+                            align-items: center;
+
+                            img {
+                                margin-right: 30px;
+                            }
+
+                            i {
+                                padding: 5px;
+                                border: 1px solid #eeeeee;
+                                color: #c8c8c8;
+                                border-radius: 50%;
+                                margin: 0 5px;
+                                font-size: 9px;
+                                cursor: pointer;
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
+
+                    .reclam {
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .comments {
+                        margin-top: 15px;
+
+                        .switch_comment {
+                            display: flex;
+
+                            button {
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                                background-color: #0559c1;
+                                border: none;
+                                border-radius: 25px;
+                                padding: 10px 20px;
+                                margin-right: 10px;
+                                cursor: pointer;
+
+                                span {
+                                    display: block;
+                                    color: #ffffff;
+                                    font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    text-transform: uppercase;
+                                }
+
+                                svg {
+                                    margin-right: 5px;
+                                }
+
+                                img {
+                                    position: absolute;
+                                    bottom: -11px;
+                                    left: 41%;
+                                }
+                            }
+
+                            .facebook_button {
+                                box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.06);
+                                border: 1px solid #eeeeee;
+                                background-color: #ffffff;
+
+                                span {
+                                    color: #3b5998;
+                                }
+
+                                i {
+                                    color: #3b5998;
+                                    border: 1px solid #3b5998;
+                                    padding: 5px 8px;
+                                    font-size: 12px;
+                                    border-radius: 50%;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+
+                        .write_comment {
+                            padding: 15px;
+                            border: 1px solid #eeeeee;
+                            margin-top: 15px;
+                            border-radius: 5px;
+
+                            form {
+                                display: flex;
+                                position: relative;
+
+                                input {
+                                    padding: 30px 0;
+                                    width: 100%;
+                                    border: 1px solid #eeeeee;
+                                    border-radius: 5px;
+                                    padding-left: 35px;
+                                }
+
+                                ::placeholder {
+                                    color: #bdbcb9;
+                                    font-family: Arial;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 16.8px;
+                                }
+
+                                :focus {
+                                    color: #929292;
+                                }
+
+                                .insert {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    position: absolute;
+                                    top: 20px;
+                                    width: 62px;
+                                    right: 10px;
+                                    height: 36px;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    i {
+                                        margin-right: 9px;
+                                        font-size: 12px;
+                                        color: #babfc6;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+
+                        .comments_container {
+                            margin-top: 25px;
+                            border: 1px solid #eeeeee;
+                            border-radius: 5px;
+                            padding: 15px;
+
+                            .comment {
+                                display: flex;
+                                align-items: center;
+
+                                .author {
+                                    margin-right: 10px;
+
+                                    .author_image {
+                                        max-width: 39px;
+                                        max-height: 39px;
+                                        position: relative;
+
+                                        img {
+                                            object-fit: cover;
+                                        }
+                                        .online{
+                                            width: 14px;
+                                            height: 14px;
+                                            border-radius: 50%;
+                                            background-color: white;
+                                            position: absolute;
+                                            right: 0;
+                                            bottom: 0;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+
+                                            .circle{
+                                                width: 8px;
+                                                height: 8px;
+                                                border-radius: 50%;
+                                                background-color: #07dd5d;
+                                            }
+                                        }
+                                    }
+                                    .last_online {
+                                        span {
+                                            display: block;
+                                            color: #706d9c;
+                                            font-family: "Conv_bpg_arial_0";
+                                            font-size: 12px;
+                                            font-weight: 400;
+                                            line-height: 24px;
+                                        }
+                                    }
+                                }
+
+                                .comment_text {
+                                    padding: 10px 15px;
+                                    background-color: #f2f3f5;
+                                    display: flex;
+                                    align-items: center;
+                                    border-radius: 25px;
+
+                                    a {
+                                        display: block;
+                                        color: #0559c1;
+                                        font-family: "Conv_bpg_arial_0";
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                        line-height: 19px;
+                                        margin-right: 5px;
+                                    }
+
+                                    p {
+                                        color: #1c1e21;
+                                        font-family: "Conv_bpg_arial_0";
+                                        font-size: 12px;
+                                        font-weight: 400;
+                                        line-height: 22px;
+                                        text-transform: uppercase;
+                                        letter-spacing: 0.12px;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -1297,6 +1694,7 @@ body {
                     padding: 15px 15px;
                     border: 1px solid #eeeeee;
                     border-top: none;
+                    margin-bottom: 15px;
                 }
 
                 .tab {
@@ -1359,6 +1757,8 @@ body {
                 .tabcontent {
                     display: none;
                     flex-direction: column;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
 
                     img {
                         width: 18px;
@@ -1775,9 +2175,10 @@ body {
                 }
 
                 .blog_container {
-                    margin-top: 15px;
                     padding: 15px;
                     border: 1px solid #eeeeee;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
 
                     button {
                         font-family: "Conv_HelveticaNeueLTGEO-55Roman";
