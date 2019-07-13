@@ -43,10 +43,11 @@ body {
                 position: absolute;
                 right: -25px;
                 top: -25px;
-                padding: 17px 20px;
+                padding: 17px 22px;
                 background-color: #ffc200;
                 cursor: pointer;
                 border-radius: 50%;
+                box-shadow: 0px 0px 7px 0px rgba(255, 194, 0, 0.75); 
 
                 i {
                     color: #ffffff;
@@ -171,6 +172,7 @@ body {
 
                         .sign_in {
                             background-color: #e7b105;
+                            box-shadow: 0px 0px 7px 0px rgba(255, 194, 0, 0.75);
                         }
 
                         .password {
@@ -188,11 +190,18 @@ body {
 
     header {
         .top_container {
+            height: 170px;
 
             h1 {
                 width: 100%;
+                height: 100%;
                 background-size: cover;
                 background-image: url('../images/REALI.png');
+
+                a{
+                    display: block;
+                    margin-left: 30px;
+                }
             }
         }
 
@@ -220,6 +229,7 @@ body {
                         align-items: center;
                         padding: 18px;
                         color: white;
+                        letter-spacing: 0.5px; text-shadow: 0 1px 0 #034c8c;
 
                         i {
                             margin-left: 5px;
@@ -390,7 +400,7 @@ body {
                             border-radius: 50%;
                             border: none;
                             cursor: pointer;
-                            padding: 10px;
+                            padding: 10px 11px;
                             background-color: #055bc6;
                             outline: none;
 
@@ -433,12 +443,10 @@ body {
 
                         i {
                             position: absolute;
-                            top: 28px;
-                            left: 50%;
-                            transform: rotate(-90deg);
+                            top: 8px;
+                            left: -5px;
+                            color: #004aa6;
                             display: none;
-
-
                         }
 
                         &:hover i {
@@ -451,7 +459,7 @@ body {
                             height: 30px;
                             background: url("../images/blitz.png") no-repeat center;
                             border-radius: 3px;
-                            transition: 0.4s;
+                            transition: .2s ease-in-out;
 
                             &:hover {
                                 background: url("../images/blitz_hover.png") no-repeat center;
@@ -463,18 +471,19 @@ body {
 
                     .hover_container {
                         display: none;
-                        -webkit-box-pack: justify;
-                        -ms-flex-pack: justify;
-                        justify-content: space-between;
-                        border: 1px solid #eeeeee;
                         position: absolute;
-                        top: 40px;
-                        right: 0;
+                        top: 0px;
+                        right: 105px;
                         background: white;
+                        transition: .2s ease-in-out;
+                        width: 502px;
+                        flex-wrap: wrap;
+                        z-index: 99;
 
 
                         .team {
-                            border-right: 1px solid #eeeeee;
+                            border: 1px solid #eeeeee;
+                            transition: .2s ease-in-out;
 
                             a {
                                 display: -webkit-box;
@@ -487,7 +496,7 @@ body {
                                 font-size: 12px;
                                 font-weight: 400;
                                 text-transform: uppercase;
-                                padding: 10px 18px;
+                                padding: 5px 10px;
                                 cursor: pointer;
 
                                 img {
@@ -501,21 +510,21 @@ body {
                         }
                     }
 
-                    @keyframes moveDown {
-                        from {
-                            transform: translateY(-20%);
-                            opacity: 0;
-                        }
+                    // @keyframes moveDown {
+                    //     from {
+                    //         transform: translateY(-20%);
+                    //         opacity: 0;
+                    //     }
 
-                        to {
-                            opacity: 1;
-                            transform: translateY(0);
-                        }
-                    }
+                    //     to {
+                    //         opacity: 1;
+                    //         transform: translateY(0);
+                    //     }
+                    // }
 
                     &:hover .hover_container {
                         display: flex;
-                        animation: moveDown 1s;
+                        transition: .2s ease-in-out;
                     }
                 }
             }
@@ -609,14 +618,24 @@ body {
                         .text_container {
                             border-bottom: 1px solid rgba(247, 247, 248, 0.1);
                             padding: 21px 25px;
+                            display: flex;
 
-                            h2 {
-                                color: #f7f7f8;
-                                font-size: 15px;
-                                font-weight: 400;
-                                letter-spacing: 0.07px;
-                                line-height: 18px;
-                            }
+                            a{
+                                display: flex;
+
+                                h2 {
+                                    color: #f7f7f8;
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                    letter-spacing: 0.07px;
+                                    line-height: 18px;
+                                    transition: .2s ease-in-out;
+    
+                                    &:hover{
+                                        color: #004aa6;
+                                    }
+                                }
+                            }                            
                         }
 
                         .bottom_container {
@@ -790,8 +809,6 @@ body {
                                 color: #333333;
                                 font-size: 18px;
                             }
-
-
                         }
                     }
 
@@ -812,7 +829,8 @@ body {
                         }
 
                         a {
-                            display: block;
+                            display: flex;
+                            align-items: center;
                             color: #777777;
                             font-size: 14px;
                             font-weight: 400;
@@ -836,6 +854,7 @@ body {
                         display: flex;
                         justify-content: center;
                         margin-top: 6px;
+                        align-items: center;
 
                         span {
                             display: block;
@@ -1031,7 +1050,6 @@ body {
 
                             &:hover img {
                                 transform: scale(1.2);
-                                transition: .3s;
                             }
 
                             a {
@@ -1040,6 +1058,8 @@ body {
                                 img {
                                     object-fit: cover;
                                     width: 100%;
+                                    height: 190px;
+                                    transition: .3s ease-in-out;
                                 }
                             }
 
@@ -1074,6 +1094,11 @@ body {
                                 letter-spacing: 0.22px;
                                 line-height: 19px;
                                 padding: 16px;
+                                transition: .3s ease-in-out;
+
+                                &:hover{
+                                    color: #004aa6;
+                                }
                             }
                         }
 
@@ -1146,12 +1171,6 @@ body {
 
                         .news_image_container {
                             width: 260px;
-
-                            a {
-                                img {
-                                    width: auto;
-                                }
-                            }
 
                             .comment {
                                 display: none;
@@ -1534,7 +1553,8 @@ body {
                                         img {
                                             object-fit: cover;
                                         }
-                                        .online{
+
+                                        .online {
                                             width: 14px;
                                             height: 14px;
                                             border-radius: 50%;
@@ -1546,7 +1566,7 @@ body {
                                             justify-content: center;
                                             align-items: center;
 
-                                            .circle{
+                                            .circle {
                                                 width: 8px;
                                                 height: 8px;
                                                 border-radius: 50%;
@@ -1554,6 +1574,7 @@ body {
                                             }
                                         }
                                     }
+
                                     .last_online {
                                         span {
                                             display: block;
@@ -1654,6 +1675,8 @@ body {
 
                 .swiper-pagination {
                     position: initial;
+                    display: flex;
+                    align-items: center;
                 }
 
                 .swiper-button-prev,
@@ -2247,7 +2270,7 @@ body {
 
                         h3 {
                             color: #44484d;
-                            font-family: Conv_bpg_arial_0;
+                            font-family: "Conv_bpg_arial_0";
                             font-size: 13px;
                             font-weight: 400;
                             letter-spacing: 0.22px;
@@ -2324,7 +2347,15 @@ body {
                             letter-spacing: 0.16px;
                             line-height: 25px;
                         }
-
+                        span{
+                            display: block;
+                            color: #787878;
+                            font-family: "BPG Arial";
+                            font-size: 12px;
+                            font-weight: 400;
+                            letter-spacing: 0.15px;
+                            line-height: 24px;
+                        }
                         .progress {
                             display: flex;
                             overflow: hidden;
@@ -2335,15 +2366,14 @@ body {
                             margin-top: 15px;
                             cursor: pointer;
 
-
-
+                            
                             .progress_bar {
                                 background: #e8e8e8;
 
                                 span {
                                     display: block;
                                     color: #74777a;
-                                    font-family: arial;
+                                    font-family: "BPG Arial";
                                     font-size: 13px;
                                     font-weight: 400;
                                     letter-spacing: 0.13px;
@@ -2541,7 +2571,7 @@ body {
 
                 .prev-third {
                     position: absolute;
-                    top: -20px;
+                    top: -24px;
                     left: auto;
                     right: 40px;
                     font-size: 32px;
@@ -2556,7 +2586,7 @@ body {
                         color: #000000;
                         font-size: 14px;
                         background-color: #eeeeee;
-                        padding: 9px 11px 9px 11px;
+                        padding: 9px 12px 9px 10px;
                         border-radius: 50%;
 
                         &:hover {
@@ -2568,7 +2598,7 @@ body {
 
                 .next-third {
                     position: absolute;
-                    top: -20px;
+                    top: -24px;
                     left: auto;
                     right: 10px;
                     font-size: 32px;
@@ -2655,10 +2685,12 @@ body {
                     cursor: pointer;
                     box-shadow: 0px 0px 30px -20px rgba(0, 0, 0, 0.75);
 
+                    &:hover img{
+                        transform: scale(1.1);
+                    }
                     &:last-child {
                         margin-right: 0;
                     }
-
                     .image_container {
                         border-bottom: 3px solid #004aa6;
                         height: 150px;
@@ -2669,6 +2701,7 @@ body {
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
+                            transition: .2s ease-in-out;
                         }
 
                         .video_button {
@@ -2681,14 +2714,22 @@ body {
                     }
 
                     .title {
+                        a{
+                            display: block;
 
-                        h3 {
-                            color: #333333;
-                            font-family: arial;
-                            font-size: 14px;
-                            font-weight: 400;
-                            line-height: 20px;
-                            padding: 20px;
+                            h3 {
+                                color: #333333;
+                                font-family: arial;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 20px;
+                                padding: 20px;
+                                transition: .2s ease-in-out;
+
+                                &:hover{
+                                    color: #004aa6;
+                                }
+                            }
                         }
                     }
                 }
@@ -2822,7 +2863,7 @@ body {
 
                     i {
                         color: #7c7c7c;
-                        padding: 6px 8px;
+                        padding: 8px 10px;
                     }
                 }
 

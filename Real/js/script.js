@@ -44,23 +44,17 @@ $(document).ready(function () {
     });
 
     // Password
-    
-    // $('.see_password').click(function(){
-    //     $('#password').is(':checked') ? $('.password').attr('type', 'password') : $('.password').attr('type', 'text');
 
-    //     console.log($('#password').is(':checked'));
-    // });
-
-    $("#see_password").click(
-        function functionName() {
-          //Change the attribute to text
-          $("#password").attr("type", "password");
-        },
-        function() {
-          //Change the attribute back to password
-          $("#password").attr("type", "text");
+    $("#see_password").click(function() {
+        if( $("#password").attr("type") == "password"){
+            $("#password").attr("type", "text");
+            $('#see_password .far').removeClass('fa-eye').addClass('fa-eye-slash');
+        }else{
+            $("#password").attr("type", "password");
+            $('#see_password .far').removeClass('fa-eye-slash').addClass('fa-eye');
         }
-      );
+    });
+      
 
     // Swiper
 
