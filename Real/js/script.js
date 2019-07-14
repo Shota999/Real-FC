@@ -153,6 +153,38 @@ $(document).ready(function () {
         });
     });
 
+    // Same news
+
+    var swiper = new Swiper('.new_slider', {
+        slidesPerView: 2,
+        // slaidebs shoris dashoreba 
+        spaceBetween: 0,
+        speed: 600,
+        navigation: {
+            nextEl: '.next-new',
+            prevEl: '.prev-new',
+        },
+        loop: true,
+        breakpoints: {
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            }
+        }
+    });
+    
     // Timer
     $('#getting-started').countdown('2019/12/29', function (event) {
         $(this).html(event.strftime('%d დღე %M წთ : %S წამი'));
@@ -177,4 +209,20 @@ $(document).ready(function () {
         }, 500);
     });
 
+    // Answer comment
+
+    $('.answer').click(function () {
+        $(this).parents('.text').find('.comment_form').toggleClass('show');
+    });
+    
+    $(document).mouseup(function (e) {
+        var container = $(".comment_form"); // YOUR CONTAINER SELECTOR
+
+        if (!container.is(e.target) // if the target of the click isn't the container...
+            &&
+            container.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            container.removeClass('show');
+        }
+    });
 });
