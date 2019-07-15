@@ -1120,9 +1120,7 @@ body {
 
 .body .web_content .left_right_side .left_side {
   border: 1px solid #eeeeee;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 675px;
   border-radius: 5px;
 }
 
@@ -3657,6 +3655,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 15px;
 }
 
 .body .web_content .reclam .left {
@@ -3770,11 +3769,8 @@ body {
   line-height: 16.8px;
 }
 
-.body .left_side {
-  width: 675px;
-  -webkit-box-flex: initial;
-      -ms-flex: initial;
-          flex: initial;
+.body .border {
+  border: none !important;
 }
 
 .body .left_side .top_block {
@@ -3782,12 +3778,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 1px solid #eeeeee;
 }
 
 .body .left_side .top_block .tab {
   background-color: #dddddd;
   padding: 5px;
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .body .left_side .top_block .tab button {
@@ -3806,11 +3806,293 @@ body {
   background-color: #ffffff;
 }
 
-.body .left_side .tabcontent {
-  width: 675px;
+.body .left_side .show_tab {
+  display: none;
+}
+
+.body .left_side .active {
+  display: block;
 }
 
 .body .left_side .tabcontent table {
   width: 100%;
+}
+
+.body .left_side .tabcontent table thead tr {
+  background-color: #333333;
+}
+
+.body .left_side .tabcontent table thead tr th {
+  color: #ffffff;
+  font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+  font-size: 14px;
+  font-weight: 400;
+  border-right: 1px solid #484848;
+  padding: 20px 0;
+}
+
+.body .left_side .tabcontent table tbody tr td {
+  color: #333333;
+  font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.body .left_side .tabcontent table tbody tr td div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body .left_side .tabcontent table tbody tr td .main {
+  padding: 20px 0;
+}
+
+.body .left_side .tabcontent table tbody tr td .main .left {
+  width: 20%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.body .left_side .tabcontent table tbody tr td .main .middle {
+  width: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body .left_side .tabcontent table tbody tr td .main .right {
+  width: 20%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.body .left_side .tabcontent table tbody tr td .main p {
+  color: #333333;
+  font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.body .left_side .tabcontent table tbody tr td .main span {
+  margin: 0 20px;
+  color: #333333;
+  font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.body .left_side .tabcontent table tbody tr td .main img {
+  margin: 0 5px;
+}
+
+.body .left_side .tabcontent table tbody tr .color {
+  font-family: "Conv_HelveticaNeueLTGEO-75Bold";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.body .left_side .tabcontent table tbody tr .green {
+  color: #05c64e;
+  border-right: 4px solid #05c64e;
+}
+
+.body .left_side .tabcontent table tbody tr .red {
+  color: #f7082f;
+  border-right: 4px solid #f7082f;
+}
+
+.body .left_side .tabcontent table tbody tr .orange {
+  color: #fba510;
+  border-right: 4px solid #fba510;
+}
+
+.body .left_side .tabcontent table tbody tr .grey {
+  color: #9c9c9c;
+  border-right: 4px solid #9c9c9c;
+}
+
+.body .left_side .tabcontent table tbody tr:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+.body .left_side .tabcontent .bottom_container {
+  border: none;
+}
+
+.body .left_side .tabcontent .bottom_container .score_title {
+  background-color: rgba(238, 238, 238, 0.4);
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+}
+
+.body .left_side .tabcontent .bottom_container .score_title .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.body .left_side .tabcontent .bottom_container .score_title .left span {
+  margin-right: 40px;
+}
+
+.body .left_side .tabcontent .bottom_container .score_title .left span:last-child {
+  margin: 0;
+}
+
+.body .left_side .tabcontent .bottom_container .score_title .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.body .left_side .tabcontent .bottom_container .score_title .right span {
+  margin-right: 20px;
+}
+
+.body .left_side .tabcontent .bottom_container .score_title .right span:last-child {
+  margin: 0;
+}
+
+.body .left_side .tabcontent .bottom_container .score_title span {
+  display: block;
+  color: #7b7c7e;
+  font-family: "Conv_HelveticaNeueLTGEO-75Bold";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.body .left_side .tabcontent .bottom_container .teams {
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.body .left_side .tabcontent .bottom_container .teams .score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .left_side .tabcontent .bottom_container .teams .score:last-child {
+  margin-bottom: 0;
+}
+
+.body .left_side .tabcontent .bottom_container .teams .score .list {
+  border-radius: 3px;
+  background-color: #cdd2dd;
+  padding: 17px 22px 17px 19px;
+  position: relative;
+}
+
+.body .left_side .tabcontent .bottom_container .teams .score .list span {
+  color: #707f9f;
+  font-family: "BPG Arial";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  line-height: 16.8px;
+  z-index: 99;
+}
+
+.body .left_side .tabcontent .bottom_container .teams .score .list .team {
+  position: absolute;
+  top: 12px;
+  padding: 7px 8px 4px 7px;
+  background-color: #fff;
+  right: -15px;
+  border-radius: 50%;
+}
+
+.body .left_side .tabcontent .bottom_container .teams .score .list .team img {
+  width: 15px;
+  height: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 0;
+}
+
+.body .left_side .tabcontent .bottom_container .teams .score .team_title {
+  width: 100%;
+}
+
+.body .left_side .tabcontent .bottom_container .teams .score .team_title span {
+  display: block;
+  color: #7b7c7e;
+  font-family: "BPG Arial";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  line-height: 16.8px;
+  margin-left: 20px;
+}
+
+.body .left_side .tabcontent .bottom_container .teams .score .team_score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .left_side .tabcontent .bottom_container .teams .score .team_score span {
+  display: block;
+  margin-right: 21px;
+  color: #7b7c7e;
+  font-family: "BPG Arial";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  line-height: 16.8px;
+}
+
+.body .left_side .tabcontent .bottom_container .teams .real .list {
+  background-image: url("../images/real_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body .left_side .tabcontent .bottom_container .teams .real .list span {
+  color: #ffffff;
+}
+
+.body .left_side .tabcontent .bottom_container .teams .real .team_title span {
+  color: #014eaf;
+}
+
+.body .left_side .tabcontent .bottom_container .teams .real .team_score span {
+  color: #014eaf;
 }
 /*# sourceMappingURL=styles.css.map */
