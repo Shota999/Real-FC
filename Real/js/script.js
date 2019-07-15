@@ -32,12 +32,12 @@ $(document).ready(function () {
     });
 
     // Grid
-    $(".change").click(function () {
+    $(".grid1").click(function () {
         $(".grid1").addClass("active");
         $(".grid2").removeClass("active");
         $(".news").removeClass("active");
     });
-    $(".change1").click(function () {
+    $(".grid2").click(function () {
         $(".grid2").addClass("active");
         $(".grid1").removeClass("active");
         $(".news").addClass("active");

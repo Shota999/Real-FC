@@ -89,6 +89,7 @@ body {
                         margin-bottom: 20px;
                         outline: none;
                         padding-left: 10px;
+                        font-family: "BPG Arial";
                     }
 
                     :focus {
@@ -113,6 +114,7 @@ body {
                             border-bottom-right-radius: 5px;
                             margin-top: 10px;
                             margin-bottom: 10px;
+                            font-family: "BPG Arial";
                         }
 
                         .see_password {
@@ -154,6 +156,7 @@ body {
                         cursor: pointer;
                         width: 100%;
                         border-radius: 5px;
+                        font-family: "BPG Arial";
                     }
 
                     .button {
@@ -168,6 +171,7 @@ body {
                             border-radius: 5px;
                             margin-bottom: 30px;
                             cursor: pointer;
+                            font-family: "BPG Arial";
                         }
 
                         .sign_in {
@@ -193,11 +197,8 @@ body {
             height: 170px;
 
             h1 {
-                width: 100%;
-                height: 100%;
-                background-size: cover;
-                background-image: url('../images/REALI.png');
-
+                background-size: 100% auto;
+                background-image: url("../images/REALI.png");
                 a {
                     display: block;
                     margin-left: 30px;
@@ -272,6 +273,7 @@ body {
                                 line-height: 15.6px;
                                 padding: 19px 18px;
                                 border-bottom: 1px solid #eeeeee;
+                                text-shadow: none;
                             }
 
                             ::before {
@@ -422,7 +424,7 @@ body {
 
                         ::placeholder {
                             color: #bdbcb9;
-                            font-family: Arial;
+                            font-family: "BPG Arial";
                             font-size: 14px;
                             font-weight: 400;
                             line-height: 16.8px;
@@ -510,19 +512,6 @@ body {
                             display: flex;
                         }
                     }
-
-                    // @keyframes moveDown {
-                    //     from {
-                    //         transform: translateY(-20%);
-                    //         opacity: 0;
-                    //     }
-
-                    //     to {
-                    //         opacity: 1;
-                    //         transform: translateY(0);
-                    //     }
-                    // }
-
                     &:hover .hover_container {
                         display: flex;
                         transition: .2s ease-in-out;
@@ -621,10 +610,10 @@ body {
                             padding: 21px 25px;
                             display: flex;
 
-                            a {
-                                display: flex;
 
-                                h2 {
+                            h2 {
+                                a {
+                                    display: flex;
                                     color: #f7f7f8;
                                     font-size: 15px;
                                     font-weight: 400;
@@ -651,7 +640,7 @@ body {
 
                                 p {
                                     color: #818181;
-                                    font-family: Arial;
+                                    font-family: "BPG Arial";
                                     font-size: 13px;
                                     font-weight: 400;
                                     letter-spacing: 0.07px;
@@ -927,6 +916,7 @@ body {
     .reclam_baner {
         background-image: url('../images/reclam.png');
         height: 100px;
+        background-repeat: no-repeat;
     }
 
     .web_content {
@@ -1002,24 +992,12 @@ body {
                                 margin-right: 0;
                                 fill: #c1c3c5;
                                 padding: 12px 12px 8px 12px;
+                                transition: 0.4s;
                             }
-
-                        }
-
-                        .change1 {
-                            border-radius: 3px;
-                            background-color: #eaeaea;
-
-                            cursor: pointer;
-
-                            svg {
-                                margin-right: 0;
-                                fill: #c1c3c5;
-                                padding: 12px 12px 8px 12px;
+                            &:hover svg{
+                                fill: #838588;
                             }
-
                         }
-
                         .active {
                             svg {
                                 fill: #888888;
@@ -1060,7 +1038,8 @@ body {
                                     object-fit: cover;
                                     width: 100%;
                                     height: 190px;
-                                    transition: .3s ease-in-out;
+                                    -webkit-transition: .9s ease-in-out;
+                                    transition: .9s ease-in-out;
                                 }
                             }
 
@@ -1085,10 +1064,9 @@ body {
                             }
                         }
 
-                        a {
-                            display: block;
-
-                            h3 {
+                        h3 {
+                            a {
+                                display: block;
                                 color: #333333;
                                 font-size: 14px;
                                 font-weight: 400;
@@ -1102,7 +1080,6 @@ body {
                                 }
                             }
                         }
-
 
                         .bottom_container {
                             padding: 20px;
@@ -1178,11 +1155,13 @@ body {
                             }
                         }
 
-                        a {
-                            h3 {
+                        h3 {
+                            a {
+                                display: block;
                                 padding: 0;
                                 padding-bottom: 13px;
                             }
+
                         }
 
                         .news_content {
@@ -1285,7 +1264,7 @@ body {
 
                         p {
                             color: #777777;
-                            font-family: "Conv_bpg_arial_0";
+                            font-family: "BPG Arial";
                             font-size: 13px;
                             font-weight: 400;
                             line-height: 23px;
@@ -1653,7 +1632,7 @@ body {
                                         }
                                     }
 
-                                    
+
                                 }
 
                                 .like_answer {
@@ -1708,11 +1687,11 @@ body {
                                     margin: 10px 0;
                                 }
                             }
-                            
+
                             .comment_form {
                                 width: 100%;
                                 display: none;
-                                margin: 15px 0;
+                                margin: 15px 0 0 0;
                                 position: relative;
 
                                 :focus {
@@ -1744,6 +1723,7 @@ body {
                                     }
                                 }
                             }
+
                             .show {
                                 display: block;
                             }
@@ -1906,6 +1886,9 @@ body {
                         -webkit-box-flex: 1;
                         -ms-flex: 1;
                         flex: 1;
+                        font-family: 'Conv_HelveticaNeueLTGEO-55Roman';
+                        -webkit-font-feature-settings: 'case'on;
+                        font-feature-settings: 'case'on;
                     }
                 }
 
@@ -2019,7 +2002,7 @@ body {
 
                                     span {
                                         color: #707f9f;
-                                        font-family: arial;
+                                        font-family: "BPG Arial";
                                         font-size: 14px;
                                         font-weight: 400;
                                         letter-spacing: 0.14px;
@@ -2050,7 +2033,7 @@ body {
                                     span {
                                         display: block;
                                         color: #7b7c7e;
-                                        font-family: arial;
+                                        font-family: "BPG Arial";
                                         font-size: 14px;
                                         font-weight: 400;
                                         letter-spacing: 0.14px;
@@ -2066,7 +2049,7 @@ body {
                                         display: block;
                                         margin-right: 15px;
                                         color: #7b7c7e;
-                                        font-family: arial;
+                                        font-family: "BPG Arial";
                                         font-size: 14px;
                                         font-weight: 400;
                                         letter-spacing: 0.14px;
@@ -2154,7 +2137,7 @@ body {
 
                                         &:last-child {
                                             color: #a4a6ab;
-                                            font-family: arial;
+                                            font-family: "BPG Arial";
                                             font-size: 10px;
                                             font-weight: 400;
                                             letter-spacing: 0.1px;
@@ -2179,7 +2162,7 @@ body {
                         justify-content: center;
                         background: #cdd2dd;
                         color: #707f9f;
-                        font-family: arial;
+                        font-family: "BPG Arial";
                         font-size: 14px;
                         font-weight: 400;
                         letter-spacing: 0.14px;
@@ -2219,7 +2202,7 @@ body {
                                     top: 8px;
                                     left: 8px;
                                     color: #054390;
-                                    font-family: Arial;
+                                    font-family: "BPG Arial";
                                     font-size: 14px;
                                     font-weight: 400;
                                     letter-spacing: 0.14px;
@@ -2253,7 +2236,7 @@ body {
                                     .title {
                                         h4 {
                                             color: #5a5e63;
-                                            font-family: Arial;
+                                            font-family: "BPG Arial";
                                             font-size: 17px;
                                             font-weight: 400;
                                             letter-spacing: 0.17px;
@@ -2263,7 +2246,7 @@ body {
                                         span {
                                             display: block;
                                             color: #555c65;
-                                            font-family: Arial;
+                                            font-family: "BPG Arial";
                                             font-size: 12px;
                                             font-weight: 400;
                                             letter-spacing: 0.12px;
@@ -2291,7 +2274,7 @@ body {
                                     span {
                                         display: block;
                                         color: #555c65;
-                                        font-family: Arial;
+                                        font-family: "BPG Arial";
                                         font-size: 14px;
                                         font-weight: 400;
                                         letter-spacing: 0.14px;
@@ -2376,7 +2359,7 @@ body {
                         .hover_container {
                             width: 100%;
                             height: 100%;
-                            display: none;
+                            display: flex;
                             justify-content: center;
                             align-items: center;
                             position: absolute;
@@ -2386,6 +2369,8 @@ body {
                             color: #ffffff;
                             font-size: 19px;
                             border-radius: 3px;
+                            transition: 0.9s;
+                            opacity: 0;
                         }
                     }
 
@@ -2397,18 +2382,23 @@ body {
                         margin-left: 15px;
 
                         h3 {
-                            color: #44484d;
-                            font-family: "BPG Arial";
-                            font-size: 13px;
-                            font-weight: 400;
-                            letter-spacing: 0.22px;
-                            line-height: 17px;
+                            a {
+                                display: block;
+                                color: #44484d;
+                                font-family: "BPG Arial";
+                                font-size: 13px;
+                                font-weight: 400;
+                                letter-spacing: 0.22px;
+                                line-height: 17px;
+                                transition: .2s ease-in-out;
+                            }
+
                         }
 
                         span {
                             display: block;
                             color: #a8a8aa;
-                            font-family: arial;
+                            font-family: "BPG Arial";
                             font-size: 13px;
                             font-weight: 400;
                             letter-spacing: 0.22px;
@@ -2421,11 +2411,11 @@ body {
                         }
                     }
 
-                    &:hover .hover_container {
-                        display: flex;
+                    &:hover .hover_container{
+                        opacity: 1;
                     }
 
-                    &:hover h3 {
+                    &:hover h3 a {
                         display: flex;
                         color: #004aa6;
                     }
@@ -2513,7 +2503,7 @@ body {
 
                             span {
                                 color: #74777a;
-                                font-family: arial;
+                                font-family: "BPG Arial";
                                 font-size: 13px;
                                 font-weight: 400;
                                 letter-spacing: 0.13px;
@@ -2534,6 +2524,9 @@ body {
                                 color: #735803;
                                 transition: .2s;
                             }
+                        }
+                        .answers{
+                            margin-top: 15px;
                         }
                     }
                 }
@@ -2559,7 +2552,7 @@ body {
 
                             span {
                                 color: #ffffff;
-                                font-family: arial;
+                                font-family: "BPG Arial";
                                 font-size: 14px;
                                 font-weight: 400;
                                 letter-spacing: 0.14px;
@@ -2575,7 +2568,7 @@ body {
 
                         p {
                             color: #787878;
-                            font-family: arial;
+                            font-family: "BPG Arial";
                             font-size: 15px;
                             font-weight: 400;
                             letter-spacing: 0.15px;
@@ -2610,6 +2603,7 @@ body {
                     width: 100%;
                     height: 250px;
                     overflow: hidden;
+                    background-repeat: no-repeat;
                     background-image: url('../images/reclam1.png');
                 }
             }
@@ -2651,7 +2645,7 @@ body {
 
                         img {
                             width: 100%;
-                            transition: .2s ease-in-out;
+                            transition: .9s ease-in-out;
 
                             &:hover {
                                 transform: scale(1.1);
@@ -2662,8 +2656,8 @@ body {
                     .title {
                         padding: 20px;
 
-                        a {
-                            h3 {
+                        h3 {
+                            a {
                                 color: #333333;
                                 font-family: "BPG Arial";
                                 font-size: 14px;
@@ -2676,6 +2670,7 @@ body {
                                     color: #004aa6;
                                 }
                             }
+
                         }
                     }
                 }
@@ -2958,25 +2953,31 @@ body {
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
-                            transition: .2s ease-in-out;
+                            -webkit-transition: .9s ease-in-out;
+                            transition: .9s ease-in-out;
                         }
 
                         .video_button {
                             position: absolute;
-                            top: 35%;
-                            left: 40%;
+                            top: 0;
+                            left: 0;
                             font-size: 32px;
                             color: #fff;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                         }
                     }
 
                     .title {
-                        a {
-                            display: block;
 
-                            h3 {
+                        h3 {
+                            a {
+                                display: block;
                                 color: #333333;
-                                font-family: arial;
+                                font-family: "BPG Arial";
                                 font-size: 14px;
                                 font-weight: 400;
                                 line-height: 20px;
@@ -2987,6 +2988,7 @@ body {
                                     color: #004aa6;
                                 }
                             }
+
                         }
                     }
                 }
@@ -3092,13 +3094,14 @@ body {
                     a {
                         display: flex;
                         align-items: center;
+                        transition: 0.9s; 
+                        color: #888888;
 
                         img {
                             margin-right: 5px;
                         }
 
                         span {
-                            color: #888888;
                             font-size: 14px;
                             font-weight: 400;
                             letter-spacing: 0.14px;
@@ -3113,19 +3116,35 @@ body {
                 align-items: center;
 
                 a {
-                    display: block;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     background-color: #e2e2e2;
                     border-radius: 3px;
                     margin-right: 15px;
+                    width: 31px;
+                    height: 31px;
+                    transition: 0.9s;
 
                     i {
                         color: #7c7c7c;
                         padding: 8px 10px;
+                        transition: .9s;
+                    }
+                    &:hover{
+                        background-color: #004aa6;
+                    }
+                    &:hover i{
+                        color: #fff;
                     }
                 }
 
                 .top_ge {
                     margin-right: 15px;
+
+                    img{
+                        vertical-align: middle;
+                    }
                 }
             }
         }
@@ -3144,6 +3163,45 @@ body {
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 16.8px;
+            }
+        }
+    }
+    // Season page
+
+    .left_side{
+        width: 675px;
+        flex: initial;
+
+        .top_block{
+            padding: 15px;
+            display: flex;
+
+            .tab{
+                background-color: #dddddd;
+                padding: 5px;
+                border-radius: 20px;
+
+                button{
+                    color: #999999;
+                    font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+                    font-size: 13px;
+                    font-weight: 400;
+                    border-radius: 20px;
+                    padding: 8px 25px;
+                    border: none;
+                    cursor: pointer;
+                }
+                .active{
+                    color: #0559c1;
+                    background-color: #ffffff;
+                }
+            }
+        }
+        .tabcontent{
+            width: 675px;
+
+            table{
+                width: 100%;
             }
         }
     }

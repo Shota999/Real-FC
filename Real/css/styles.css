@@ -104,6 +104,7 @@ body {
   margin-bottom: 20px;
   outline: none;
   padding-left: 10px;
+  font-family: "BPG Arial";
 }
 
 .body .popup_container .registration .inside_content form :focus {
@@ -133,6 +134,7 @@ body {
   border-bottom-right-radius: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: "BPG Arial";
 }
 
 .body .popup_container .registration .inside_content form .input_container .see_password {
@@ -178,6 +180,7 @@ body {
   cursor: pointer;
   width: 100%;
   border-radius: 5px;
+  font-family: "BPG Arial";
 }
 
 .body .popup_container .registration .inside_content form .button {
@@ -196,6 +199,7 @@ body {
   border-radius: 5px;
   margin-bottom: 30px;
   cursor: pointer;
+  font-family: "BPG Arial";
 }
 
 .body .popup_container .registration .inside_content form .button .sign_in {
@@ -219,9 +223,7 @@ body {
 }
 
 .body header .top_container h1 {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
+  background-size: 100% auto;
   background-image: url("../images/REALI.png");
 }
 
@@ -315,6 +317,7 @@ body {
   line-height: 15.6px;
   padding: 19px 18px;
   border-bottom: 1px solid #eeeeee;
+  text-shadow: none;
 }
 
 .body header nav .menu .dropdown_menu .dropdown_content li ::before {
@@ -480,7 +483,7 @@ body {
 
 .body header .bottom_container .left_container .form form ::-webkit-input-placeholder {
   color: #bdbcb9;
-  font-family: Arial;
+  font-family: "BPG Arial";
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
@@ -488,7 +491,7 @@ body {
 
 .body header .bottom_container .left_container .form form :-ms-input-placeholder {
   color: #bdbcb9;
-  font-family: Arial;
+  font-family: "BPG Arial";
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
@@ -496,7 +499,7 @@ body {
 
 .body header .bottom_container .left_container .form form ::-ms-input-placeholder {
   color: #bdbcb9;
-  font-family: Arial;
+  font-family: "BPG Arial";
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
@@ -504,7 +507,7 @@ body {
 
 .body header .bottom_container .left_container .form form ::placeholder {
   color: #bdbcb9;
-  font-family: Arial;
+  font-family: "BPG Arial";
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
@@ -720,13 +723,10 @@ body {
   display: flex;
 }
 
-.body .container .content .left_container .swiper-slide .slider_content .text_container a {
+.body .container .content .left_container .swiper-slide .slider_content .text_container h2 a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.body .container .content .left_container .swiper-slide .slider_content .text_container a h2 {
   color: #f7f7f8;
   font-size: 15px;
   font-weight: 400;
@@ -736,7 +736,7 @@ body {
   transition: .2s ease-in-out;
 }
 
-.body .container .content .left_container .swiper-slide .slider_content .text_container a h2:hover {
+.body .container .content .left_container .swiper-slide .slider_content .text_container h2 a:hover {
   color: #004aa6;
 }
 
@@ -764,7 +764,7 @@ body {
 
 .body .container .content .left_container .swiper-slide .slider_content .bottom_container .info_container p {
   color: #818181;
-  font-family: Arial;
+  font-family: "BPG Arial";
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.07px;
@@ -1093,6 +1093,7 @@ body {
 .body .reclam_baner {
   background-image: url("../images/reclam.png");
   height: 100px;
+  background-repeat: no-repeat;
 }
 
 .body .web_content {
@@ -1206,18 +1207,12 @@ body {
   margin-right: 0;
   fill: #c1c3c5;
   padding: 12px 12px 8px 12px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.body .web_content .left_right_side .left_side .top_container .change_container .change1 {
-  border-radius: 3px;
-  background-color: #eaeaea;
-  cursor: pointer;
-}
-
-.body .web_content .left_right_side .left_side .top_container .change_container .change1 svg {
-  margin-right: 0;
-  fill: #c1c3c5;
-  padding: 12px 12px 8px 12px;
+.body .web_content .left_right_side .left_side .top_container .change_container .change:hover svg {
+  fill: #838588;
 }
 
 .body .web_content .left_right_side .left_side .top_container .change_container .active svg {
@@ -1272,8 +1267,8 @@ body {
      object-fit: cover;
   width: 100%;
   height: 190px;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: .9s ease-in-out;
+  transition: .9s ease-in-out;
 }
 
 .body .web_content .left_right_side .left_side .container .news .news_image_container .comment {
@@ -1300,11 +1295,8 @@ body {
   margin-left: 5px;
 }
 
-.body .web_content .left_right_side .left_side .container .news a {
+.body .web_content .left_right_side .left_side .container .news h3 a {
   display: block;
-}
-
-.body .web_content .left_right_side .left_side .container .news a h3 {
   color: #333333;
   font-size: 14px;
   font-weight: 400;
@@ -1315,7 +1307,7 @@ body {
   transition: .3s ease-in-out;
 }
 
-.body .web_content .left_right_side .left_side .container .news a h3:hover {
+.body .web_content .left_right_side .left_side .container .news h3 a:hover {
   color: #004aa6;
 }
 
@@ -1409,7 +1401,8 @@ body {
   display: none;
 }
 
-.body .web_content .left_right_side .left_side .container .active a h3 {
+.body .web_content .left_right_side .left_side .container .active h3 a {
+  display: block;
   padding: 0;
   padding-bottom: 13px;
 }
@@ -1527,7 +1520,7 @@ body {
 
 .body .web_content .left_right_side .left_side .inner_container .text_container p {
   color: #777777;
-  font-family: "Conv_bpg_arial_0";
+  font-family: "BPG Arial";
   font-size: 13px;
   font-weight: 400;
   line-height: 23px;
@@ -2053,7 +2046,7 @@ body {
 .body .web_content .left_right_side .left_side .inner_container .comments .comments_container .comment_form {
   width: 100%;
   display: none;
-  margin: 15px 0;
+  margin: 15px 0 0 0;
   position: relative;
 }
 
@@ -2286,6 +2279,9 @@ body {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  font-family: 'Conv_HelveticaNeueLTGEO-55Roman';
+  -webkit-font-feature-settings: 'case'on;
+  font-feature-settings: 'case'on;
 }
 
 .body .web_content .left_right_side .right_side .tabcontent {
@@ -2421,7 +2417,7 @@ body {
 
 .body .web_content .left_right_side .right_side .tabcontent .swiper-slide .teams .score .list span {
   color: #707f9f;
-  font-family: arial;
+  font-family: "BPG Arial";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.14px;
@@ -2453,7 +2449,7 @@ body {
 .body .web_content .left_right_side .right_side .tabcontent .swiper-slide .teams .score .team_title span {
   display: block;
   color: #7b7c7e;
-  font-family: arial;
+  font-family: "BPG Arial";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.14px;
@@ -2471,7 +2467,7 @@ body {
   display: block;
   margin-right: 15px;
   color: #7b7c7e;
-  font-family: arial;
+  font-family: "BPG Arial";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.14px;
@@ -2574,7 +2570,7 @@ body {
 
 .body .web_content .left_right_side .right_side .tabcontent .swiper-slide .match_score .match .score span:last-child {
   color: #a4a6ab;
-  font-family: arial;
+  font-family: "BPG Arial";
   font-size: 10px;
   font-weight: 400;
   letter-spacing: 0.1px;
@@ -2598,7 +2594,7 @@ body {
           justify-content: center;
   background: #cdd2dd;
   color: #707f9f;
-  font-family: arial;
+  font-family: "BPG Arial";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.14px;
@@ -2646,7 +2642,7 @@ body {
   top: 8px;
   left: 8px;
   color: #054390;
-  font-family: Arial;
+  font-family: "BPG Arial";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.14px;
@@ -2694,7 +2690,7 @@ body {
 
 .body .web_content .left_right_side .right_side .tabcontent .bombardier .soccer .information .name .title h4 {
   color: #5a5e63;
-  font-family: Arial;
+  font-family: "BPG Arial";
   font-size: 17px;
   font-weight: 400;
   letter-spacing: 0.17px;
@@ -2704,7 +2700,7 @@ body {
 .body .web_content .left_right_side .right_side .tabcontent .bombardier .soccer .information .name .title span {
   display: block;
   color: #555c65;
-  font-family: Arial;
+  font-family: "BPG Arial";
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.12px;
@@ -2736,7 +2732,7 @@ body {
 .body .web_content .left_right_side .right_side .tabcontent .bombardier .soccer .information .goal span {
   display: block;
   color: #555c65;
-  font-family: Arial;
+  font-family: "BPG Arial";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.14px;
@@ -2838,7 +2834,9 @@ body {
 .body .web_content .left_right_side .right_side .blog_content .image_container .hover_container {
   width: 100%;
   height: 100%;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2852,6 +2850,9 @@ body {
   color: #ffffff;
   font-size: 19px;
   border-radius: 3px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  opacity: 0;
 }
 
 .body .web_content .left_right_side .right_side .blog_content .text_container {
@@ -2871,19 +2872,22 @@ body {
   margin-left: 15px;
 }
 
-.body .web_content .left_right_side .right_side .blog_content .text_container h3 {
+.body .web_content .left_right_side .right_side .blog_content .text_container h3 a {
+  display: block;
   color: #44484d;
   font-family: "BPG Arial";
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.22px;
   line-height: 17px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .body .web_content .left_right_side .right_side .blog_content .text_container span {
   display: block;
   color: #a8a8aa;
-  font-family: arial;
+  font-family: "BPG Arial";
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.22px;
@@ -2896,12 +2900,10 @@ body {
 }
 
 .body .web_content .left_right_side .right_side .blog_content:hover .hover_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
 }
 
-.body .web_content .left_right_side .right_side .blog_content:hover h3 {
+.body .web_content .left_right_side .right_side .blog_content:hover h3 a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3003,7 +3005,7 @@ body {
 
 .body .web_content .left_right_side .right_side .poll_container .poll_text .progress span {
   color: #74777a;
-  font-family: arial;
+  font-family: "BPG Arial";
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.13px;
@@ -3026,6 +3028,10 @@ body {
   color: #735803;
   -webkit-transition: .2s;
   transition: .2s;
+}
+
+.body .web_content .left_right_side .right_side .poll_container .poll_text .answers {
+  margin-top: 15px;
 }
 
 .body .web_content .left_right_side .right_side .loss_container {
@@ -3058,7 +3064,7 @@ body {
 
 .body .web_content .left_right_side .right_side .loss_container .background_container .top_container span {
   color: #ffffff;
-  font-family: arial;
+  font-family: "BPG Arial";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.14px;
@@ -3073,7 +3079,7 @@ body {
 
 .body .web_content .left_right_side .right_side .loss_container .loss_text p {
   color: #787878;
-  font-family: arial;
+  font-family: "BPG Arial";
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.15px;
@@ -3110,6 +3116,7 @@ body {
   width: 100%;
   height: 250px;
   overflow: hidden;
+  background-repeat: no-repeat;
   background-image: url("../images/reclam1.png");
 }
 
@@ -3151,8 +3158,8 @@ body {
 
 .body .web_content .news_slider .swiper-slide .video .image_container img {
   width: 100%;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: .9s ease-in-out;
+  transition: .9s ease-in-out;
 }
 
 .body .web_content .news_slider .swiper-slide .video .image_container img:hover {
@@ -3164,7 +3171,7 @@ body {
   padding: 20px;
 }
 
-.body .web_content .news_slider .swiper-slide .video .title a h3 {
+.body .web_content .news_slider .swiper-slide .video .title h3 a {
   color: #333333;
   font-family: "BPG Arial";
   font-size: 14px;
@@ -3175,7 +3182,7 @@ body {
   transition: .2s ease-in-out;
 }
 
-.body .web_content .news_slider .swiper-slide .video .title a h3:hover {
+.body .web_content .news_slider .swiper-slide .video .title h3 a:hover {
   color: #004aa6;
 }
 
@@ -3508,25 +3515,33 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: .9s ease-in-out;
+  transition: .9s ease-in-out;
 }
 
 .body .web_content .bottom_container .video_container .video .image_container .video_button {
   position: absolute;
-  top: 35%;
-  left: 40%;
+  top: 0;
+  left: 0;
   font-size: 32px;
   color: #fff;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.body .web_content .bottom_container .video_container .video .title a {
+.body .web_content .bottom_container .video_container .video .title h3 a {
   display: block;
-}
-
-.body .web_content .bottom_container .video_container .video .title a h3 {
   color: #333333;
-  font-family: arial;
+  font-family: "BPG Arial";
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -3535,7 +3550,7 @@ body {
   transition: .2s ease-in-out;
 }
 
-.body .web_content .bottom_container .video_container .video .title a h3:hover {
+.body .web_content .bottom_container .video_container .video .title h3 a:hover {
   color: #004aa6;
 }
 
@@ -3665,6 +3680,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  color: #888888;
 }
 
 .body .web_content .reclam .left .container a img {
@@ -3672,7 +3690,6 @@ body {
 }
 
 .body .web_content .reclam .left .container a span {
-  color: #888888;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.14px;
@@ -3689,19 +3706,45 @@ body {
 }
 
 .body .web_content .reclam .right a {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #e2e2e2;
   border-radius: 3px;
   margin-right: 15px;
+  width: 31px;
+  height: 31px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
 }
 
 .body .web_content .reclam .right a i {
   color: #7c7c7c;
   padding: 8px 10px;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
+.body .web_content .reclam .right a:hover {
+  background-color: #004aa6;
+}
+
+.body .web_content .reclam .right a:hover i {
+  color: #fff;
 }
 
 .body .web_content .reclam .right .top_ge {
   margin-right: 15px;
+}
+
+.body .web_content .reclam .right .top_ge img {
+  vertical-align: middle;
 }
 
 .body .web_content footer {
@@ -3725,5 +3768,49 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
+}
+
+.body .left_side {
+  width: 675px;
+  -webkit-box-flex: initial;
+      -ms-flex: initial;
+          flex: initial;
+}
+
+.body .left_side .top_block {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .left_side .top_block .tab {
+  background-color: #dddddd;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.body .left_side .top_block .tab button {
+  color: #999999;
+  font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 8px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.body .left_side .top_block .tab .active {
+  color: #0559c1;
+  background-color: #ffffff;
+}
+
+.body .left_side .tabcontent {
+  width: 675px;
+}
+
+.body .left_side .tabcontent table {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
