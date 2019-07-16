@@ -1531,8 +1531,7 @@ body {
                                     margin-right: 10px;
                                 }
                             }
-                        }
-
+                        }                        
                         .write_comment {
                             padding: 15px;
                             border: 1px solid #eeeeee;
@@ -1542,15 +1541,6 @@ body {
                             form {
                                 display: flex;
                                 position: relative;
-
-                                textarea {
-                                    padding: 30px 80px 30px 35px;
-                                    outline: none;
-                                    resize: none;
-                                    width: 100%;
-                                    border: 1px solid #eeeeee;
-                                    border-radius: 5px;
-                                }
 
                                 ::placeholder {
                                     color: #bdbcb9;
@@ -1574,12 +1564,46 @@ body {
                                     height: 36px;
                                     align-items: center;
                                     justify-content: space-between;
+                                }
+                                .redactor_box{
+                                    background-color: #fff;
+                                    width: 100%;
+                                    position: relative;
+                                    overflow: auto;
+                                    padding: 30px 90px 30px 35px;
+                                    outline: none;
+                                    resize: none;
+                                    border: 1px solid #eeeeee;
+                                    border-radius: 5px;
 
-                                    i {
-                                        margin-right: 9px;
-                                        font-size: 12px;
-                                        color: #babfc6;
-                                        cursor: pointer;
+                                    .redactor_toolbar {
+
+                                        font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
+                                        display: flex;
+                                        position: absolute;
+                                        top: 20px;
+                                        width: 90px;
+                                        left: initial;
+                                        right: 10px;
+                                        z-index: 99;
+                                        margin: 0;
+                                        padding: 0;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        flex-wrap: wrap;
+                                        background: none;
+                                        border: none;
+                                        height: auto!important;
+                                        
+                                        li{
+                                            a{
+                                                height: 19px;
+                                            }
+                                        }
+                                    }
+                                    .redactor_editor, .redactor_editor:focus{
+                                        padding: 0!important;
+                                        min-height: 35px!important;
                                     }
                                 }
                             }

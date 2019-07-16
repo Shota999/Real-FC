@@ -1846,15 +1846,6 @@ body {
   position: relative;
 }
 
-.body .web_content .left_right_side .left_side .inner_container .comments .write_comment form textarea {
-  padding: 30px 80px 30px 35px;
-  outline: none;
-  resize: none;
-  width: 100%;
-  border: 1px solid #eeeeee;
-  border-radius: 5px;
-}
-
 .body .web_content .left_right_side .left_side .inner_container .comments .write_comment form ::-webkit-input-placeholder {
   color: #bdbcb9;
   font-family: "BPG Arial";
@@ -1910,11 +1901,51 @@ body {
           justify-content: space-between;
 }
 
-.body .web_content .left_right_side .left_side .inner_container .comments .write_comment form .insert i {
-  margin-right: 9px;
-  font-size: 12px;
-  color: #babfc6;
-  cursor: pointer;
+.body .web_content .left_right_side .left_side .inner_container .comments .write_comment form .redactor_box {
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  padding: 30px 90px 30px 35px;
+  outline: none;
+  resize: none;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+}
+
+.body .web_content .left_right_side .left_side .inner_container .comments .write_comment form .redactor_box .redactor_toolbar {
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  width: 90px;
+  left: initial;
+  right: 10px;
+  z-index: 99;
+  margin: 0;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: none;
+  border: none;
+  height: auto !important;
+}
+
+.body .web_content .left_right_side .left_side .inner_container .comments .write_comment form .redactor_box .redactor_toolbar li a {
+  height: 19px;
+}
+
+.body .web_content .left_right_side .left_side .inner_container .comments .write_comment form .redactor_box .redactor_editor, .body .web_content .left_right_side .left_side .inner_container .comments .write_comment form .redactor_box .redactor_editor:focus {
+  padding: 0 !important;
+  min-height: 35px !important;
 }
 
 .body .web_content .left_right_side .left_side .inner_container .comments .comments_container {

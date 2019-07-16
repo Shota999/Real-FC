@@ -190,18 +190,6 @@ $(document).ready(function () {
         $(this).html(event.strftime('%d დღე %M წთ : %S წამი'));
     });
 
-
-    // Load more
-
-    // $(".news").slice(0, 17).show();
-    // $("#loadMore").on("click", function (e) {
-    //     e.preventDefault();
-    //     $(".news:hidden").slice(0, 4).slideDown();
-    //     if ($(".news:hidden").length == 0) {
-    //         $("#loadMore").text("No Content").addClass("noContent");
-    //     }
-    // });
-
     // ===== Scroll to Top ==== 
     $('#return-to-top').click(function () {
         $('body,html').animate({
@@ -224,5 +212,45 @@ $(document).ready(function () {
         {
             container.removeClass('show');
         }
+    });
+
+    // Redactor
+
+    $(document).ready(function() {
+
+        $('textarea').redactor({
+
+            imageUpload: "{{url('admin/upload')}}?_token=" + "{{csrf_token()}}",
+
+            fileUpload: "{{url('admin/upload')}}?_token=" + "{{csrf_token()}}",
+
+            lang: 'en',
+
+            autoresize: true,
+
+            minHeight: 200,
+
+            plugins : ['emoticons'],
+
+            emoticons : {
+                viewType: 'modal',
+
+                items: [{
+                    'name': 'Happy',
+                    'src' : 'http://acmilan.ge/engine/data/emoticons/022.gif',
+                    'shortcode' : ':)'
+                },
+                {
+                    'name': 'Sad',
+                    'src' : 'http://acmilan.ge/engine/data/emoticons/fuck%20morata.gif',
+                    'shortcode' : ':('
+                }],
+                
+                button: {
+                    addBefore: 'fontcolor',
+                }
+            }
+        });
+
     });
 });
