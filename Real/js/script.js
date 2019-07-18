@@ -31,6 +31,15 @@ $(document).ready(function () {
         $(".sign_in_popup_container").removeClass("show");
     });
 
+    // Information popup
+
+    $(".information").click(function () {
+        $(".information_popup").addClass("show");
+    });
+    $(".close_container").click(function () {
+        $(".sign_in_popup_container").removeClass("show");
+    });
+
     // Grid
     $(".grid1").click(function () {
         $(".grid1").addClass("active");
@@ -252,5 +261,11 @@ $(document).ready(function () {
             }
         });
 
+    });
+
+    // Filter
+
+    $(".filter").click(function () {
+        $(".hide_container").toggleClass('show');
     });
 });

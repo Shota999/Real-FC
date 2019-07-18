@@ -183,6 +183,12 @@ body {
                             background-color: #222428;
                         }
                     }
+                    .file{
+                        border: none;
+                        padding: 0;
+                        border-radius: initial;
+                        margin-top: 0;
+                    }
                 }
             }
         }
@@ -869,12 +875,8 @@ body {
 
 
                             i {
-                                font-size: 5px;
+                                font-size: 13px;
                                 color: #004aa6;
-                                border: 1px solid #777;
-                                padding: 3px;
-                                padding-left: 4px;
-                                border-radius: 50%;
                                 margin-right: 5px;
                             }
                         }
@@ -1021,36 +1023,116 @@ body {
                             margin-left: 7px;
                         }
                     }
-
-                    .change_container {
+                    .search{
                         display: flex;
-                        justify-content: space-between;
+                        align-items: center;
+                        position: relative;
 
-                        .change {
-                            border-radius: 3px;
-                            background-color: #eaeaea;
-                            margin-right: 12px;
-
+                        .filter{
+                            border: 1px solid #eeeeee;
+                            border-radius: 5px;
+                            display: flex;
+                            align-items: center;
+                            margin-right: 10px;
                             cursor: pointer;
 
-                            svg {
-                                margin-right: 0;
-                                fill: #c1c3c5;
-                                padding: 12px 12px 8px 12px;
-                                transition: 0.4s;
+                            .left{
+                                border-right: 1px solid #eeeeee;
+                                i{
+                                    font-size: 16px;
+                                    color: #a8a8a8;
+                                    padding: 11px 13px;
+                                }
                             }
-
-                            &:hover svg {
-                                fill: #838588;
+                            .right{
+                                p{
+                                    color: #777777;
+                                    font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                    padding: 0 20px;
+                                }
                             }
                         }
+                        .hide_container{
+                            position: absolute;
+                            top: 45px;
+                            left: 0;
+                            width: 196px;
+                            z-index: 99;
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                            background-color: #ffffff;
+                            opacity: 0;
+                            transition: .2s ease-in-out;
+                            padding: 10px;
 
-                        .active {
-                            svg {
-                                fill: #888888;
+                            form{
+                                width: 100%;
+
+                                .input{
+                                    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.05);
+                                    background-color: #f3f3f3;
+                                    padding: 15px 15px;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 10px;
+                                    cursor: pointer;
+
+                                    &:last-child{
+                                        margin-bottom: 0;
+                                    }
+                                    label{
+                                        color: #989898;
+                                        font-family: "BPG Arial";
+                                        font-size: 12px;
+                                        font-weight: 400;
+                                        line-height: 19px;
+                                        margin-left: 5px;
+                                        transition: .4s ease-in-out;
+                                    }
+                                    &:hover label{
+                                        color: #055bc6;
+                                    }
+                                }
+                            }
+                        }
+                        .show{
+                            opacity: 1;
+                        }
+                        .change_container {
+                            display: flex;
+                            justify-content: space-between;
+    
+                            .change {
+                                border-radius: 3px;
+                                background-color: #eaeaea;
+                                margin-right: 12px;
+                                
+                                &:last-child{
+                                    margin-right: 0;
+                                }
+                                cursor: pointer;
+    
+                                svg {
+                                    margin-right: 0;
+                                    fill: #c1c3c5;
+                                    padding: 12px 12px 8px 12px;
+                                    transition: 0.4s;
+                                }
+    
+                                &:hover svg {
+                                    fill: #838588;
+                                }
+                            }
+    
+                            .active {
+                                svg {
+                                    fill: #888888;
+                                }
                             }
                         }
                     }
+                    
                 }
 
                 .container {
@@ -1107,6 +1189,24 @@ body {
                                     letter-spacing: 0.13px;
                                     line-height: 20px;
                                     margin-left: 5px;
+                                }
+                            }
+
+                            .video {
+                                background-color: #ffffff;
+                                border-radius: 5px;
+                                position: absolute;
+                                top: 20px;
+                                left: 20px;
+
+                                a {
+                                    display: block;
+                                    padding: 10px 11px 10px 10px;
+
+                                    i {
+                                        color: #ff0000;
+                                        font-size: 20px;
+                                    }
                                 }
                             }
                         }
@@ -1193,6 +1293,26 @@ body {
                         box-shadow: none;
                         border-bottom: 1px solid #eeeeee;
                         padding-bottom: 15px;
+
+                        .video {
+                            background-color: #ffffff;
+                            border-radius: 5px;
+                            position: absolute;
+                            top: initial !important;
+                            left: initial !important;
+                            bottom: 20px;
+                            right: 20px;
+
+                            a {
+                                display: block;
+                                padding: 10px;
+
+                                i {
+                                    color: #ff0000;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
 
                         .news_image_container {
                             width: 260px;
@@ -1531,7 +1651,8 @@ body {
                                     margin-right: 10px;
                                 }
                             }
-                        }                        
+                        }
+
                         .write_comment {
                             padding: 15px;
                             border: 1px solid #eeeeee;
@@ -1565,7 +1686,8 @@ body {
                                     align-items: center;
                                     justify-content: space-between;
                                 }
-                                .redactor_box{
+
+                                .redactor_box {
                                     background-color: #fff;
                                     width: 100%;
                                     position: relative;
@@ -1593,25 +1715,29 @@ body {
                                         flex-wrap: wrap;
                                         background: none;
                                         border: none;
-                                        height: auto!important;
-                                        
-                                        li{
-                                            a{
+                                        height: auto !important;
+
+                                        li {
+                                            a {
                                                 height: 19px;
                                             }
                                         }
                                     }
-                                    .redactor_editor, .redactor_editor:focus{
-                                        padding: 0!important;
-                                        min-height: 35px!important;
+
+                                    .redactor_editor,
+                                    .redactor_editor:focus {
+                                        padding: 0 !important;
+                                        min-height: 35px !important;
                                     }
-                                    .redactor_editor{
+
+                                    .redactor_editor {
                                         height: 35px;
                                         overflow-y: auto;
                                     }
                                 }
                             }
-                            button{
+
+                            button {
                                 background-color: #f1c10f;
                                 border: none;
                                 color: #1d1c2d;
@@ -1625,7 +1751,7 @@ body {
                                 cursor: pointer;
                                 transition: .4s ease-in-out;
 
-                                &:hover{
+                                &:hover {
                                     color: #000;
                                     box-shadow: 0px 0px 7px 0px rgba(255, 194, 0, 0.75);
                                 }
@@ -1742,6 +1868,11 @@ body {
                                             font-size: 12px;
                                             font-weight: 400;
                                             line-height: 24px;
+                                            transition: .4s ease-in-out;
+
+                                            &:hover {
+                                                color: #004aa6;
+                                            }
                                         }
 
                                         i {
@@ -1810,6 +1941,7 @@ body {
                                 }
 
                             }
+
                             form {
                                 display: flex;
                                 position: relative;
@@ -1837,7 +1969,8 @@ body {
                                     align-items: center;
                                     justify-content: space-between;
                                 }
-                                .redactor_box{
+
+                                .redactor_box {
                                     background-color: #fff;
                                     width: 100%;
                                     position: relative;
@@ -1865,19 +1998,22 @@ body {
                                         flex-wrap: wrap;
                                         background: none;
                                         border: none;
-                                        height: auto!important;
-                                        
-                                        li{
-                                            a{
+                                        height: auto !important;
+
+                                        li {
+                                            a {
                                                 height: 19px;
                                             }
                                         }
                                     }
-                                    .redactor_editor, .redactor_editor:focus{
-                                        padding: 0!important;
-                                        min-height: 35px!important;
+
+                                    .redactor_editor,
+                                    .redactor_editor:focus {
+                                        padding: 0 !important;
+                                        min-height: 35px !important;
                                     }
-                                    .redactor_editor{
+
+                                    .redactor_editor {
                                         height: 35px;
                                         overflow-y: auto;
                                     }
@@ -1888,6 +2024,180 @@ body {
                                 display: flex;
                             }
                         }
+                    }
+                }
+
+                // Profile page
+
+                .profile_top {
+                    border-radius: 5px;
+                    background-image: url('../images/profile_images/background.png');
+                    width: 100%;
+                    height: 140px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    overflow: hidden;
+
+                    .user_image {
+                        border-radius: 50%;
+                        overflow: hidden;
+                        width: 110px;
+                        height: 110px;
+                        z-index: 99;
+                        position: absolute;
+                        left: 15px;
+                        top: 15px;
+
+                        a {
+                            display: block;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+
+                    .bottom_container {
+                        background-color: rgba(0, 0, 0, 0.7);
+                        border: none;
+                        display: flex;
+                        justify-content: flex-end;
+
+                        .bottom_content {
+                            display: flex;
+
+                            .user {
+                                display: flex;
+                                align-items: center;
+                                margin-right: 20px;
+                                padding: 20px;
+
+                                a {
+                                    display: flex;
+                                    align-items: center;
+
+                                    i {
+                                        font-size: 14px;
+                                        color: #ffffff;
+                                        margin-right: 5px;
+                                        transition: .4s ease-in-out;
+                                    }
+
+                                    p {
+                                        color: #ffffff;
+                                        font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        text-transform: uppercase;
+                                        transition: .4s ease-in-out;
+                                    }
+                                }
+
+                            }
+
+                            .information {
+                                margin-right: 60px;
+
+                                a {
+                                    i {
+                                        color: #7995b6;
+                                    }
+
+                                    p {
+                                        color: #7995b6;
+                                    }
+
+                                    &:hover i {
+                                        color: #ffffff;
+                                    }
+
+                                    &:hover p {
+                                        color: #ffffff;
+                                    }
+                                }
+                            }
+
+                            .log_out {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-left: 1px solid;
+                                border-color: rgba(255, 255, 255, 0.15);
+
+                                a{
+                                    display: block;
+                                    padding: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .profile_information{
+                    border-radius: 5px;
+                    border: 1px solid #eeeeee;
+                    padding: 20px;
+                    margin-top: 15px;
+
+                    .info{
+                        display: flex;
+                        align-items: center;
+                        // justify-content: space-between;
+                        padding-bottom: 15px;
+                        border-bottom: 1px solid #eeeeee;
+                        margin-top: 15px;
+
+                        &:first-child{
+                            margin: 0;
+                        }
+                        &:last-child{
+                            border: none;
+                            padding: 0;
+                        }
+                        .left{
+                            display: flex;
+                            align-items: center;
+                            width: 185px;
+                            margin-right: 50px; 
+
+                            p{
+                                color: #777777;
+                                font-family: "BPG Arial";
+                                font-size: 13px;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                margin-left: 7px;
+                            }
+                        }
+                        .right{
+                            p{
+                                color: #777777;
+                                font-family: "BPG Arial";
+                                font-size: 13px;
+                                font-weight: 400;
+                            }
+                        }
+                        .online{
+                            display: flex;
+                            align-items: center;
+                            
+                            p{
+                                color: #2ad446;
+                            }
+                            .circle{
+                                width: 14px;
+                                height: 14px;
+                                border-radius: 50%;
+                                background-color: #07dd5d;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    .top{
+                        margin-top: 45px;
                     }
                 }
             }

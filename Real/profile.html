@@ -1,0 +1,590 @@
+﻿<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <title>Real-FC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/font-awasome.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="body">
+        <header>
+            <div class="top_container">
+                <h1>
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </h1>
+            </div>
+
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="index.html" class="active"><svg xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="21" viewBox="0 0 19 21">
+                                <defs>
+                                    <image id="9b1yb" width="19" height="19"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAABW0lEQVQ4T+WUvyvFURjGP09ikLLIIouy+TEruUmKmPwopZgUxcCE0cQgs00ZlMRgEEVJlKKU+BcMJgPDLR4dnatvt3vv97qrM5067/t5n/d9zjkiZdnuAg6AEUm3pcJV6tB2B3AJXAAZoFfSo+2wf5d0l8wvCrPdClwDm5I2bC8DCxG6BLxJWkmF2W4GboBdSau5BNsbwCjwDDylwmw3RkWnkuaTlW2HTraBGWC9JMx2PXAFPADTkpw/U9tVwB7QAvRJesvF/M7Mdm0c9AswJumzmDm2a4BjoBoYlvQRYn9g8fAE+AKGJGXLuDKh+DnwGotnFWUfAg1Af65KGiyKyI3lEZgKsB2gE5gA6iTdlwNKONwGHAFnAbYZnAk3HOiRNPkXWFQYzFhLGjAHdFcCK+Tmf4XFx52RNFiOKSUNiLD2ck3Jhw0AiwkVs0BTJbBxYL9AO1uSwv+Vur4BVP6YR8GlG0wAAAAASUVORK5CYII=" />
+                                    <clipPath id="9b1ya">
+                                        <path d="M0 19V0h19v19z" />
+                                    </clipPath>
+                                </defs>
+                                <g>
+                                    <g>
+                                        <g clip-path="url(&quot;#9b1ya&quot;)">
+                                            <use xlink:href="#9b1yb" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <path fill="#fcbf00"
+                                            d="M17.82 13.977a3.965 3.965 0 0 0-1.541-.985v1.24c.271.138.528.318.753.55a3.027 3.027 0 0 1 0 4.196 2.84 2.84 0 0 1-4.085 0 3.03 3.03 0 0 1 0-4.196c.003-.003.012-.009.016-.014h.001l.668.685-.004-2.174-2.115-.003.665.683a.067.067 0 0 1-.016.018c-1.561 1.603-1.561 4.205 0 5.808a3.926 3.926 0 0 0 5.658 0c1.56-1.603 1.562-4.205 0-5.808z" />
+                                    </g>
+                                </g>
+                            </svg></a>
+                    </li>
+                    <li><a href="#">მთავარი</a></li>
+                    <li class="dropdown_menu"><a href="#">მულტიმედია<i class="fas fa-chevron-down arrow_down"></i><i
+                                class="fas fa-chevron-up arrow_up"></i></a>
+                        <ul class="dropdown_content">
+                            <li><a href="#">ვიდეო</a></li>
+                            <li><a href="#">აუდიო</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">გუნდი</a></li>
+                    <li class="dropdown_menu"><a href="#">სეზონი<i class="fas fa-chevron-down arrow_down"></i><i
+                                class="fas fa-chevron-up arrow_up"></i></a>
+                        <ul class="dropdown_content">
+                            <li><a href="#">ჩემპიონთა ლიგა</a></li>
+                            <li><a href="#">ლა ლიგა</a></li>
+                            <li><a href="#">კოპა დელ რეი</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">საიტი</a></li>
+                    <li><a href="#">ფანკლუბი</a></li>
+                </ul>
+                <div class="authorization">
+                    <div class="registration">
+                        <button class="registration_popup">
+                            <!-- New linkshi chasma ar chirdeba -->
+                            <i class="fas fa-user-plus"></i>
+                            <p>რეგისტრაცია</p>
+                        </button>
+                    </div>
+                    <div class="sign_in">
+                        <button class="sign_in_popup">
+                            <!-- New igive wyoba ro qondes i garet gamovitane -->
+                            <i class="fas fa-user"></i>
+                            <p>შესვლა</p>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div class="bottom_container">
+                <div class="left_container">
+                    <div class="social">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                <g>
+                                    <g>
+                                        <path fill="#777"
+                                            d="M9.57 13.5V9.21h1.324l.241-1.588H9.57V6.48c0-.35.363-.432.532-.432h1.01V4.505L9.956 4.5c-1.583 0-1.943 1.15-1.943 1.886v1.237H6.864V9.21h1.148v4.29zM9 1.405a7.594 7.594 0 1 1 0 15.187A7.594 7.594 0 0 1 9 1.406zM9 18a9 9 0 0 0 9-9 9 9 0 0 0-9-9 9 9 0 0 0-9 9 9 9 0 0 0 9 9z" />
+                                    </g>
+                                </g>
+                            </svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                <g>
+                                    <g>
+                                        <path fill="#777"
+                                            d="M4.5 12.053zm0 0c.854.56 1.85.884 2.904.884 2.995 0 5.322-2.615 5.197-5.84l-.001-.01V7.06v-.03c.272-.2.638-.556.9-1.023a3.09 3.09 0 0 1-1.03.315c.271-.158.674-.676.773-1.086-.261.18-.862.441-1.158.441v.002a1.79 1.79 0 0 0-1.342-.618c-1.025 0-1.856.895-1.856 2 0 .152.016.3.047.445C7.542 7.468 5.916 6.717 5 5.432c-.562 1.05-.075 2.217.564 2.643-.219.017-.622-.027-.811-.226-.014.696.298 1.619 1.432 1.953-.219.128-.605.09-.773.063.06.59.824 1.358 1.66 1.358-.299.37-1.315 1.044-2.572.83zM9 1.406a7.594 7.594 0 1 1 0 15.187A7.594 7.594 0 0 1 9 1.406zM9 18a9 9 0 0 0 9-9 9 9 0 0 0-9-9 9 9 0 0 0-9 9 9 9 0 0 0 9 9z" />
+                                    </g>
+                                </g>
+                            </svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="18" height="18" viewBox="0 0 18 18">
+                                <defs>
+                                    <image id="97n5b" width="18" height="18"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABwElEQVQ4T6WUwYtOURjGf+/5B6SIDRuKrBSLIUVjxpTGQilrS5vJyP3u+bZK333vtRChbJSllIVZ4IuINIuZsjIUG1aixI7FefVO9+pmbjLfd1a3c97z6+k8z3OFjhVjnEwpnRaRSWB7PfLRzJ4Cd8uyfPL3NWlv9Pv93Smlm8AR4J2IPEopffCZEMIOM5sBdgHPQghnB4PB2+b+H1CWZYdDCA+Az8B5VfXvNSvGeMzMrgNbUkonqqp67kOroFrJooi8Bk4WRfGtC9LsxRg3AvfNbG8IYcKVOUjyPH8FbAb2qer3f0GaszzPNwDLwBdVPSgxxikzG9YyF/4H0sxkWTbrzyEi067mFnBIVfesB9JS9gZ46aD3wIKqnhsRdAWYddBPM8vKsrw6CqjX682JSOWgH8BFVb08CijP8wvAJQd5qB6r6twooBjjNTM77q7dMbP94zy2iCy5Io/9wzHtn2kHchPgytYTyCXg62ogx62ImR0oy3Kls7QppfmqqjpTXjfhBrB1TWkbt+ry3gYmgBURGZqZBxYR2WlmU4A3YDGEcKbzN9Ky3p2cNrNTwFFgG/AL+AS8EJF7RVEMAWvH5Tc2hee347D1WAAAAABJRU5ErkJggg==" />
+                                    <clipPath id="97n5a">
+                                        <path d="M0 18V0h18v18z" />
+                                    </clipPath>
+                                </defs>
+                                <g>
+                                    <g>
+                                        <g clip-path="url(&quot;#97n5a&quot;)">
+                                            <use xlink:href="#97n5b" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <path fill="#777"
+                                            d="M11.023 7.3a.322.322 0 0 0 .227-.552.326.326 0 0 0-.227-.094.325.325 0 0 0-.324.323.325.325 0 0 0 .324.323zm-2.007.536a1.142 1.142 0 0 1 1.136.98 1.149 1.149 0 0 1-2.271.336 1.14 1.14 0 0 1 .213-.852 1.139 1.139 0 0 1 .922-.464zm-1.069 2.589a1.783 1.783 0 0 0 1.332.333 1.78 1.78 0 0 0 1.178-.706c.285-.385.404-.858.333-1.332a1.785 1.785 0 0 0-.505-1.005 1.785 1.785 0 0 0-1.532-.506c-.474.07-.892.32-1.178.706a1.783 1.783 0 0 0-.333 1.332c.07.474.32.892.705 1.178zM5.646 7.16c0-.836.68-1.515 1.516-1.515h3.676c.836 0 1.516.68 1.516 1.515v3.677c0 .835-.68 1.515-1.516 1.515H7.162c-.836 0-1.516-.68-1.516-1.515V7.16zM10.838 13C12.031 13 13 12.03 13 10.838V7.16C13 5.97 12.03 5 10.838 5H7.162C5.97 5 5 5.97 5 7.16v3.677C5 12.029 5.97 13 7.162 13z" />
+                                    </g>
+                                </g>
+                            </svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                <g>
+                                    <g>
+                                        <path fill="#777"
+                                            d="M7.367 7.772V6.738L8.141 4.5h-.588l-.356 1.389h-.036l-.374-1.389h-.583l.74 2.302v.97zm1.274-1.93a.22.22 0 0 1 .153-.051c.067 0 .096.017.138.052.042.034.063.079.063.136v1.14c0 .07-.02.123-.061.164-.043.038-.071.057-.14.057-.069 0-.121-.02-.157-.057-.037-.038-.055-.093-.055-.163V5.979c0-.057.02-.103.059-.136zm-.257 1.751c.135.127.2.191.423.191.232 0 .262-.062.397-.186.131-.123.197-.296.197-.516v-1.07c0-.195-.064-.388-.176-.5-.13-.13-.195-.205-.407-.205-.233 0-.298.088-.437.205-.138.118-.2.288-.2.485V7.07c0 .219.069.392.203.522zm1.516.169c.024.024.071.04.13.04a.442.442 0 0 0 .264-.096c.123-.095.225-.226.333-.421v.435h.41V5.31h-.41v1.638c-.049.057-.263.346-.3.346-.048 0-.057-.013-.08-.04-.02-.027-.032-.07-.032-.131V5.309h-.41V7.3c0 .154.013.379.095.463zm1.53 3.357v-.076c0-.092-.016-.346-.043-.383-.028-.04-.076-.059-.14-.059-.065 0-.113.02-.142.059-.029.037-.044.291-.044.383v.076zm-1.898 1.184a.214.214 0 0 0 .102.025c.052 0 .091-.016.115-.048.025-.031.075-.082.075-.154v-1.362c0-.076-.053-.132-.082-.173a.166.166 0 0 0-.134-.056.199.199 0 0 0-.092.021c-.028.014-.083.037-.113.068v1.6a.461.461 0 0 0 .129.079zM6.139 9.404h1.23v.409h-.415v2.862h-.412V9.813H6.14zm4.67.998a.613.613 0 0 1 .456-.176c.192 0 .338.053.438.16.105.112.156.456.156.659v.408h-.798v.545c0 .113.015.192.042.236.028.043.073.065.142.065.068 0 .115-.018.142-.055.027-.037.043-.117.043-.246V11.9h.428v.111c0 .222-.05.386-.156.498-.105.11-.26.167-.467.167a.562.562 0 0 1-.442-.179c-.107-.115-.16-.279-.16-.486v-.966c0-.186.059-.528.177-.643zM9.612 12.63a.55.55 0 0 1-.183-.151v.171h-.433V9.404h.408v.981a.824.824 0 0 1 .208-.156.412.412 0 0 1 .2-.054c.134 0 .239.05.31.145.07.096.106.236.106.42v1.447c0 .16-.033.28-.1.366a.354.354 0 0 1-.29.128.48.48 0 0 1-.226-.051zM7.353 10.23h.415v1.903c0 .052.009.09.027.114.018.023.047.035.087.035.03 0 .097-.015.145-.048.048-.03.119-.07.158-.117v-1.887h.404v2.446H8.16v-.295c-.08.087-.161.184-.248.23a.485.485 0 0 1-.248.072c-.099 0-.174-.033-.224-.1a.485.485 0 0 1-.087-.298zm4.503 3.268c.91 0 1.644-.753 1.644-1.68v-1.557c0-.929-.735-1.681-1.644-1.681H6.144c-.908 0-1.644.752-1.644 1.68v1.558c0 .927.736 1.68 1.644 1.68zM9 1.406a7.594 7.594 0 1 1 0 15.187A7.594 7.594 0 0 1 9 1.406zM9 18a9 9 0 0 0 9-9 9 9 0 0 0-9-9 9 9 0 0 0-9 9 9 9 0 0 0 9 9z" />
+                                    </g>
+                                </g>
+                            </svg></a>
+                    </div>
+                    <div class="form">
+                        <form action="action.php" method="get">
+                            <button><i class="fas fa-search"></i></button>
+                            <input type="text" name="search" placeholder="ძიება">
+                        </form>
+                    </div>
+                </div>
+                <div class="right_container">
+                    <div class="company_icons">
+                        <div class="hover_container">
+                            <div class="team">
+                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                            </div>
+                            <div class="team">
+                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                            </div>
+                            <div class="team">
+                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                            </div>
+                            <div class="team">
+                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                            </div>
+                            <div class="team">
+                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                            </div>
+                            <div class="team">
+                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                            </div>
+                            <div class="team">
+                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                            </div>
+                            <div class="team">
+                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                            </div>
+                        </div>
+                        <div class="blitz">
+                            <i class="fas fa-caret-left"></i>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="web_content">
+            <div class="left_right_side">
+                <div class="left_side border">
+                    <div class="profile_top">
+                        <div class="user_image">
+                            <a href="#"><img src="images/profile_images/user.png" alt="user"></a>
+                        </div>
+                        <div class="bottom_container">
+                            <div class="bottom_content">
+                                <div class="user">
+                                    <a href="#">
+                                        <i class="fas fa-user"></i>
+                                        <p>ბაჩო გოცირიძე</p>
+                                    </a>
+                                </div>
+                                <div class="user information">
+                                    <a href="#">
+                                        <i class="fas fa-cog"></i>
+                                        <p>ინფორმაციის შეცვლა</p>
+                                    </a>
+                                </div>
+                                <div class="log_out">
+                                    <a href="#"><img src="images/profile_images/off.png" alt="off"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile_information">
+                        <div class="info">
+                            <div class="left">
+                                <img src="images/profile_images/user_icon.png" alt="icon">
+                                <p>სრული სახელი</p>
+                            </div>
+                            <div class="right">
+                                <p>ბაჩო გოცირიძე</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="left">
+                                <img src="images/profile_images/location_icon.png" alt="icon">
+                                <p>საცხოვრებელი ადგილი</p>
+                            </div>
+                            <div class="right">
+                                <p>თბილისი</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="left">
+                                <img src="images/profile_images/date_icon.png" alt="icon">
+                                <p>რეგისტრაციის თარიღი</p>
+                            </div>
+                            <div class="right">
+                                <p>9 ნოემბერი 2018 20:17</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="left">
+                                <img src="images/profile_images/team_icon.png" alt="icon">
+                                <p>ჯგუფი</p>
+                            </div>
+                            <div class="right">
+                                <p>ადმინი</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="left">
+                                <img src="images/profile_images/status_icon.png" alt="icon">
+                                <p>სტატუსი</p>
+                            </div>
+                            <div class="right online">
+                                <div class="circle"></div>
+                                <p>შემოსულია</p>
+                            </div>
+                        </div>
+                        <div class="info top">
+                            <div class="left">
+                                <img src="images/profile_images/news_icon.png" alt="icon">
+                                <p>ჩემი სიახლეები</p>
+                            </div>
+                            <div class="right">
+                                <a href="#">
+                                    <p>[147] ყველა სიახლის ნახვა</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="left">
+                                <img src="images/profile_images/comment_icon.png" alt="icon">
+                                <p>კომენტარები</p>
+                            </div>
+                            <div class="right">
+                                <a href="#">
+                                    <p>[589] ყველა კომენტარის ნახვა</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_side">
+                    <div class="blog_container">
+                        <div class="tab">
+                            <button class="tablinks active previous openTabs" data-tab="popular">პოპულარული</button>
+                            <button class="tablinks next openTabs" data-tab="blog">ბლოგი</button>
+                        </div>
+                    </div>
+                    <div id="popular" class="tabcontent show_tab active blog popular">
+                        <div class="blog_content">
+                            <div class="image_container">
+                                <img src="images/blog_images/1.png" alt="1">
+                                <div class="hover_container"><i class="far fa-eye"></i></div>
+                            </div>
+                            <div class="text_container">
+                                <h3><a href="#">ზიზუ:თუ მენდის დავიმატებთ, ის ერთ-ერთი საუკეთესო შენაძენი იქნება</a>
+                                </h3>
+                                <span><i class="far fa-clock"></i>დღეს 10.06.19</span>
+                            </div>
+                        </div>
+                        <div class="blog_content">
+                            <div class="image_container">
+                                <img src="images/blog_images/2.png" alt="2">
+                                <div class="hover_container"><i class="far fa-eye"></i></div>
+                            </div>
+                            <div class="text_container">
+                                <h3><a href="#">ზიზუ:თუ მენდის დავიმატებთ, ის ერთ-ერთი საუკეთესო შენაძენი იქნება</a>
+                                </h3>
+                                <span><i class="far fa-clock"></i>დღეს 10.06.19</span>
+                            </div>
+                        </div>
+                        <div class="blog_content">
+                            <div class="image_container">
+                                <img src="images/blog_images/3.png" alt="3">
+                                <div class="hover_container"><i class="far fa-eye"></i></div>
+                            </div>
+                            <div class="text_container">
+                                <h3><a href="#">ზიზუ:თუ მენდის დავიმატებთ, ის ერთ-ერთი საუკეთესო შენაძენი იქნება</a>
+                                </h3>
+                                <span><i class="far fa-clock"></i>დღეს 10.06.19</span>
+                            </div>
+                        </div>
+                        <div class="blog_content">
+                            <div class="image_container">
+                                <img src="images/blog_images/4.png" alt="4">
+                                <div class="hover_container"><i class="far fa-eye"></i></div>
+                            </div>
+                            <div class="text_container">
+                                <h3><a href="#">ზიზუ:თუ მენდის დავიმატებთ, ის ერთ-ერთი საუკეთესო შენაძენი იქნება</a>
+                                </h3>
+                                <span><i class="far fa-clock"></i>დღეს 10.06.19</span>
+                            </div>
+                        </div>
+                        <div class="blog_content">
+                            <div class="image_container">
+                                <img src="images/blog_images/5.png" alt="5">
+                                <div class="hover_container"><i class="far fa-eye"></i></div>
+                            </div>
+                            <div class="text_container">
+                                <h3><a href="#">ზიზუ:თუ მენდის დავიმატებთ, ის ერთ-ერთი საუკეთესო შენაძენი იქნება</a>
+                                </h3>
+                                <span><i class="far fa-clock"></i>დღეს 10.06.19</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="blog" class="tabcontent show_tab blog popular">
+                        <div class="blog_content">
+                            <div class="image_container">
+                                <img src="images/blog_images/1.png" alt="1">
+                                <div class="hover_container"><i class="far fa-eye"></i></div>
+                            </div>
+                            <div class="text_container">
+                                <h3><a href="#">ზიზუ:თუ მენდის დავიმატებთ, ის ერთ-ერთი საუკეთესო შენაძენი იქნება</a>
+                                </h3>
+                                <span><i class="far fa-clock"></i>დღეს 10.06.19</span>
+                            </div>
+                        </div>
+                        <div class="blog_content">
+                            <div class="image_container">
+                                <img src="images/blog_images/2.png" alt="2">
+                                <div class="hover_container"><i class="far fa-eye"></i></div>
+                            </div>
+                            <div class="text_container">
+                                <h3><a href="#">ზიზუ:თუ მენდის დავიმატებთ, ის ერთ-ერთი საუკეთესო შენაძენი იქნება</a>
+                                </h3>
+                                <span><i class="far fa-clock"></i>დღეს 10.06.19</span>
+                            </div>
+                        </div>
+                        <div class="blog_content">
+                            <div class="image_container">
+                                <img src="images/blog_images/3.png" alt="3">
+                                <div class="hover_container"><i class="far fa-eye"></i></div>
+                            </div>
+                            <div class="text_container">
+                                <h3><a href="#">ზიზუ:თუ მენდის დავიმატებთ, ის ერთ-ერთი საუკეთესო შენაძენი იქნება</a>
+                                </h3>
+                                <span><i class="far fa-clock"></i>დღეს 10.06.19</span>
+                            </div>
+                        </div>
+                        <div class="blog_content">
+                            <div class="image_container">
+                                <img src="images/blog_images/4.png" alt="4">
+                                <div class="hover_container"><i class="far fa-eye"></i></div>
+                            </div>
+                            <div class="text_container">
+                                <h3><a href="#">ზიზუ:თუ მენდის დავიმატებთ, ის ერთ-ერთი საუკეთესო შენაძენი იქნება</a>
+                                </h3>
+                                <span><i class="far fa-clock"></i>დღეს 10.06.19</span>
+                            </div>
+                        </div>
+                        <div class="blog_content">
+                            <div class="image_container">
+                                <img src="images/blog_images/5.png" alt="5">
+                                <div class="hover_container"><i class="far fa-eye"></i></div>
+                            </div>
+                            <div class="text_container">
+                                <h3><a href="#">ზიზუ:თუ მენდის დავიმატებთ, ის ერთ-ერთი საუკეთესო შენაძენი იქნება</a>
+                                </h3>
+                                <span><i class="far fa-clock"></i>დღეს 10.06.19</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="poll_container">
+                        <div class="background_container">
+                            <div class="top_container">
+                                <img src="images/icons/poll.png" alt="poll">
+                                <span>გამოკითხა</span>
+                            </div>
+                        </div>
+                        <div class="poll_text">
+                            <h4>კმაყოფილი ხართ აზარის ტრასნფერით?</h4>
+
+                            <div class="progress">
+                                <div class="progress_bar" style="width: 56%"><span>დიახ რა თქმა უნდა</span></div>
+                                <span>20%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress_bar" style="width: 70%"><span>არა უკმაყოფილო ვარ</span></div>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress_bar" style="width: 46%"><span>არ იყო საჭირო</span></div>
+                                <span>15%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress_bar" style="width: 25%"><span>არვიცი</span></div>
+                                <span>5%</span>
+                            </div>
+                            <span class="answers">სულ პასუხები: 419</span>
+                        </div>
+                    </div>
+                    <div class="loss_container">
+                        <div class="background_container">
+                            <div class="top_container">
+                                <img src="images/icons/loss.png" alt="loss">
+                                <span>დანაკლისი</span>
+                            </div>
+                        </div>
+                        <div class="loss_text">
+                            <div class="loss_title">
+                                <img src="images/icons/injury.png" alt="injury">
+                                <h4>ტრავმები</h4>
+                            </div>
+                            <p>გარეთ ბეილი, მარსელო, მარკო ასენსიო, ნავასი</p>
+                            <div class="loss_title">
+                                <img src="images/icons/red_yellow.png" alt="red_yellow">
+                                <h4>ყვითელი & წითელი ბარათი</h4>
+                            </div>
+                            <p>სერხიო რაოსი, ნაჩო</p>
+                        </div>
+                    </div>
+                    <div class="reclam_banner"></div>
+                </div>
+            </div>
+            <div class="reclam">
+                <div class="left">
+                    <div class="container">
+                        <a href="#">
+                            <img src="images/icons/reclam.png" alt="reclam">
+                            <span>რეკლამა</span>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#">
+                            <img src="images/icons/contact.png" alt="contact">
+                            <span>კონტაქტი</span>
+                        </a>
+                    </div>
+                    <div class="container">
+                        <a href="#"><img src="images/icons/writer.png" alt="writer">
+                            <span>გახდი მწერალი</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+                    <div class="top_ge">
+                        <img src="images/top.png" alt="top.ge">
+                    </div>
+                    <div class="top_ge">
+                        <img src="images/top.png" alt="top.ge">
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="left">
+                    <span>დაიცავით სავტორო უფლებები &copy; 2019 </span>
+                </div>
+                <div class="right">
+                    <span>პროექტზე იმუშავეს: STUDIO-GB | unicode</span>
+                </div>
+            </footer>
+        </div>
+
+
+
+        <!-- Registration popup -->
+
+        <div class="popup_container show_popup">
+            <div class="registration">
+                <div class="registration_content">
+                    <h3>რეგისტრაცია</h3>
+                </div>
+                <div class="inside_content">
+                    <form action="action.php" method="get">
+                        მომხმარებლის სახელი
+                        <input type="text">
+                        პაროლი
+                        <input type="text">
+                        ელ.ფოსტა
+                        <input type="text">
+                        გაიმეორე პაროლი
+                        <input type="text">
+                        <button class="registration_button">რეგისტრაცია</button>
+                    </form>
+                </div>
+                <div class="close_container">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sign in popup -->
+
+        <div class="popup_container sign_in_popup_container">
+            <div class="registration">
+                <div class="registration_content">
+                    <h3>ავტორიზაცია</h3>
+                </div>
+                <div class="inside_content">
+                    <form action="action.php" method="get">
+                        <div class="input_container">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="სახელი">
+                        </div>
+                        <div class="input_container">
+                            <i class="fas fa-lock"></i>
+                            <input id="password" class="password" type="password" placeholder="პაროლი">
+                            <div class="see_password" id="see_password">
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="checked">
+                            <input type="checkbox" name="password" value="password">დავამახსოვრებ
+                        </div>
+                        <div class="button">
+                            <button class="sign_in">შესვლა</button>
+                            <button class="password">პაროლის აღდგენა</button>
+                        </div>
+                        <button class="registration_button">Facebook ავტორიზაცია</button>
+                    </form>
+                </div>
+                <div class="close_container">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Information change popup -->
+
+        <div class="popup_container information_popup">
+                <div class="registration">
+                    <div class="registration_content">
+                        <h3>ინფორმაციის შეცვლა</h3>
+                    </div>
+                    <div class="inside_content">
+                        <form action="action.php" method="get">
+                            საცხოვრებელი ადგილი
+                            <input type="text">
+                            პაროლი
+                            <input type="text">
+                            გაიმეორე პაროლი
+                            <input type="text">
+                            ელ.ფოსტა
+                            <input type="text">
+                            <input class="file" type="file">
+                            <button class="registration_button">ცვლილებების შენახვა</button>
+                        </form>
+                    </div>
+                    <div class="close_container">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/redactor.js"></script>
+    <script src="js/redactor-emoticons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

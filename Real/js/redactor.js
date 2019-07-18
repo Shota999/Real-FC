@@ -412,7 +412,7 @@ var RLANG = {
 
 			// private
 
-			// emptyHtml: '<p><br /></p>',
+			emptyHtml: '<p><br /></p>',
 
 			buffer: false,
 
@@ -3226,8 +3226,8 @@ var RLANG = {
 
 				e.preventDefault();
 
-
-
+				
+				
 				var node = $(this.opts.emptyHtml).get(0);
 
 				this.$editor.html(node);
@@ -5148,6 +5148,8 @@ var RLANG = {
 
 		{
 
+			
+
 			if (focn == null)
 
 			{
@@ -5187,11 +5189,9 @@ var RLANG = {
 				if (sel.collapse && sel.extend)
 
 				{
-
 					sel.collapse(orgn, orgo);
 
 					sel.extend(focn, foco);
-
 				}
 
 				else // IE9
