@@ -1224,6 +1224,58 @@ body {
           align-items: center;
 }
 
+.body .web_content .left_right_side .left_side .top_container .news form {
+  margin-left: 13px;
+}
+
+.body .web_content .left_right_side .left_side .top_container .news form button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.body .web_content .left_right_side .left_side .top_container .news form button i {
+  color: #055bc6;
+  font-size: 16px;
+}
+
+.body .web_content .left_right_side .left_side .top_container .news form input {
+  border: none;
+  margin-left: 5px;
+}
+
+.body .web_content .left_right_side .left_side .top_container .news form input::-webkit-input-placeholder {
+  color: #777777;
+  font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.body .web_content .left_right_side .left_side .top_container .news form input:-ms-input-placeholder {
+  color: #777777;
+  font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.body .web_content .left_right_side .left_side .top_container .news form input::-ms-input-placeholder {
+  color: #777777;
+  font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.body .web_content .left_right_side .left_side .top_container .news form input::placeholder {
+  color: #777777;
+  font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.body .web_content .left_right_side .left_side .top_container .news form input:focus {
+  color: #777777;
+}
+
 .body .web_content .left_right_side .left_side .top_container .news span {
   display: block;
   color: #333333;
@@ -1288,10 +1340,12 @@ body {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   padding: 10px;
+  height: 164px;
 }
 
 .body .web_content .left_right_side .left_side .top_container .search .hide_container form {
   width: 100%;
+  overflow-y: auto;
 }
 
 .body .web_content .left_right_side .left_side .top_container .search .hide_container form .input {
