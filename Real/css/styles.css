@@ -1974,6 +1974,12 @@ body {
   display: flex;
 }
 
+.body .web_content .left_right_side .left_side .inner_container .comments .switch_comment .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .body .web_content .left_right_side .left_side .inner_container .comments .switch_comment button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4780,6 +4786,84 @@ body {
 
 .body .left_side .tabcontent .bottom_container .teams .real .team_score span {
   color: #014eaf;
+}
+
+.body .left_side .contact_container {
+  padding: 40px;
+}
+
+.body .left_side .contact_container .top_buttons .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.body .left_side .contact_container .top_buttons .tab button {
+  background-color: transparent;
+  border: none;
+  color: #c1c1c1;
+  font-family: "Conv_HelveticaNeueLTGEO-75Bold";
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.body .left_side .contact_container .top_buttons .tab button span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #c1c1c1;
+  font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.body .left_side .contact_container .top_buttons .tab button span svg {
+  fill: #333333;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.body .left_side .contact_container .top_buttons .tab button:hover {
+  color: #333333;
+}
+
+.body .left_side .contact_container .top_buttons .tab button:hover span {
+  color: #055bc6;
+}
+
+.body .left_side .contact_container .top_buttons .tab button:hover svg {
+  fill: #055bc6;
+}
+
+.body .left_side .contact_container .top_buttons .tab .active {
+  color: #333333;
+}
+
+.body .left_side .contact_container .top_buttons .tab .active span {
+  color: #055bc6;
+}
+
+.body .left_side .contact_container .top_buttons .tab .active svg {
+  fill: #055bc6;
 }
 
 /* width */

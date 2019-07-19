@@ -183,7 +183,8 @@ body {
                             background-color: #222428;
                         }
                     }
-                    .file{
+
+                    .file {
                         border: none;
                         padding: 0;
                         border-radius: initial;
@@ -1013,34 +1014,37 @@ body {
                         display: flex;
                         align-items: center;
 
-                        form{
+                        form {
                             margin-left: 13px;
 
-                            button{
+                            button {
                                 border: none;
                                 background-color: transparent;
                                 cursor: pointer;
 
-                                i{
+                                i {
                                     color: #055bc6;
                                     font-size: 16px;
                                 }
                             }
-                            input{
+
+                            input {
                                 border: none;
                                 margin-left: 5px;
 
-                                &::placeholder{
+                                &::placeholder {
                                     color: #777777;
                                     font-family: "Conv_HelveticaNeueLTGEO-55Roman";
                                     font-size: 15px;
                                     font-weight: 400;
                                 }
-                                &:focus{
+
+                                &:focus {
                                     color: #777777;
                                 }
                             }
                         }
+
                         span {
                             display: block;
                             color: #333333;
@@ -1051,12 +1055,13 @@ body {
                             margin-left: 7px;
                         }
                     }
-                    .search{
+
+                    .search {
                         display: flex;
                         align-items: center;
                         position: relative;
 
-                        .filter{
+                        .filter {
                             border: 1px solid #eeeeee;
                             border-radius: 5px;
                             display: flex;
@@ -1064,16 +1069,18 @@ body {
                             margin-right: 10px;
                             cursor: pointer;
 
-                            .left{
+                            .left {
                                 border-right: 1px solid #eeeeee;
-                                i{
+
+                                i {
                                     font-size: 16px;
                                     color: #a8a8a8;
                                     padding: 11px 13px;
                                 }
                             }
-                            .right{
-                                p{
+
+                            .right {
+                                p {
                                     color: #777777;
                                     font-family: "Conv_HelveticaNeueLTGEO-55Roman";
                                     font-size: 12px;
@@ -1082,7 +1089,8 @@ body {
                                 }
                             }
                         }
-                        .hide_container{
+
+                        .hide_container {
                             position: absolute;
                             top: 45px;
                             left: 0;
@@ -1095,11 +1103,11 @@ body {
                             padding: 10px;
                             height: 164px;
 
-                            form{
+                            form {
                                 width: 100%;
                                 overflow-y: auto;
 
-                                .input{
+                                .input {
                                     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.05);
                                     background-color: #f3f3f3;
                                     padding: 15px 15px;
@@ -1108,10 +1116,11 @@ body {
                                     margin-bottom: 10px;
                                     cursor: pointer;
 
-                                    &:last-child{
+                                    &:last-child {
                                         margin-bottom: 0;
                                     }
-                                    label{
+
+                                    label {
                                         color: #989898;
                                         font-family: "BPG Arial";
                                         font-size: 12px;
@@ -1120,41 +1129,53 @@ body {
                                         margin-left: 5px;
                                         transition: .4s ease-in-out;
                                     }
-                                    &:hover label{
+
+                                    &:hover label {
                                         color: #055bc6;
                                     }
                                 }
+
+                                // input[type=checkbox] {
+                                //     background-color: red;
+
+                                //     &:hover{
+                                //         background-color: blue;
+                                //     }
+                                // }
                             }
                         }
-                        .show{
+
+                        .show {
                             opacity: 1;
                         }
+
                         .change_container {
                             display: flex;
                             justify-content: space-between;
-    
+
                             .change {
                                 border-radius: 3px;
                                 background-color: #eaeaea;
                                 margin-right: 12px;
-                                
-                                &:last-child{
+
+                                &:last-child {
                                     margin-right: 0;
                                 }
+
                                 cursor: pointer;
-    
+
                                 svg {
                                     margin-right: 0;
                                     fill: #c1c3c5;
                                     padding: 12px 12px 8px 12px;
                                     transition: 0.4s;
                                 }
-    
+
                                 &:hover svg {
                                     fill: #838588;
                                 }
                             }
-    
+
                             .active {
                                 svg {
                                     fill: #888888;
@@ -1162,7 +1183,7 @@ body {
                             }
                         }
                     }
-                    
+
                 }
 
                 .container {
@@ -1178,7 +1199,7 @@ body {
                         margin-bottom: 15px;
                         width: 49%;
                         border-radius: 5px;
-                        
+
                         .news_image_container {
                             overflow: hidden;
                             position: relative;
@@ -1631,6 +1652,10 @@ body {
 
                         .switch_comment {
                             display: flex;
+
+                            .tab {
+                                display: flex;
+                            }
 
                             button {
                                 display: flex;
@@ -2158,7 +2183,7 @@ body {
                                 border-left: 1px solid;
                                 border-color: rgba(255, 255, 255, 0.15);
 
-                                a{
+                                a {
                                     display: block;
                                     padding: 20px;
                                 }
@@ -2166,13 +2191,14 @@ body {
                         }
                     }
                 }
-                .profile_information{
+
+                .profile_information {
                     border-radius: 5px;
                     border: 1px solid #eeeeee;
                     padding: 20px;
                     margin-top: 15px;
 
-                    .info{
+                    .info {
                         display: flex;
                         align-items: center;
                         // justify-content: space-between;
@@ -2180,20 +2206,22 @@ body {
                         border-bottom: 1px solid #eeeeee;
                         margin-top: 15px;
 
-                        &:first-child{
+                        &:first-child {
                             margin: 0;
                         }
-                        &:last-child{
+
+                        &:last-child {
                             border: none;
                             padding: 0;
                         }
-                        .left{
+
+                        .left {
                             display: flex;
                             align-items: center;
                             width: 185px;
-                            margin-right: 50px; 
+                            margin-right: 50px;
 
-                            p{
+                            p {
                                 color: #777777;
                                 font-family: "BPG Arial";
                                 font-size: 13px;
@@ -2202,22 +2230,25 @@ body {
                                 margin-left: 7px;
                             }
                         }
-                        .right{
-                            p{
+
+                        .right {
+                            p {
                                 color: #777777;
                                 font-family: "BPG Arial";
                                 font-size: 13px;
                                 font-weight: 400;
                             }
                         }
-                        .online{
+
+                        .online {
                             display: flex;
                             align-items: center;
-                            
-                            p{
+
+                            p {
                                 color: #2ad446;
                             }
-                            .circle{
+
+                            .circle {
                                 width: 14px;
                                 height: 14px;
                                 border-radius: 50%;
@@ -2226,7 +2257,8 @@ body {
                             }
                         }
                     }
-                    .top{
+
+                    .top {
                         margin-top: 45px;
                     }
                 }
@@ -4005,6 +4037,69 @@ body {
                             span {
                                 color: #014eaf;
                             }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Contact - reclam
+
+        .contact_container {
+            padding: 40px;
+
+            .top_buttons {
+
+                .tab {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        color: #c1c1c1;
+                        font-family: "Conv_HelveticaNeueLTGEO-75Bold";
+                        font-size: 24px;
+                        font-weight: 400;
+                        cursor: pointer;
+                        transition: .4s ease-in-out;
+
+                        span{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #c1c1c1;;
+                            font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+                            font-size: 12px;
+                            font-weight: 400;
+                            margin-top: 5px;
+                            transition: .4s ease-in-out;
+
+                            svg{
+                                fill: #333333;
+                                transition: .4s ease-in-out;
+                            }
+                        }
+                        &:hover {
+                            color: #333333;
+                        }
+                        &:hover span{
+                            color: #055bc6;
+                        }
+                        &:hover svg{
+                            fill: #055bc6;
+                        }
+                    }
+                    .active{
+                        color: #333333;
+
+                        span{
+                            color: #055bc6;
+                        }
+                        svg{
+                            fill: #055bc6;
                         }
                     }
                 }
