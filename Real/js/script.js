@@ -227,7 +227,7 @@ $(document).ready(function () {
 
     $(document).ready(function() {
 
-        $('textarea').redactor({
+        $('.textarea').redactor({
 
             imageUpload: "{{url('admin/upload')}}?_token=" + "{{csrf_token()}}",
 
