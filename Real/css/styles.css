@@ -558,6 +558,11 @@ body {
   display: inline-block;
 }
 
+.body header .bottom_container .right_container .company_icons:hover .blitz a {
+  background: url("../images/blitz_hover.png") no-repeat center;
+  background-color: #004aa6;
+}
+
 .body header .bottom_container .right_container .company_icons .blitz {
   position: relative;
 }
@@ -578,11 +583,6 @@ body {
   border-radius: 3px;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
-}
-
-.body header .bottom_container .right_container .company_icons .blitz a:hover {
-  background: url("../images/blitz_hover.png") no-repeat center;
-  background-color: #004aa6;
 }
 
 .body header .bottom_container .right_container .company_icons .hover_container {
@@ -1346,6 +1346,10 @@ body {
 .body .web_content .left_right_side .left_side .top_container .search .hide_container form {
   width: 100%;
   overflow-y: auto;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
 }
 
 .body .web_content .left_right_side .left_side .top_container .search .hide_container form .input {
@@ -1376,9 +1380,53 @@ body {
   margin-left: 5px;
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
+  cursor: pointer;
 }
 
 .body .web_content .left_right_side .left_side .top_container .search .hide_container form .input:hover label {
+  color: #055bc6;
+}
+
+.body .web_content .left_right_side .left_side .top_container .search .hide_container form .input {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .web_content .left_right_side .left_side .top_container .search .hide_container form .input input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.body .web_content .left_right_side .left_side .top_container .search .hide_container form .checkmark {
+  height: 10px;
+  width: 10px;
+  background-color: #ece8e8;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.body .web_content .left_right_side .left_side .top_container .search .hide_container form .input:hover input ~ .checkmark {
+  background-color: #055bc6;
+}
+
+.body .web_content .left_right_side .left_side .top_container .search .hide_container form .input input:checked ~ .checkmark {
+  background-color: #055bc6;
+}
+
+.body .web_content .left_right_side .left_side .top_container .search .hide_container form .input input:checked ~ label {
   color: #055bc6;
 }
 
@@ -4320,7 +4368,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .body .web_content .reclam .left {
@@ -5289,6 +5337,339 @@ body {
   line-height: 6px;
   margin: 0;
   margin-left: 5px;
+}
+
+.body .left_side .team_background {
+  background-image: url("../images/team_images/team_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.body .left_side .team_background .logo {
+  position: absolute;
+  top: -13px;
+  left: 20px;
+}
+
+.body .left_side .team_background .text {
+  padding-top: 36px;
+  padding-left: 130px;
+  padding-bottom: 24px;
+}
+
+.body .left_side .team_background .text p {
+  color: #ffffff;
+  font-family: "Conv_HelveticaNeueLTGEO-75Bold";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.body .left_side .team_background .text span {
+  color: #ffffff;
+  font-family: "BPG Arial";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.body .left_side .team_background .year {
+  display: block;
+  color: #ffffff;
+  font-family: "Conv_HelveticaNeueLTGEO-75Bold";
+  font-size: 48px;
+  font-weight: 400;
+  position: absolute;
+  bottom: -11px;
+  right: -5px;
+}
+
+.body .left_side .title {
+  -webkit-box-shadow: inset 0 5px 38px rgba(0, 0, 0, 0.02);
+          box-shadow: inset 0 5px 38px rgba(0, 0, 0, 0.02);
+  border: 1px solid #eeeeee;
+  padding: 20px 22px;
+  border-radius: 5px;
+}
+
+.body .left_side .title h3 {
+  color: #17222f;
+  font-family: "Conv_HelveticaNeueLTGEO-75Bold";
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.body .left_side .players .player {
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+}
+
+.body .left_side .players .player .player_image {
+  -webkit-box-flex: 32%;
+      -ms-flex: 32%;
+          flex: 32%;
+  background-image: url("../images/team_images/player_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.body .left_side .players .player .player_image img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.body .left_side .players .player .player_info {
+  -webkit-box-flex: 68%;
+      -ms-flex: 68%;
+          flex: 68%;
+}
+
+.body .left_side .players .player .player_info .text {
+  padding: 25px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.body .left_side .players .player .player_info .text p {
+  color: #777777;
+  font-family: "BPG Arial";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.33px;
+}
+
+.body .left_side .players .player .player_info .number_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .left_side .players .player .player_info .number_name .player_number {
+  padding: 25px 30px;
+  border-right: 1px solid #eeeeee;
+}
+
+.body .left_side .players .player .player_info .number_name .player_number span {
+  display: block;
+  color: #17222f;
+  font-family: "Conv_HelveticaNeueLTGEO-75Bold";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.body .left_side .players .player .player_info .number_name .player_name {
+  padding: 25px 30px;
+}
+
+.body .left_side .players .player .player_info .number_name .player_name p {
+  color: #17222f;
+  font-family: "Conv_HelveticaNeueLTGEO-75Bold";
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.body .left_side .titles_background {
+  background-image: url("../images/titles_images/titles_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body .left_side .titles_background .text span {
+  color: #c3c6c9;
+}
+
+.body .left_side .titles .title {
+  padding: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.body .left_side .titles .title:last-child {
+  margin-bottom: 0;
+}
+
+.body .left_side .titles .title .title_image {
+  border-radius: 5px;
+  position: relative;
+}
+
+.body .left_side .titles .title .title_image img {
+  width: 150px;
+  height: 94px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.body .left_side .titles .title .title_image .number {
+  position: absolute;
+  right: -22px;
+  top: 25px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body .left_side .titles .title .title_image .number span {
+  color: #444444;
+  font-family: "Conv_HelveticaNeueLTGEO-75Bold";
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+}
+
+.body .left_side .titles .title .title_content {
+  margin-left: 40px;
+  width: 100%;
+}
+
+.body .left_side .titles .title .title_content .top_title {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.body .left_side .titles .title .title_content .top_title h4 {
+  color: #055bc6;
+  font-family: "Conv_HelveticaNeueLTGEO-75Bold";
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+
+.body .left_side .titles .title .title_content .years {
+  margin-top: 17px;
+  overflow-y: auto;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-right: 55px;
+}
+
+.body .left_side .titles .title .title_content .years span {
+  display: block;
+  color: #777777;
+  font-family: "BPG Arial";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-right: 5px;
+}
+
+.body .left_side .text_background {
+  background-image: url("../images/text_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+.body .left_side .text_background h5 {
+  color: #444444;
+  font-family: "Conv_HelveticaNeueLTGEO-75Bold";
+  font-size: 15px;
+  font-weight: 400;
+  padding: 20px 30px 18px;
+}
+
+.body .left_side .text_container {
+  padding: 25px;
+  border: 1px solid #eeeeee;
+  margin-top: 15px;
+}
+
+.body .left_side .text_container p {
+  color: #555555;
+  font-family: "BPG Arial";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.body .left_side .stadium {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .left_side .stadium h5 {
+  margin-left: 5px;
+}
+
+.body .left_side .text_container .image {
+  width: 100%;
+  height: 240px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.body .left_side .text_container .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.body .left_side .text_container .image .stadium_title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.body .left_side .text_container .image .stadium_title h6 {
+  color: #ffffff;
+  font-family: "Conv_HelveticaNeueLTGEO-75Bold";
+  font-size: 15px;
+  font-weight: 400;
+  padding: 30px 0;
 }
 
 /* width */

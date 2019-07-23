@@ -48,15 +48,17 @@
                             </svg></a>
                     </li>
                     <li><a href="index.html">მთავარი</a></li>
-                    <li class="dropdown_menu"><a href="search.html">მულტიმედია<i class="fas fa-chevron-down arrow_down"></i><i
+                    <li class="dropdown_menu"><a href="search.html">მულტიმედია<i
+                                class="fas fa-chevron-down arrow_down"></i><i
                                 class="fas fa-chevron-up arrow_up"></i></a>
                         <ul class="dropdown_content">
                             <li><a href="#">ვიდეო</a></li>
                             <li><a href="#">აუდიო</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">გუნდი</a></li>
-                    <li class="dropdown_menu"><a href="season.html">სეზონი<i class="fas fa-chevron-down arrow_down"></i><i
+                    <li><a href="team.html">გუნდი</a></li>
+                    <li class="dropdown_menu"><a href="season.html">სეზონი<i
+                                class="fas fa-chevron-down arrow_down"></i><i
                                 class="fas fa-chevron-up arrow_up"></i></a>
                         <ul class="dropdown_content">
                             <li><a href="#">ჩემპიონთა ლიგა</a></li>
@@ -256,9 +258,10 @@
                         <div class="comments">
                             <div class="switch_comment">
                                 <div class="tab">
-                                        <button class="tablinks active previous openTabs" data-tab="comment"><svg
-                                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                            width="15" height="15" viewBox="0 0 15 15">
+                                    <button class="tablinks active previous openTabs" data-tab="comment"><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15"
+                                            viewBox="0 0 15 15">
                                             <defs>
                                                 <image id="7tdrb" width="15" height="15"
                                                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABPUlEQVQ4T5XSPUuWcRTH8c/xWSJBcYlWX0JOTdnkkI7O0txsToEIFvgCgpamkIgKnMTBhgZB34BjkzhYVJj2QEdOXLfIhd43/dfrfK/fwzmRmdNYxzj+InV/fTjFk8jMD3iF9xjsAQd+4y6WC97F/Yg46aF48Tkz6ydbBX/EfEQcZ+ZI2cFEy0ENl9WViPicmaN424YH8AA3m/wdtY7dzXLYwO/a8DAeN8pV3mX4DM8i4st1cBW20Chfbr2Uf+F1RHzvpryMyZbtWs8PrF2lPNcUMYRFjF1R2E+8jIhvTbH/Mu9hpuz856p2Cn6Dr3iB/Yj4k5nV+gyqwPbF1ZHcw52Cb9X+MIsp3MZz3MAh+luOKv8RnlaLGqVtbOARys1quegWpQPXZR2ghh9GRN17z9eB66KWKndEfOpJNQPnpkWkpPc5RDcAAAAASUVORK5CYII=">
@@ -281,12 +284,13 @@
                                             class="fab fa-facebook-f"></i><span>facebook კომენტარები</span>
                                     </button>
                                 </div>
-                                
+
                             </div>
                             <div id="comment" class="comment tabcontent show_tab active">
                                 <div class="write_comment">
                                     <form action="action.php" method="get">
-                                        <textarea class="textarea" name="text" placeholder="დაწერეთ კომენტარი..."></textarea>
+                                        <textarea class="textarea" name="text"
+                                            placeholder="დაწერეთ კომენტარი..."></textarea>
                                     </form>
                                     <button>დამატება</button>
                                 </div>
@@ -318,7 +322,8 @@
                                                 </div>
                                             </div>
                                             <form action="action.php" method="get" class="comment_form">
-                                                <textarea class="textarea" name="text" placeholder="დაწერეთ კომენტარი..."></textarea>
+                                                <textarea class="textarea" name="text"
+                                                    placeholder="დაწერეთ კომენტარი..."></textarea>
                                             </form>
                                         </div>
                                     </div>
@@ -349,7 +354,8 @@
                                                     </div>
                                                 </div>
                                                 <form action="action.php" method="get" class="comment_form">
-                                                    <textarea class="textarea" name="text" placeholder="დაწერეთ პასუხი..."></textarea>
+                                                    <textarea class="textarea" name="text"
+                                                        placeholder="დაწერეთ პასუხი..."></textarea>
                                                 </form>
                                             </div>
                                             <div class="comment_answer">
@@ -440,7 +446,8 @@
                                                 </div>
                                             </div>
                                             <form action="action.php" method="get" class="comment_form">
-                                                <textarea name="text" class="textarea" placeholder="დაწერეთ პასუხი..."></textarea>
+                                                <textarea name="text" class="textarea"
+                                                    placeholder="დაწერეთ პასუხი..."></textarea>
                                             </form>
                                         </div>
                                     </div>
@@ -710,14 +717,22 @@
                 </div>
                 <div class="inside_content">
                     <form action="action.php" method="get">
-                        მომხმარებლის სახელი
-                        <input type="text">
-                        პაროლი
-                        <input type="text">
-                        ელ.ფოსტა
-                        <input type="text">
-                        გაიმეორე პაროლი
-                        <input type="text">
+                        <label>
+                            <label for="name">მომხმარებლის სახელი</label>
+                            <input type="text" id="name">
+                        </label>
+                        <label>
+                            <label for="password">პაროლი</label>
+                            <input type="password" id="password">
+                        </label>
+                        <label>
+                            <label for="return_password">გაიმეორე პაროლი</label>
+                            <input type="password" id="return_password">
+                        </label>
+                        <label>
+                            <label for="email">ელ.ფოსტა</label>
+                            <input type="email" id="email">
+                        </label>
                         <button class="registration_button">რეგისტრაცია</button>
                     </form>
                 </div>
@@ -747,9 +762,10 @@
                                 <i class="far fa-eye"></i>
                             </div>
                         </div>
-                        <div class="checked">
-                            <input type="checkbox" name="password" value="password">დავამახსოვრებ
-                        </div>
+                        <label class="checked">
+                            <input type="checkbox" id="chek" name="password" value="password">
+                            <label for="check">დავამახსოვრებ</label>
+                        </label>
                         <div class="button">
                             <button class="sign_in">შესვლა</button>
                             <button class="password">პაროლის აღდგენა</button>
@@ -761,7 +777,7 @@
                     <i class="fas fa-times"></i>
                 </div>
             </div>
-        </div>
+        </div>s
 
     </div>
 

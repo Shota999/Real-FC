@@ -47,15 +47,17 @@
                             </svg></a>
                     </li>
                     <li><a href="index.html">მთავარი</a></li>
-                    <li class="dropdown_menu"><a href="search.html">მულტიმედია<i class="fas fa-chevron-down arrow_down"></i><i
+                    <li class="dropdown_menu"><a href="search.html">მულტიმედია<i
+                                class="fas fa-chevron-down arrow_down"></i><i
                                 class="fas fa-chevron-up arrow_up"></i></a>
                         <ul class="dropdown_content">
                             <li><a href="#">ვიდეო</a></li>
                             <li><a href="#">აუდიო</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">გუნდი</a></li>
-                    <li class="dropdown_menu"><a href="season.html">სეზონი<i class="fas fa-chevron-down arrow_down"></i><i
+                    <li><a href="team.html">გუნდი</a></li>
+                    <li class="dropdown_menu"><a href="season.html">სეზონი<i
+                                class="fas fa-chevron-down arrow_down"></i><i
                                 class="fas fa-chevron-up arrow_up"></i></a>
                         <ul class="dropdown_content">
                             <li><a href="#">ჩემპიონთა ლიგა</a></li>
@@ -2616,14 +2618,22 @@
                 </div>
                 <div class="inside_content">
                     <form action="action.php" method="get">
-                        მომხმარებლის სახელი
-                        <input type="text">
-                        პაროლი
-                        <input type="text">
-                        ელ.ფოსტა
-                        <input type="text">
-                        გაიმეორე პაროლი
-                        <input type="text">
+                        <label>
+                            <label for="name">მომხმარებლის სახელი</label>
+                            <input type="text" id="name">
+                        </label>
+                        <label>
+                            <label for="password">პაროლი</label>
+                            <input type="password" id="password">
+                        </label>
+                        <label>
+                            <label for="return_password">გაიმეორე პაროლი</label>
+                            <input type="password" id="return_password">
+                        </label>
+                        <label>
+                            <label for="email">ელ.ფოსტა</label>
+                            <input type="email" id="email">
+                        </label>
                         <button class="registration_button">რეგისტრაცია</button>
                     </form>
                 </div>
@@ -2653,9 +2663,10 @@
                                 <i class="far fa-eye"></i>
                             </div>
                         </div>
-                        <div class="checked">
-                            <input type="checkbox" name="password" value="password">დავამახსოვრებ
-                        </div>
+                        <label class="checked">
+                            <input type="checkbox" id="chek" name="password" value="password">
+                            <label for="check">დავამახსოვრებ</label>
+                        </label>
                         <div class="button">
                             <button class="sign_in">შესვლა</button>
                             <button class="password">პაროლის აღდგენა</button>
