@@ -13,6 +13,24 @@ $(document).ready(function () {
         }
     });
 
+    // Font size up and down
+
+    $('.font-size-up').click(function() {
+        $('#main-content *').each(function() {
+            let currentFontSize = Number($(this).css('font-size').replace('px', ''));
+            $(this).css('font-size', ++currentFontSize + 'px');
+            $(this).css('line-height', 2*(++currentFontSize) + 'px');
+        });
+    });
+
+    $('.font-size-down').click(function() {
+        $('#main-content *').each(function() {
+            let currentFontSize = Number($(this).css('font-size').replace('px', ''));
+            $(this).css('font-size', --currentFontSize);
+            $(this).css('line-height', 2*(--currentFontSize) + 'px');
+        });
+    });
+
     // Registration popup
 
     $(".registration_popup").click(function () {
@@ -39,6 +57,13 @@ $(document).ready(function () {
     $(".close_container").click(function () {
         $(".sign_in_popup_container").removeClass("show");
     });
+
+    // Remove avatar
+    $(".remove_avatar").click(function () {
+        $(".fa-circle").toggleClass("show_avatar");
+    });
+    
+
 
     // Grid
     $(".grid1").click(function () {
@@ -267,5 +292,6 @@ $(document).ready(function () {
 
     $(".filter").click(function () {
         $(".hide_container").toggleClass('show');
+        $(this).toggleClass('text_color');
     });
 });

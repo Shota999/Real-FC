@@ -1,0 +1,127 @@
+$tablet-width: 768px;
+$phone-width: 375px;
+$desktop-width: 765px;
+$desktop-s: 1024px;
+
+@media (max-width: #{$phone-width}) {
+
+    body{
+        padding-top: 0;
+
+        .body{
+            padding: 30px;
+            width: auto;
+
+            header{
+                .top_container{
+                    height: auto;
+
+                    h1{
+                        margin: 0 auto;
+
+                        a{
+                            margin: 0;
+                            display: none;
+                        }
+                        .responsive_logo{
+                            display: block;
+                        }
+                    }
+                    .background{
+                        display: none;
+                    }
+                }
+                .nav{
+                    display: none;
+                }
+                .responsive_nav{
+                    display: flex;
+                    align-items: center;
+                    border-radius: 5px;
+                    margin-top: 20px;
+
+                    .show_menu{
+                        margin-left: 20px;
+
+                        i{
+                            color: #ffffff;
+                            font-size: 18px;
+                        }
+                    }
+
+                    .menu{
+                        display: none;
+                    }
+                    .authorization{
+                        .sign_in{
+                            button{
+                                i{
+                                    color: #ffffff;
+                                }
+                            }
+                        }
+                    }
+                }
+                .bottom_container{
+                    margin-top: 15px;
+                    border-bottom: none;
+
+                    .left_container{
+                        .social{
+                            display: none;
+                        }
+                        .form{
+                            margin: 0;
+
+                            form{
+                                button{
+                                    width: 44px;
+                                }
+                                input{
+                                    &::placeholder{
+                                        opacity: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .container{
+                padding: 15px 0;
+
+                .content{
+                    flex-wrap: wrap;
+
+                    .left_container{
+                        width: 260px;
+
+                        .swiper-container{
+                            .swiper-slide{
+                                background-position: center;
+
+                                .slider_content{
+                                    margin: 0;
+
+                                    .text_container{
+                                        padding: 18px 13px;
+                                    }
+                                    .bottom_container{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .reclam_baner{
+                display: none;
+            }
+            .web_content{
+                display: none;
+            }
+        }
+    }
+    
+}
