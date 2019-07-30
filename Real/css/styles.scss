@@ -143,7 +143,7 @@ body {
                         }
                     }
 
-                    .add_remove{
+                    .add_remove {
                         display: flex;
                         align-items: center;
                         margin-bottom: 20px;
@@ -167,7 +167,7 @@ body {
                             align-items: center;
                             cursor: pointer;
 
-                            label{
+                            label {
                                 margin-left: 5px;
                                 color: #767270;
                                 font-family: "Conv_HelveticaNeueLTGEO-55Roman";
@@ -195,20 +195,22 @@ body {
                             transition: .4s ease-in-out;
                             border-radius: 50%;
                             box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
-                            
-                            i{
+
+                            i {
                                 display: none;
                                 font-size: 4px;
                                 color: #055bc6;
                                 padding: 5px;
                                 border-radius: 50%;
                             }
-                            .show_avatar{
+
+                            .show_avatar {
                                 display: block;
                             }
                         }
 
                     }
+
                     .registration_button {
                         box-shadow: 0 5px 5px rgba(66, 103, 178, 0.3);
                         background-color: #3767c9;
@@ -268,11 +270,13 @@ body {
                     display: block;
                     margin-left: 30px;
                 }
-                .responsive_logo{
+
+                .responsive_logo {
                     display: none;
                 }
             }
-            .background{
+
+            .background {
                 background-size: cover;
                 background-image: url("../images/REALI.png");
                 width: 100%;
@@ -280,7 +284,7 @@ body {
                 background-position: right;
             }
         }
-        
+
         nav {
             display: flex;
             justify-content: space-between;
@@ -449,9 +453,11 @@ body {
                 }
             }
         }
-        .responsive_nav{
+
+        .responsive_nav {
             display: none;
         }
+
         .bottom_container {
             border-bottom: 1px solid #eeeeee;
             display: flex;
@@ -500,9 +506,10 @@ body {
                         display: flex;
                         align-items: center;
 
-                        i{
+                        i {
                             display: none;
                         }
+
                         button {
                             border-radius: 50%;
                             border: none;
@@ -519,7 +526,8 @@ body {
                                 color: #ffffff;
                                 display: block;
                             }
-                            span{
+
+                            span {
                                 display: block;
                                 font-size: 17px;
                                 color: #fff;
@@ -546,12 +554,13 @@ body {
                             line-height: 16.8px;
                         }
                     }
-                    .search_form{
+
+                    .search_form {
                         border: 1px solid #eee;
                         border-radius: 25px;
                         padding: 4px 7px 4px 7px;
 
-                        i{
+                        i {
                             display: block;
                             margin: 0 15px;
                             color: #222222;
@@ -832,6 +841,10 @@ body {
                 }
             }
 
+            .show_match {
+                display: none;
+            }
+
             // End style
             .right_container {
                 width: 370px;
@@ -869,6 +882,7 @@ body {
                         i {
                             margin-right: 5px;
                             font-size: 10px;
+                            line-height: normal;
                         }
                     }
 
@@ -1155,6 +1169,10 @@ body {
                             line-height: 18px;
                             margin-left: 7px;
                         }
+
+                        .arrow {
+                            display: none;
+                        }
                     }
 
                     .search {
@@ -1191,25 +1209,30 @@ body {
                                     transition: .4s ease-in-out;
                                 }
                             }
-                            &:hover i{
+
+                            &:hover i {
                                 color: #014eaf;
                             }
-                            &:hover p{
+
+                            &:hover p {
                                 color: #014eaf;
                             }
                         }
-                        .text_color{
-                            .left{
-                                i{
+
+                        .text_color {
+                            .left {
+                                i {
                                     color: #014eaf;
                                 }
                             }
-                            .right{
-                                p{
+
+                            .right {
+                                p {
                                     color: #014eaf;
                                 }
                             }
                         }
+
                         .hide_container {
                             position: absolute;
                             top: 45px;
@@ -1307,7 +1330,7 @@ body {
                         .show {
                             opacity: 1;
                         }
-                        
+
 
                         .change_container {
                             display: flex;
@@ -1639,6 +1662,7 @@ body {
 
                     .text_container {
                         border-bottom: 1px solid #eeeeee;
+                        padding: 0;
 
                         p {
                             color: #777777;
@@ -1656,6 +1680,117 @@ body {
                         .quote {
                             color: #111111;
                             font-style: italic;
+                        }
+
+                    }
+
+                    .poll_container {
+                        border: 1px solid #eeeeee;
+                        border-bottom-left-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                        margin-top: 15px;
+
+                        .background_container {
+                            background-image: url('../images/poll_background.png');
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            padding: 20px;
+
+                            .top_container {
+                                display: flex;
+                                align-items: center;
+                                justify-content: initial;
+                                padding: 0;
+                                border: none;
+
+                                span {
+                                    color: #ffffff;
+                                    font-family: arial;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    letter-spacing: 0.14px;
+                                    line-height: 16.8px;
+                                    margin-left: 10px;
+                                    font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+                                }
+                            }
+                        }
+
+
+
+                        .poll_text {
+                            padding: 20px 25px;
+
+                            h4 {
+                                color: #74777a;
+                                font-size: 16px;
+                                font-weight: 400;
+                                letter-spacing: 0.16px;
+                                line-height: 25px;
+                                font-family: 'Conv_HelveticaNeueLTGEO-75Bold';
+                            }
+
+                            span {
+                                display: block;
+                                color: #787878;
+                                font-family: "BPG Arial";
+                                font-size: 12px;
+                                font-weight: 400;
+                                letter-spacing: 0.15px;
+                                line-height: 24px;
+                            }
+
+                            .progress {
+                                display: flex;
+                                overflow: hidden;
+                                background-color: #f4f4f4;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin-top: 15px;
+                                cursor: pointer;
+
+                                .progress_bar {
+                                    background: #e8e8e8;
+                                    transition: .4s ease-in-out;
+
+                                    span {
+                                        display: block;
+                                        color: #74777a;
+                                        font-family: "BPG Arial";
+                                        font-size: 13px;
+                                        font-weight: 400;
+                                        letter-spacing: 0.13px;
+                                        padding: 12px;
+                                        transition: .4s ease-in-out;
+                                    }
+                                }
+
+                                span {
+                                    color: #74777a;
+                                    font-family: "BPG Arial";
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    letter-spacing: 0.13px;
+                                    padding: 12px;
+                                    transition: .4s ease-in-out;
+                                }
+
+                                &:hover .progress_bar {
+                                    background-color: #ffc200;
+                                }
+
+                                &:hover .progress_bar span {
+                                    color: #735803;
+                                }
+
+                                &:hover span {
+                                    color: #735803;
+                                }
+                            }
+
+                            .answers {
+                                margin-top: 15px;
+                            }
                         }
                     }
 
@@ -1759,7 +1894,7 @@ body {
                             display: flex;
                             align-items: center;
 
-                            a{
+                            a {
                                 display: block;
                                 margin-right: 30px;
                             }
@@ -1817,7 +1952,7 @@ body {
                             .tab {
                                 display: flex;
 
-                                
+
                                 button {
                                     display: flex;
                                     align-items: center;
@@ -1830,7 +1965,7 @@ body {
                                     border: 1px solid #eeeeee;
                                     background-color: #ffffff;
                                     position: relative;
-    
+
                                     span {
                                         display: block;
                                         color: #3b5998;
@@ -1839,15 +1974,16 @@ body {
                                         font-weight: 400;
                                         text-transform: uppercase;
                                     }
-    
+
                                     svg {
                                         margin-right: 5px;
                                     }
-    
-                                    img{
+
+                                    img {
                                         display: none;
                                     }
-                                    &:hover{
+
+                                    &:hover {
                                         background-color: #0559c1;
 
                                         img {
@@ -1856,25 +1992,27 @@ body {
                                             left: 41%;
                                             display: block;
                                         }
-                                        span{
+
+                                        span {
                                             color: #ffffff;
                                         }
-                                        i{
+
+                                        i {
                                             color: #ffffff;
                                             border-color: #ffffff;
                                         }
                                     }
                                 }
-                                
+
                                 .facebook_button {
                                     box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.06);
                                     border: 1px solid #eeeeee;
                                     background-color: #ffffff;
-    
+
                                     span {
                                         color: #3b5998;
                                     }
-    
+
                                     i {
                                         color: #3b5998;
                                         border: 1px solid #3b5998;
@@ -1883,10 +2021,12 @@ body {
                                         border-radius: 50%;
                                         margin-right: 10px;
                                     }
-                                    img{
+
+                                    img {
                                         display: none;
                                     }
-                                    &:hover{
+
+                                    &:hover {
                                         background-color: #0559c1;
 
                                         img {
@@ -1895,16 +2035,19 @@ body {
                                             left: 41%;
                                             display: block;
                                         }
-                                        span{
+
+                                        span {
                                             color: #ffffff;
                                         }
-                                        i{
+
+                                        i {
                                             color: #ffffff;
                                             border-color: #ffffff;
                                         }
                                     }
                                 }
-                                .active{
+
+                                .active {
                                     background-color: #0559c1;
                                     position: relative;
 
@@ -1914,17 +2057,19 @@ body {
                                         left: 41%;
                                         display: block;
                                     }
-                                    span{
+
+                                    span {
                                         color: #ffffff;
                                     }
-                                    i{
+
+                                    i {
                                         color: #ffffff;
                                         border-color: #ffffff;
                                     }
                                 }
                             }
 
-                           
+
                         }
 
                         .write_comment {
@@ -2007,6 +2152,12 @@ body {
                                     .redactor_editor {
                                         height: 35px;
                                         overflow-y: auto;
+                                    }
+
+                                    p {
+                                        u {
+                                            text-decoration: underline;
+                                        }
                                     }
                                 }
                             }
@@ -3899,6 +4050,16 @@ body {
                 display: flex;
                 align-items: center;
 
+                .responsive_up {
+                    display: none;
+                    color: #d6d6d6;
+                    font-family: "Conv_HelveticaNeueLTGEO-55Roman";
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    margin-right: 10px;
+                }
+
                 a {
                     display: flex;
                     justify-content: center;
@@ -4399,7 +4560,7 @@ body {
                         }
                     }
 
-                    a{
+                    a {
                         transition: .4s ease-in-out;
 
                         span {
@@ -4407,17 +4568,18 @@ body {
                             display: flex;
                             align-items: center;
                             margin-right: 5px;
-    
+
                             svg {
                                 fill: #1263c8;
                                 margin-right: 10px;
                             }
                         }
-                        &:hover{
+
+                        &:hover {
                             color: #1263c8;
                         }
                     }
-                    
+
 
                     a {
                         display: flex;
@@ -4639,7 +4801,8 @@ body {
                                 margin-left: 5px;
                                 transition: .4s ease-in-out;
                             }
-                            &:hover span{
+
+                            &:hover span {
                                 color: red;
                             }
                         }
@@ -4659,7 +4822,8 @@ body {
                                 margin-left: 5px;
                                 transition: .4s ease-in-out;
                             }
-                            &:hover span{
+
+                            &:hover span {
                                 color: darkorange;
                             }
                         }
@@ -4922,7 +5086,6 @@ body {
 
         .text_container {
             padding: 25px;
-            border: 1px solid #eeeeee;
             margin-top: 15px;
 
             p {

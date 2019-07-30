@@ -29,29 +29,6 @@
                 <div class="show_menu">
                     <i class="fas fa-bars"></i>
                 </div>
-                <ul class="menu">
-                    <li><a href="index.html">მთავარი</a></li>
-                    <li class="dropdown_menu"><a href="search.html">მულტიმედია<i
-                                class="fas fa-chevron-down arrow_down"></i><i
-                                class="fas fa-chevron-up arrow_up"></i></a>
-                        <ul class="dropdown_content">
-                            <li><a href="#">ვიდეო</a></li>
-                            <li><a href="#">აუდიო</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="team.html">გუნდი</a></li>
-                    <li class="dropdown_menu"><a href="season.html">სეზონი<i
-                                class="fas fa-chevron-down arrow_down"></i><i
-                                class="fas fa-chevron-up arrow_up"></i></a>
-                        <ul class="dropdown_content">
-                            <li><a href="#">ჩემპიონთა ლიგა</a></li>
-                            <li><a href="#">ლა ლიგა</a></li>
-                            <li><a href="#">კოპა დელ რეი</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">საიტი</a></li>
-                    <li><a href="#">ფანკლუბი</a></li>
-                </ul>
                 <div class="authorization">
                     <div class="registration">
                         <button class="registration_popup">
@@ -65,6 +42,29 @@
                             <i class="fas fa-user"></i>
                         </button>
                     </div>
+                </div>
+                <div class="hidden_menu">
+                    <ul>
+                        <li><a href="index.html">მთავარი</a></li>
+                    <li class="dropdown_menu"><a>მულტიმედია<i
+                                class="fas fa-chevron-down arrow_down"></i></a>
+                        <ul class="dropdown_content">
+                            <li><a href="#">ვიდეო</a></li>
+                            <li><a href="#">აუდიო</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="team.html">გუნდი</a></li>
+                    <li class="dropdown_menu"><a>სეზონი<i
+                                class="fas fa-chevron-down arrow_down"></i></a>
+                        <ul class="dropdown_content">
+                            <li><a href="#">ჩემპიონთა ლიგა</a></li>
+                            <li><a href="#">ლა ლიგა</a></li>
+                            <li><a href="#">კოპა დელ რეი</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">საიტი</a></li>
+                    <li><a href="#">ფანკლუბი</a></li>
+                    </ul>
                 </div>
             </nav>
             <nav class="nav">
@@ -340,13 +340,17 @@
                                 class="fas fa-chevron-right"></i></div>
                     </div>
                 </div>
+                <div class="show_match">
+                    <i class="fas fa-plus font-size-up"></i>
+                    <p>წინა და მომდევნო მატჩები</p>
+                </div>
                 <div class="right_container">
                     <div class="top_container">
                         <div class="tab">
                             <button class="tablinks active previous openTabs" data-tab="previous-match"><i
-                                    class="fas fa-circle"></i>წინა მატჩი</button>
+                                    class="fas fa-circle"></i><span>წინა მატჩი</span></button>
                             <button class="tablinks next openTabs" data-tab="next-match"><i
-                                    class="fas fa-circle"></i>მომდევნო მატჩი</button>
+                                    class="fas fa-circle"></i><span>მომდევნო მატჩი</span></button>
                         </div>
                     </div>
 
@@ -432,6 +436,7 @@
                                 </g>
                             </svg>
                             <span>სიახლეები</span>
+                            <div class="arrow"><i class="fas fa-chevron-right"></i></div>
                         </div>
                         <div class="search">
                             <div class="change_container">
@@ -2634,7 +2639,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+                    <span class="responsive_up">Up</span><a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
                     <div class="top_ge">
                         <img src="images/top.png" alt="top.ge">
                     </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/redactor.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -19,10 +20,52 @@
             <div class="top_container">
                 <h1>
                     <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    <a href="index.html" class="responsive_logo"><img src="images/responsive_logo.png" alt="logo"></a>
                 </h1>
+                <div class="background"></div>
             </div>
 
-            <nav>
+            <nav class="responsive_nav nav">
+                <div class="show_menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="authorization">
+                    <div class="registration">
+                        <button class="registration_popup">
+                            <!-- New linkshi chasma ar chirdeba -->
+                            <i class="fas fa-user-plus"></i>
+                        </button>
+                    </div>
+                    <div class="sign_in">
+                        <button class="sign_in_popup">
+                            <!-- New igive wyoba ro qondes i garet gamovitane -->
+                            <i class="fas fa-user"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden_menu">
+                    <ul>
+                        <li><a href="index.html">მთავარი</a></li>
+                        <li class="dropdown_menu"><a>მულტიმედია<i class="fas fa-chevron-down arrow_down"></i></a>
+                            <ul class="dropdown_content">
+                                <li><a href="#">ვიდეო</a></li>
+                                <li><a href="#">აუდიო</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="team.html">გუნდი</a></li>
+                        <li class="dropdown_menu"><a>სეზონი<i class="fas fa-chevron-down arrow_down"></i></a>
+                            <ul class="dropdown_content">
+                                <li><a href="#">ჩემპიონთა ლიგა</a></li>
+                                <li><a href="#">ლა ლიგა</a></li>
+                                <li><a href="#">კოპა დელ რეი</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">საიტი</a></li>
+                        <li><a href="#">ფანკლუბი</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="nav">
                 <ul class="menu">
                     <li>
                         <a href="index.html" class="active"><svg xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +227,7 @@
                     <div class="contact_container">
                         <div class="top_buttons">
                             <div class="tab">
-                                <button class="tablinks active previous openTabs" data-tab="contact">კონტაქტი
+                                <button class="tablinks active previous openTabs" data-tab="contact"><h4> კონტაქტი </h4>
                                     <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             viewBox="0 0 14 14">
                                             <g>
@@ -198,7 +241,7 @@
                                         <span>1</span>
                                     </div>
                                 </button>
-                                <button class="tablinks next openTabs" data-tab="reclam">რეკლამა
+                                <button class="tablinks next openTabs" data-tab="reclam"><h4>რეკლამა</h4>
                                     <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="16"
                                             viewBox="0 0 15 16">
                                             <g>
@@ -329,12 +372,6 @@
                                     <div class="left">
                                         <button>გაგზავნა
                                             <img src="images/contact_images/sent.png" alt="sent">
-                                        </button>
-                                    </div>
-                                    <div class="right">
-                                        <button>
-                                            <i class="fas fa-undo-alt"></i>
-                                            <span>კითხვის გამოცვლა</span>
                                         </button>
                                     </div>
                                 </div>

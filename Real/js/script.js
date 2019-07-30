@@ -36,17 +36,11 @@ $(document).ready(function () {
     $(".registration_popup").click(function () {
         $(".show_popup").addClass("show");
     });
-    $(".close_container").click(function () {
-        $(".popup_container").removeClass("show");
-    });
 
     // Sign in popup
 
     $(".sign_in_popup").click(function () {
         $(".sign_in_popup_container").addClass("show");
-    });
-    $(".close_container").click(function () {
-        $(".sign_in_popup_container").removeClass("show");
     });
 
     // Information popup
@@ -54,16 +48,26 @@ $(document).ready(function () {
     $(".information").click(function () {
         $(".information_popup").addClass("show");
     });
+
+    // Hide popup on body click
+
+    $('.popup_container').click(function (e) {
+        console.log(e.target.offsetParent.className);
+        
+        if (!e.target.offsetParent || (e.target.offsetParent.className !== 'registration' && e.target.offsetParent.className !== 'input_container')) {
+            $(".popup_container").removeClass("show");
+        }
+    });
+
+    // Hide popup
     $(".close_container").click(function () {
-        $(".sign_in_popup_container").removeClass("show");
+        $(".popup_container").removeClass("show");
     });
 
     // Remove avatar
     $(".remove_avatar").click(function () {
         $(".fa-circle").toggleClass("show_avatar");
     });
-    
-
 
     // Grid
     $(".grid1").click(function () {
@@ -89,7 +93,6 @@ $(document).ready(function () {
         }
     });
       
-
     // Swiper
 
     // First slider
@@ -293,5 +296,19 @@ $(document).ready(function () {
     $(".filter").click(function () {
         $(".hide_container").toggleClass('show');
         $(this).toggleClass('text_color');
+    });
+
+
+    // Responsive menu
+
+    $(".show_menu").click(function () {
+        $(".hidden_menu").toggleClass('show');
+    });
+    $('.dropdown_menu').click(function () {
+        $(this).find('.dropdown_content').toggleClass('show');
+    });
+
+    $(".show_match").click(function () {
+        $(".right_container").toggleClass('show');
     });
 });
