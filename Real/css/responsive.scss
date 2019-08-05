@@ -1,7 +1,1228 @@
-$tablet-width: 768px;
+$tablet-width: 920px;
 $phone-width: 375px;
-$desktop-width: 765px;
-$desktop-s: 1024px;
+$desktop-s: 970px;
+$desktop-l: 1054px;
+$footer: 550px;
+
+
+
+
+@media (max-width: #{$desktop-s}) {
+    body {
+        .body {
+            width: 100%;
+
+            header {
+                .nav {
+                    ul {
+                        li {
+                            a {
+                                padding: 17px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: #{$desktop-l}) {
+    body {
+        .body {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: #{$tablet-width}) {
+    body {
+        .body {
+            width: 100%;
+
+            header {
+                .top_container {
+                    height: 130px;
+
+                    h1 {
+                        margin: 0 auto;
+
+                        a {
+                            margin: 0;
+                            
+                            img{
+                                width: 100%;
+                            }
+                        }
+
+                        .responsive_logo {
+                            display: none;
+                        }
+                    }
+                }
+
+                .nav {
+                    display: none;
+                }
+
+                .responsive_nav {
+                    display: flex;
+                    align-items: center;
+                    border-radius: 5px;
+                    margin-top: 0;
+                    position: relative;
+
+                    .show_menu {
+                        margin-left: 20px;
+
+                        i {
+                            color: #ffffff;
+                            font-size: 18px;
+                        }
+                    }
+
+                    .authorization {
+                        .sign_in {
+                            button {
+                                i {
+                                    color: #ffffff;
+                                }
+                            }
+                        }
+                    }
+
+                    .hidden_menu {
+                        position: absolute;
+                        top: 50px;
+                        left: 0;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: visibility 0s linear 400ms, opacity 400ms;
+                        z-index: 99;
+                        background-image: linear-gradient(to top, #004aa6 0%, #055cc7 100%);
+                        width: 100%;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        transition: .2s ease-in-out;
+
+                        ul {
+                            width: 100%;
+
+                            li {
+                                a {
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 17px 18px;
+                                    color: white;
+                                    letter-spacing: 0.5px;
+                                    text-shadow: 0 1px 0 #034c8c;
+
+                                    i {
+                                        display: flex;
+                                        width: 100%;
+                                        justify-content: flex-end;
+                                    }
+                                }
+                            }
+
+                            .dropdown_menu {
+                                position: relative;
+
+
+                                .dropdown_content {
+                                    display: none;
+                                    z-index: 99;
+                                    box-shadow: 0px 0px 30px -20px rgba(0, 0, 0, 0.75);
+                                    background-image: linear-gradient(to top, #004aa6 0%, #055cc7 100%);
+
+                                    li {
+                                        margin-left: 15px;
+
+
+                                        a {
+                                            display: flex;
+                                            padding: 0;
+                                            color: white;
+                                            font-size: 13px;
+                                            font-weight: 400;
+                                            letter-spacing: 0.13px;
+                                            line-height: 15.6px;
+                                            padding: 19px 18px;
+                                            text-shadow: none;
+                                        }
+
+                                        ::before {
+                                            content: "\2022";
+                                            color: #ffffff;
+                                            margin-right: 5px;
+                                        }
+
+                                        ::after {
+                                            content: "";
+                                            border-right: 1px solid red;
+                                            justify-content: flex-end;
+                                        }
+
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+                    .show {
+                        top: 50px;
+                        visibility: visible;
+                        opacity: 1;
+                        transition: visibility 0s linear 0s, opacity 400ms;
+                        display: block !important;
+                    }
+                }
+
+                .bottom_container {
+                    // border-bottom: none;
+
+                    .left_container {
+                        .social {
+                            display: flex;
+                        }
+
+                        .form {
+
+                            form {
+                                button {
+                                    width: 31px;
+                                }
+
+                                input {
+                                    &::placeholder {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .right_container {
+                        margin-right: 15px;
+
+                        .company_icons {
+                            .hover_container {
+                                flex-wrap: wrap;
+                                width: 251px;
+                                top: 40px;
+                                right: 0;
+                            }
+
+                            .blitz {
+                                border: 1px solid #eeeeee;
+                                border-radius: 5px;
+
+                                i {
+                                    transform: rotate(-90deg);
+                                    top: 24px;
+                                    left: 48px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .container {
+                padding: 15px 0;
+
+                .content {
+                    flex-wrap: wrap;
+
+                    .left_container {
+                        width: 100%;
+                        height: 400px;
+
+                        .swiper-container {
+                            .swiper-slide {
+                                background-position: 30%;
+                                width: 100% !important;
+
+                                .slider_content {
+                                    margin: 0;
+
+                                    .text_container {
+                                        padding: 18px 13px;
+                                    }
+                                }
+                            }
+
+                            .navigation_button {
+                                margin-top: -40px;
+
+                                i {
+                                    padding: 11px 14px;
+                                }
+                            }
+                        }
+                    }
+
+                    .right_container {
+                        width: 100%;
+                        margin: 15px;
+                        background-color: #ffffff;
+
+                        .tabcontent {
+                            .bottom_container {
+                                span {
+                                    font-size: 12px;
+                                }
+
+                                #getting-started {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+
+                    .show {
+                        display: block;
+                    }
+                }
+            }
+
+            .web_content {
+                padding: 0;
+                width: 100%;
+
+                .left_right_side {
+                    .left_side {
+                        width: 100%;
+                        margin: 15px;
+                        border: none;
+
+                        .container {
+                            width: 100%;
+
+                            .news {
+                                width: 49%;
+                                background-color: #ffffff;
+                            }
+
+                            .active {
+                                width: 100%;
+                            }
+                        }
+
+
+                        .more {
+                            margin: 0;
+                        }
+
+                        // Contact Page
+
+                        .contact_container {
+                            padding: 0;
+
+                            .tabcontent{
+                                .map{
+                                    height: auto;
+
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+
+                        // Inner Page
+
+                        .inner_container {
+                            width: 100%;
+                            background-color: #ffffff;
+                            padding: 0;
+                            margin-top: 15px;
+
+                            h3 {
+                                font-size: 17px;
+                            }
+
+                            .poll_container {
+                                .poll_text {
+                                    padding: 10px 10px;
+
+                                    h4 {
+                                        font-size: 13px;
+                                    }
+
+                                    .progress {
+                                        .progress_bar {
+                                            span {
+                                                font-size: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .reclam{
+                                width: 100%;
+                                margin: 0;
+                            }
+                        }
+
+                        // Team page
+
+                        
+
+                        // Profile page
+                        
+                    }
+
+                    .right_side {
+                        display: none;
+                    }
+                }
+
+                .bottom_container {
+                    display: none;
+                }
+
+                .reclam {
+                    width: 95%;
+                    margin: 15px;
+
+                    .left {
+                        width: 100%;
+
+                        .container {
+                            width: 100%;
+
+                            a {
+                                justify-content: center;
+                            }
+
+                            &:nth-child(3) {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .right {
+                        width: 98%;
+                        padding: 10px 10px;
+                        justify-content: space-between;
+
+                        .responsive_up {
+                            display: block;
+                            order: 1;
+                        }
+
+                        a {
+                            order: 1;
+                            margin: 0;
+                        }
+
+                        img {
+                            width: 80px;
+                        }
+                    }
+                }
+
+                // footer {
+                //     margin: 15px;
+                //     background-color: #ffffff;
+                //     flex-wrap: wrap;
+                //     border: 0;
+                //     border-radius: 5px;
+                // }
+
+                .news_slider {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: #{$footer}) {
+    body{
+        padding-top: 0;
+
+        .body{
+            width: 100%;
+            padding: 30px;
+            background-image: linear-gradient(to top, #ebf5ff 0%, #ffffff 100%);
+
+            header {
+                .top_container {
+                    height: auto;
+
+                    h1 {
+                        margin: 0 auto;
+
+                        a {
+                            margin: 0;
+                            display: none;
+                        }
+
+                        .responsive_logo {
+                            display: block;
+                        }
+                    }
+
+                    .background {
+                        display: none;
+                    }
+                }
+
+                .nav {
+                    display: none;
+                }
+
+                .responsive_nav {
+                    display: flex;
+                    align-items: center;
+                    border-radius: 5px;
+                    margin-top: 20px;
+                    position: relative;
+
+                    .show_menu {
+                        margin-left: 20px;
+
+                        i {
+                            color: #ffffff;
+                            font-size: 18px;
+                        }
+                    }
+
+                    .authorization {
+                        .sign_in {
+                            button {
+                                i {
+                                    color: #ffffff;
+                                }
+                            }
+                        }
+                    }
+
+                    .hidden_menu {
+                        position: absolute;
+                        top: 50px;
+                        left: 0;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: visibility 0s linear 400ms, opacity 400ms;
+                        z-index: 99;
+                        background-image: linear-gradient(to top, #004aa6 0%, #055cc7 100%);
+                        width: 100%;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        transition: .2s ease-in-out;
+
+                        ul {
+                            width: 100%;
+
+                            li {
+                                a {
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 17px 18px;
+                                    color: white;
+                                    letter-spacing: 0.5px;
+                                    text-shadow: 0 1px 0 #034c8c;
+
+                                    i {
+                                        display: flex;
+                                        width: 100%;
+                                        justify-content: flex-end;
+                                    }
+                                }
+                            }
+
+                            .dropdown_menu {
+                                position: relative;
+
+
+                                .dropdown_content {
+                                    display: none;
+                                    z-index: 99;
+                                    box-shadow: 0px 0px 30px -20px rgba(0, 0, 0, 0.75);
+                                    background-image: linear-gradient(to top, #004aa6 0%, #055cc7 100%);
+
+                                    li {
+                                        margin-left: 15px;
+
+
+                                        a {
+                                            display: flex;
+                                            padding: 0;
+                                            color: white;
+                                            font-size: 13px;
+                                            font-weight: 400;
+                                            letter-spacing: 0.13px;
+                                            line-height: 15.6px;
+                                            padding: 19px 18px;
+                                            text-shadow: none;
+                                        }
+
+                                        ::before {
+                                            content: "\2022";
+                                            color: #ffffff;
+                                            margin-right: 5px;
+                                        }
+
+                                        ::after {
+                                            content: "";
+                                            border-right: 1px solid red;
+                                            justify-content: flex-end;
+                                        }
+
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+                    .show {
+                        top: 50px;
+                        visibility: visible;
+                        opacity: 1;
+                        transition: visibility 0s linear 0s, opacity 400ms;
+                        display: block !important;
+                    }
+                }
+
+                .bottom_container {
+                    margin-top: 15px;
+                    border-bottom: none;
+
+                    .left_container {
+                        .social {
+                            display: none;
+                        }
+
+                        .form {
+                            margin: 0;
+
+                            form {
+                                button {
+                                    width: 33px;
+                                }
+
+                                input {
+                                    &::placeholder {
+                                        opacity: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .right_container {
+                        margin-right: 0;
+
+                        .company_icons {
+                            .hover_container {
+                                flex-wrap: wrap;
+                                width: 251px;
+                                top: 40px;
+                                right: 0;
+                            }
+
+                            .blitz {
+                                border: 1px solid #eeeeee;
+                                border-radius: 5px;
+
+                                i {
+                                    transform: rotate(-90deg);
+                                    top: 24px;
+                                    left: 48px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .web_content {
+                padding: 0;
+                width: 100%;
+        
+                .left_right_side {
+                    .left_side {
+                        width: 100%;
+                        border: none;
+                        margin: 0;
+        
+                        .top_container {
+                            width: 100%;
+                            padding: 0;
+                            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.04);
+                            border-bottom: none;
+        
+                            .news {
+                                padding: 15px;
+                                width: 100%;
+        
+                                .arrow {
+                                    display: flex;
+                                    width: 100%;
+                                    justify-content: flex-end;
+        
+                                    i {
+                                        color: #8c8c8c;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+        
+                            .search {
+                                display: none;
+                            }
+                        }
+        
+                        .container {
+                            width: 100%;
+        
+                            .news {
+                                width: 100%;
+                                background-color: #ffffff;
+                            }
+                        }
+        
+                        .more {
+                            margin: 0;
+                        }
+        
+                        // Contact Page
+        
+                        .contact_container {
+                            background-color: #ffffff;
+                            border: 1px solid #eeeeee;
+                            padding: 15px;
+                            margin-top: 20px;
+        
+                            .tabcontent {
+                                .contact_links {
+                                    flex-wrap: wrap;
+        
+                                    p {
+                                        width: 100%;
+                                    }
+        
+                                    a {
+                                        width: 100%;
+                                        margin-top: 15px;
+                                    }
+                                }
+        
+                                form {
+                                    padding: 0;
+                                    border: none;
+        
+                                    .input_container {
+                                        width: 100%;
+                                        flex-wrap: wrap;
+        
+                                        input {
+                                            width: 100%;
+                                            flex: auto;
+                                            margin-right: 0;
+        
+                                            &:nth-child(2) {
+                                                margin-top: 15px;
+                                            }
+                                        }
+                                    }
+        
+                                    .bottom_container {
+                                        .left {
+                                            width: 100%;
+        
+                                            button {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+        
+                                .map {
+                                    height: auto;
+        
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+        
+                                .text_container {
+                                    padding: 0;
+                                    padding-bottom: 40px;
+        
+                                    .bottom_container {
+                                        flex-wrap: wrap;
+        
+                                        a {
+                                            span {
+                                                font-size: 12px;
+                                            }
+                                        }
+        
+                                        .right {
+                                            margin-top: 15px;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            .top_buttons {
+                                .tab {
+                                    flex-wrap: wrap;
+        
+                                    button {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        width: 100%;
+                                        font-size: 20px;
+        
+                                        span {
+                                            &:nth-child(2) {
+                                                display: none;
+                                            }
+                                        }
+        
+                                        .number {
+                                            margin: 0;
+                                        }
+        
+                                        &:last-child {
+                                            margin-top: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+        
+                        // Inner Page
+        
+                        .inner_container {
+                            width: 100%;
+                            background-color: #ffffff;
+                            padding: 0;
+                            margin-top: 15px;
+        
+                            h3 {
+                                font-size: 17px;
+                            }
+        
+                            .bottom_container {
+                                flex-wrap: wrap;
+        
+                                .social {
+                                    width: 100%;
+                                    justify-content: space-evenly;
+        
+                                    i {
+                                        align-items: center;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                }
+        
+                                .time_author {
+                                    width: 100%;
+                                    justify-content: center;
+                                    margin: 15px 0;
+        
+                                    .comment {
+                                        margin: 0 15px;
+                                    }
+                                }
+        
+                                .edit {
+                                    width: 100%;
+                                    justify-content: center;
+        
+                                    a {
+                                        margin-right: 10px;
+        
+                                        img {
+                                            width: 15px;
+                                        }
+                                    }
+        
+                                    svg {
+                                        width: 22px;
+                                    }
+                                }
+                            }
+        
+                            .comments {
+                                .write_comment {
+                                    button {
+                                        width: 100%;
+                                    }
+                                }
+        
+                                .switch_comment {
+                                    .tab {
+                                        flex-wrap: wrap;
+                                        padding: 0 15px;
+        
+                                        button {
+                                            width: 100%;
+                                            justify-content: flex-start;
+                                            margin: 0;
+        
+                                            svg {
+                                                margin-right: 10px;
+                                            }
+        
+                                            &:last-child {
+                                                margin-top: 15px;
+                                            }
+        
+                                            span {
+                                                font-size: 12px;
+                                            }
+                                        }
+        
+                                        .active {
+                                            img {
+                                                display: none;
+                                            }
+                                        }
+        
+                                        .facebook_button {
+                                            &:hover img {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+        
+                                .comment {
+                                    .comments_container {
+                                        .comment {
+                                            .like_answer {
+                                                flex-wrap: wrap;
+                                                justify-content: center;
+                                            }
+        
+                                            .text {
+                                                .comment_text {
+                                                    a {
+                                                        font-size: 12px;
+                                                    }
+        
+                                                    p {
+                                                        font-size: 11px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+        
+                            .poll_container {
+                                .poll_text {
+                                    padding: 10px 10px;
+        
+                                    h4 {
+                                        font-size: 13px;
+                                    }
+        
+                                    .progress {
+                                        .progress_bar {
+                                            span {
+                                                font-size: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+        
+                        // Team page
+        
+                        .team_background {
+                            .logo {
+                                display: none;
+                            }
+        
+                            .text {
+                                padding-top: 24px;
+                                padding-left: 20px;
+                                padding-bottom: 24px;
+        
+                                p {
+                                    font-size: 24px;
+                                }
+        
+                                span {
+                                    font-size: 14px;
+                                }
+                            }
+        
+                            .year {
+                                font-size: 30px;
+                                bottom: -7px;
+                            }
+                        }
+        
+                        .title {
+                            background-color: #ffffff;
+                        }
+        
+                        .text_background {
+                            margin-top: 15px;
+                        }
+        
+                        .players {
+                            .player {
+                                flex-direction: column;
+                                background-color: #ffffff;
+        
+                                .player_image {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    flex: initial;
+        
+                                    img {
+                                        position: initial;
+                                    }
+                                }
+        
+                                .text {
+                                    p {
+                                        font-size: 11px;
+                                    }
+                                }
+        
+                                .number_name {
+                                    .player_number {
+                                        span {
+                                            font-size: 14px;
+                                        }
+                                    }
+        
+                                    .player_name {
+                                        padding: 14px 30px;
+        
+                                        p {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+        
+                        .top_block {
+                            padding: 15px 0;
+                            border: none;
+        
+                            .tab {
+                                width: 100%;
+        
+                                button {
+                                    width: 100%;
+                                }
+                            }
+                        }
+        
+                        .table {
+                            overflow-y: initial;
+                        }
+        
+                        .stadium {
+                            margin-top: 15px;
+                        }
+        
+                        .text_container {
+                            // background-color: #ffffff;
+                            padding: 0;
+        
+                            p {
+                                font-size: 12px;
+                            }
+                        }
+        
+                        // Profile page
+        
+                        .profile_top {
+                            margin-top: 15px;
+                            height: auto;
+                            padding-top: 15px;
+        
+                            .user_image {
+                                width: 70px;
+                                height: 70px;
+                                position: initial;
+                                justify-content: center;
+                                margin: 0 auto;
+                            }
+        
+                            .bottom_container {
+                                margin-top: 15px;
+        
+                                .bottom_content {
+                                    flex-wrap: wrap;
+        
+                                    .user {
+                                        margin: 0;
+                                        width: 100%;
+        
+                                        a {
+                                            width: 100%;
+                                            justify-content: center;
+                                        }
+                                    }
+        
+                                    .log_out {
+                                        align-items: center;
+                                        width: 100%;
+        
+                                        a {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+        
+                        .profile_information {
+                            border: none;
+                            background-color: #ffffff;
+        
+                            .info {
+                                .left {
+                                    width: 70px;
+                                    margin-right: 70px;
+        
+                                    p {
+                                        font-size: 12px;
+                                    }
+        
+                                    .right {
+                                        p {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+        
+                        .titles {
+                            .title {
+                                padding: 0;
+                                flex-wrap: wrap;
+                                padding-bottom: 16px;
+        
+                                .title_image {
+                                    width: 100%;
+        
+                                    img {
+                                        height: 160px;
+                                        width: 100%;
+                                        object-fit: contain;
+                                    }
+        
+                                    .number {
+                                        top: 57px;
+                                    }
+                                }
+        
+                                .title_content {
+                                    padding-top: 15px;
+                                    padding-left: 20px;
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                    }
+        
+                    .right_side {
+                        display: none;
+                    }
+                }
+        
+                .bottom_container {
+                    display: none;
+                }
+        
+                .reclam {
+                    width: 100%;
+                    flex-wrap: wrap;
+                    border-bottom: none;
+                    border-radius: 25px;
+                    margin: 0;
+                    margin-top: 15px;
+                    border-bottom: none !important;
+        
+                    .left {
+                        width: 100%;
+                        background-color: #ffffff;
+                        border-bottom: 1px solid #eeeeee;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+        
+                        .container {
+                            width: 100%;
+        
+                            a {
+                                justify-content: center;
+                            }
+        
+                            &:nth-child(3) {
+                                display: none;
+                            }
+                        }
+                    }
+        
+                    .right {
+                        width: 98%;
+                        background: #fff;
+                        padding: 20px 10px;
+                        justify-content: space-between;
+        
+                        .responsive_up {
+                            display: block;
+                            order: 1;
+                        }
+        
+                        a {
+                            order: 1;
+                            margin: 0;
+                        }
+        
+                        img {
+                            width: 80px;
+                        }
+                    }
+                }
+        
+                footer {
+                    background-color: #ffffff;
+                    border: 0;
+                    border-radius: 5px;
+                    margin: 0;
+
+                    .left{
+                        width: 100%;
+                    }
+                }
+        
+                .news_slider {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    
+
+}
 
 @media (max-width: #{$phone-width}) {
 
@@ -64,7 +1285,8 @@ $desktop-s: 1024px;
                             }
                         }
                     }
-                    .hidden_menu{
+
+                    .hidden_menu {
                         position: absolute;
                         top: 50px;
                         left: 0;
@@ -78,11 +1300,11 @@ $desktop-s: 1024px;
                         border-bottom-right-radius: 5px;
                         transition: .2s ease-in-out;
 
-                        ul{
+                        ul {
                             width: 100%;
 
-                            li{
-                                a{
+                            li {
+                                a {
                                     display: flex;
                                     align-items: center;
                                     padding: 17px 18px;
@@ -90,27 +1312,28 @@ $desktop-s: 1024px;
                                     letter-spacing: 0.5px;
                                     text-shadow: 0 1px 0 #034c8c;
 
-                                    i{
+                                    i {
                                         display: flex;
                                         width: 100%;
                                         justify-content: flex-end;
                                     }
                                 }
                             }
+
                             .dropdown_menu {
                                 position: relative;
-            
-            
+
+
                                 .dropdown_content {
                                     display: none;
                                     z-index: 99;
                                     box-shadow: 0px 0px 30px -20px rgba(0, 0, 0, 0.75);
                                     background-image: linear-gradient(to top, #004aa6 0%, #055cc7 100%);
-            
+
                                     li {
                                         margin-left: 15px;
 
-            
+
                                         a {
                                             display: flex;
                                             padding: 0;
@@ -122,13 +1345,13 @@ $desktop-s: 1024px;
                                             padding: 19px 18px;
                                             text-shadow: none;
                                         }
-            
+
                                         ::before {
                                             content: "\2022";
                                             color: #ffffff;
                                             margin-right: 5px;
                                         }
-            
+
                                         ::after {
                                             content: "";
                                             border-right: 1px solid red;
@@ -137,16 +1360,17 @@ $desktop-s: 1024px;
 
                                     }
                                 }
-            
+
                             }
                         }
                     }
-                    .show{
+
+                    .show {
                         top: 50px;
                         visibility: visible;
                         opacity: 1;
                         transition: visibility 0s linear 0s, opacity 400ms;
-                        display: block!important;
+                        display: block !important;
                     }
                 }
 
@@ -164,13 +1388,37 @@ $desktop-s: 1024px;
 
                             form {
                                 button {
-                                    width: 35px;
+                                    width: 39px;
                                 }
 
                                 input {
                                     &::placeholder {
                                         opacity: 0;
                                     }
+                                }
+                            }
+                        }
+                    }
+
+                    .right_container {
+                        margin-right: 0;
+
+                        .company_icons {
+                            .hover_container {
+                                flex-wrap: wrap;
+                                width: 251px;
+                                top: 40px;
+                                right: 0;
+                            }
+
+                            .blitz {
+                                border: 1px solid #eeeeee;
+                                border-radius: 5px;
+
+                                i {
+                                    transform: rotate(-90deg);
+                                    top: 24px;
+                                    left: 48px;
                                 }
                             }
                         }
@@ -245,21 +1493,24 @@ $desktop-s: 1024px;
 
                     .right_container {
                         display: none;
+                        margin: 0;
                         margin-top: 20px;
                         background-color: #ffffff;
 
-                        .tabcontent{
-                            .bottom_container{
-                                span{
+                        .tabcontent {
+                            .bottom_container {
+                                span {
                                     font-size: 12px;
                                 }
-                                #getting-started{
+
+                                #getting-started {
                                     font-size: 12px;
                                 }
                             }
                         }
                     }
-                    .show{
+
+                    .show {
                         display: block;
                     }
                 }
@@ -277,6 +1528,7 @@ $desktop-s: 1024px;
                     .left_side {
                         width: 100%;
                         border: none;
+                        margin: 0;
 
                         .top_container {
                             width: 100%;
@@ -320,109 +1572,453 @@ $desktop-s: 1024px;
 
                         // Contact Page
 
-                        .contact_container{
+                        .contact_container {
                             background-color: #ffffff;
                             border: 1px solid #eeeeee;
-                            padding: 30px;
+                            padding: 15px;
                             margin-top: 20px;
 
-                            .tabcontent{
-                                .contact_links{
+                            .tabcontent {
+                                .contact_links {
                                     flex-wrap: wrap;
 
-                                    p{
+                                    p {
                                         width: 100%;
                                     }
-                                    a{
+
+                                    a {
                                         width: 100%;
                                         margin-top: 15px;
                                     }
                                 }
-                                form{
+
+                                form {
                                     padding: 0;
                                     border: none;
 
-                                    .input_container{
+                                    .input_container {
                                         width: 100%;
                                         flex-wrap: wrap;
 
-                                        input{
+                                        input {
                                             width: 100%;
                                             flex: auto;
                                             margin-right: 0;
 
-                                            &:nth-child(2){
+                                            &:nth-child(2) {
                                                 margin-top: 15px;
                                             }
                                         }
                                     }
-                                    .bottom_container{
-                                        .left{
+
+                                    .bottom_container {
+                                        .left {
                                             width: 100%;
 
-                                            button{
+                                            button {
                                                 width: 100%;
                                             }
                                         }
                                     }
                                 }
-                                .map{
+
+                                .map {
                                     height: auto;
 
-                                    img{
+                                    img {
                                         width: 100%;
                                     }
                                 }
-                                .text_container{
+
+                                .text_container {
                                     padding: 0;
                                     padding-bottom: 40px;
 
-                                    .bottom_container{
+                                    .bottom_container {
                                         flex-wrap: wrap;
 
-                                        a{
-                                            span{
+                                        a {
+                                            span {
                                                 font-size: 12px;
                                             }
                                         }
-                                        .right{
+
+                                        .right {
                                             margin-top: 15px;
                                         }
                                     }
                                 }
                             }
-                            .top_buttons{
-                                .tab{
+
+                            .top_buttons {
+                                .tab {
                                     flex-wrap: wrap;
 
-                                    button{
+                                    button {
                                         display: flex;
                                         align-items: center;
                                         justify-content: space-between;
                                         width: 100%;
                                         font-size: 20px;
 
-                                        span{
-                                            &:nth-child(2){
+                                        span {
+                                            &:nth-child(2) {
                                                 display: none;
                                             }
                                         }
-                                        .number{
+
+                                        .number {
                                             margin: 0;
                                         }
-                                        &:last-child{
+
+                                        &:last-child {
                                             margin-top: 10px;
                                         }
                                     }
                                 }
                             }
                         }
+
                         // Inner Page
 
-                        .inner_container{
+                        .inner_container {
                             width: 100%;
                             background-color: #ffffff;
                             padding: 0;
+                            margin-top: 15px;
+
+                            h3 {
+                                font-size: 17px;
+                            }
+
+                            .bottom_container {
+                                flex-wrap: wrap;
+
+                                .social {
+                                    width: 100%;
+                                    justify-content: space-evenly;
+
+                                    i {
+                                        align-items: center;
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                }
+
+                                .time_author {
+                                    width: 100%;
+                                    justify-content: center;
+                                    margin: 15px 0;
+
+                                    .comment {
+                                        margin: 0 15px;
+                                    }
+                                }
+
+                                .edit {
+                                    width: 100%;
+                                    justify-content: center;
+
+                                    a {
+                                        margin-right: 10px;
+
+                                        img {
+                                            width: 15px;
+                                        }
+                                    }
+
+                                    svg {
+                                        width: 22px;
+                                    }
+                                }
+                            }
+
+                            .comments {
+                                .write_comment {
+                                    button {
+                                        width: 100%;
+                                    }
+                                }
+
+                                .switch_comment {
+                                    .tab {
+                                        flex-wrap: wrap;
+                                        padding: 0 15px;
+
+                                        button {
+                                            width: 100%;
+                                            justify-content: flex-start;
+                                            margin: 0;
+
+                                            svg {
+                                                margin-right: 10px;
+                                            }
+
+                                            &:last-child {
+                                                margin-top: 15px;
+                                            }
+
+                                            span {
+                                                font-size: 12px;
+                                            }
+                                        }
+
+                                        .active {
+                                            img {
+                                                display: none;
+                                            }
+                                        }
+
+                                        .facebook_button {
+                                            &:hover img {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .comment {
+                                    .comments_container {
+                                        .comment {
+                                            .like_answer {
+                                                flex-wrap: wrap;
+                                                justify-content: center;
+                                            }
+
+                                            .text {
+                                                .comment_text {
+                                                    a {
+                                                        font-size: 12px;
+                                                    }
+
+                                                    p {
+                                                        font-size: 11px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .poll_container {
+                                .poll_text {
+                                    padding: 10px 10px;
+
+                                    h4 {
+                                        font-size: 13px;
+                                    }
+
+                                    .progress {
+                                        .progress_bar {
+                                            span {
+                                                font-size: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        // Team page
+
+                        .team_background {
+                            .logo {
+                                display: none;
+                            }
+
+                            .text {
+                                padding-top: 24px;
+                                padding-left: 20px;
+                                padding-bottom: 24px;
+
+                                p {
+                                    font-size: 24px;
+                                }
+
+                                span {
+                                    font-size: 14px;
+                                }
+                            }
+
+                            .year {
+                                font-size: 30px;
+                                bottom: -7px;
+                            }
+                        }
+
+                        .title {
+                            background-color: #ffffff;
+                        }
+
+                        .text_background {
+                            margin-top: 15px;
+                        }
+
+                        .players {
+                            .player {
+                                flex-direction: column;
+                                background-color: #ffffff;
+
+                                .player_image {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    flex: initial;
+
+                                    img {
+                                        position: initial;
+                                    }
+                                }
+
+                                .text {
+                                    p {
+                                        font-size: 11px;
+                                    }
+                                }
+
+                                .number_name {
+                                    .player_number {
+                                        span {
+                                            font-size: 14px;
+                                        }
+                                    }
+
+                                    .player_name {
+                                        padding: 14px 30px;
+
+                                        p {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .top_block {
+                            padding: 15px 0;
+                            border: none;
+
+                            .tab {
+                                flex-wrap: wrap;
+
+                                button {
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        .table {
+                            overflow-y: auto;
+                        }
+
+                        .stadium {
+                            margin-top: 15px;
+                        }
+
+                        .text_container {
+                            // background-color: #ffffff;
+                            padding: 0;
+
+                            p {
+                                font-size: 12px;
+                            }
+                        }
+
+                        // Profile page
+
+                        .profile_top {
+                            margin-top: 15px;
+                            height: auto;
+                            padding-top: 15px;
+
+                            .user_image {
+                                width: 70px;
+                                height: 70px;
+                                position: initial;
+                                justify-content: center;
+                                margin: 0 auto;
+                            }
+
+                            .bottom_container {
+                                margin-top: 15px;
+
+                                .bottom_content {
+                                    flex-wrap: wrap;
+
+                                    .user {
+                                        margin: 0;
+                                        width: 100%;
+
+                                        a {
+                                            width: 100%;
+                                            justify-content: center;
+                                        }
+                                    }
+
+                                    .log_out {
+                                        align-items: center;
+                                        width: 100%;
+
+                                        a {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .profile_information {
+                            border: none;
+                            background-color: #ffffff;
+
+                            .info {
+                                .left {
+                                    width: 70px;
+                                    margin-right: 70px;
+
+                                    p {
+                                        font-size: 12px;
+                                    }
+
+                                    .right {
+                                        p {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .titles {
+                            .title {
+                                padding: 0;
+                                flex-wrap: wrap;
+                                padding-bottom: 16px;
+
+                                .title_image {
+                                    width: 100%;
+
+                                    img {
+                                        height: 160px;
+                                        width: 100%;
+                                        object-fit: contain;
+                                    }
+
+                                    .number {
+                                        top: 57px;
+                                    }
+                                }
+
+                                .title_content {
+                                    padding-top: 15px;
+                                    padding-left: 20px;
+                                    margin-left: 0;
+                                }
+                            }
                         }
                     }
 
@@ -440,6 +2036,7 @@ $desktop-s: 1024px;
                     flex-wrap: wrap;
                     border-bottom: none;
                     border-radius: 25px;
+                    margin: 0;
 
                     .left {
                         width: 100%;
@@ -464,35 +2061,82 @@ $desktop-s: 1024px;
                     .right {
                         width: 100%;
                         background: #fff;
-                        padding: 20px 0;
-                        justify-content: center;
+                        padding: 20px 5px;
+                        justify-content: space-between;
 
-                        .responsive_up{
+                        .responsive_up {
                             display: block;
                             order: 1;
                         }
-                        a{
+
+                        a {
                             order: 1;
+                            margin: 0;
+                        }
+
+                        img {
+                            width: 80px;
                         }
                     }
                 }
-                footer{
+
+                footer {
                     margin: 0;
                     background-color: #ffffff;
                     flex-wrap: wrap;
                     border: 0;
                     border-radius: 5px;
                 }
-                .news_slider{
+
+                .news_slider {
                     display: none;
                 }
             }
-            .popup_container{
-                .registration{
-                    width: 320px;
+
+            .popup_container {
+                .registration {
+                    width: 270px;
+
+                    .registration_content {
+                        padding: 15px;
+                    }
+
+                    .inside_content {
+                        padding: 15px;
+
+                        form {
+                            label {
+                                input {
+                                    padding-left: 0;
+                                }
+                            }
+
+                            .button {
+                                button {
+                                    padding: 10px;
+                                }
+                            }
+
+                            .registration_button {
+                                padding: 15px;
+                            }
+
+                            .add_remove {
+                                flex-wrap: wrap;
+                                justify-content: center;
+
+                                .remove_avatar {
+                                    margin-top: 15px;
+                                }
+
+                                .checkmark {
+                                    width: 14px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
-
 }
