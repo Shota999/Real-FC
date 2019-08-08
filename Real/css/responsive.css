@@ -5,15 +5,39 @@
   body .body header .nav ul li a {
     padding: 17px 10px;
   }
+  body .body .container .content .left_container {
+    width: 600px;
+  }
+  body .body .web_content .left_right_side .left_side {
+    width: 645px;
+  }
+  body .body .web_content .left_right_side .left_side .container {
+    width: 615px;
+  }
+  body .body .web_content .left_right_side .right_side .tabs_slider .tabcontent .swiper-container .swiper-wrapper .swiper-slide .tabcontent .match_score .match .team {
+    padding: 20px 14px;
+  }
 }
 
 @media (max-width: 1054px) {
   body .body {
     width: 100%;
   }
+  body .body .web_content .left_right_side .left_side {
+    width: 645px;
+  }
+  body .body .web_content .left_right_side .left_side .container {
+    width: 615px;
+  }
+  body .body .web_content .left_right_side .right_side .top_container .swiper-pagination span {
+    width: 40px;
+  }
+  body .body .web_content .left_right_side .right_side .tabs_slider .tabcontent .swiper-container .swiper-wrapper .swiper-slide .tabcontent .match_score .match .team {
+    padding: 20px 14px;
+  }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 950px) {
   body .body {
     width: 100%;
   }

@@ -1,4 +1,4 @@
-$tablet-width: 920px;
+$tablet-width: 950px;
 $phone-width: 375px;
 $desktop-s: 970px;
 $desktop-l: 1054px;
@@ -23,6 +23,46 @@ $footer: 550px;
                     }
                 }
             }
+            .container{
+                .content{
+                    .left_container{
+                        width: 600px;
+
+                    }
+                }
+            }
+            .web_content{
+                .left_right_side{
+                    .left_side{
+                        width: 645px;
+                        
+                        .container{
+                            width: 615px;
+                        }
+                    }
+                    .right_side{
+                        .tabs_slider{
+                            .tabcontent{
+                                .swiper-container{
+                                    .swiper-wrapper{
+                                        .swiper-slide{
+                                            .tabcontent{
+                                                .match_score{
+                                                    .match{
+                                                        .team{
+                                                            padding: 20px 14px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -31,6 +71,46 @@ $footer: 550px;
     body {
         .body {
             width: 100%;
+
+            .web_content{
+                .left_right_side{
+                    .left_side{
+                        width: 645px;
+                        
+                        .container{
+                            width: 615px;
+                        }
+                    }
+                    .right_side{
+                        .top_container{
+                            .swiper-pagination{
+                                span{
+                                    width: 40px;
+                                }
+                            }
+                        }
+                        .tabs_slider{
+                            .tabcontent{
+                                .swiper-container{
+                                    .swiper-wrapper{
+                                        .swiper-slide{
+                                            .tabcontent{
+                                                .match_score{
+                                                    .match{
+                                                        .team{
+                                                            padding: 20px 14px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
