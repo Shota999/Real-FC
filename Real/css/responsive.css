@@ -8,8 +8,15 @@
   body .body .container .content .left_container {
     width: 600px;
   }
+  body .body .reclam_baner {
+    margin-bottom: 15px;
+  }
   body .body .web_content .left_right_side .left_side {
     width: 645px;
+  }
+  body .body .web_content .left_right_side .left_side .top_container {
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
   }
   body .body .web_content .left_right_side .left_side .container {
     width: 615px;

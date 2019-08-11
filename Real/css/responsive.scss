@@ -31,11 +31,18 @@ $footer: 550px;
                     }
                 }
             }
+            .reclam_baner{
+                margin-bottom: 15px;
+            }
             .web_content{
                 .left_right_side{
                     .left_side{
                         width: 645px;
                         
+                        .top_container{
+                            border: 1px solid #eeeeee;
+                            border-radius: 5px;
+                        }
                         .container{
                             width: 615px;
                         }
