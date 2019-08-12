@@ -716,14 +716,13 @@ $footer: 550px;
                     }
 
                     .right_container {
-                        margin-right: 0;
+                        margin-right: 15px;
 
                         .company_icons {
                             .hover_container {
                                 flex-wrap: wrap;
                                 width: 251px;
                                 top: 40px;
-                                right: 0;
                             }
 
                             .blitz {
@@ -735,6 +734,9 @@ $footer: 550px;
                                     top: 24px;
                                     left: 48px;
                                 }
+                            }
+                            &:hover .hover_container{
+                                right: 0;
                             }
                         }
                     }
@@ -1506,14 +1508,13 @@ $footer: 550px;
                     }
 
                     .right_container {
-                        margin-right: 0;
+                        margin-right: 15px;
 
                         .company_icons {
                             .hover_container {
                                 flex-wrap: wrap;
                                 width: 251px;
                                 top: 40px;
-                                right: 0;
                             }
 
                             .blitz {
@@ -1525,6 +1526,9 @@ $footer: 550px;
                                     top: 24px;
                                     left: 48px;
                                 }
+                            }
+                            &:hover .hover_container{
+                                right: 0;
                             }
                         }
                     }
