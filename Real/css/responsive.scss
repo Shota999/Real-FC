@@ -161,6 +161,7 @@ $footer: 550px;
 
                     .show_menu {
                         margin-left: 20px;
+                        cursor: pointer;
 
                         i {
                             color: #ffffff;
@@ -203,7 +204,11 @@ $footer: 550px;
                                     color: white;
                                     letter-spacing: 0.5px;
                                     text-shadow: 0 1px 0 #034c8c;
+                                    cursor: pointer;
 
+                                    &:hover{
+                                        background: linear-gradient(to top, #055cc7 0%, #004ba7 100%);
+                                    }
                                     i {
                                         display: flex;
                                         width: 100%;
@@ -384,6 +389,9 @@ $footer: 550px;
                         margin: 15px;
                         border: none;
 
+                        .top_container{
+                            margin-top: 15px;
+                        }
                         .container {
                             width: 100%;
 
@@ -534,6 +542,7 @@ $footer: 550px;
         .body{
             width: 100%;
             padding: 30px;
+            box-sizing: border-box;
             background-image: linear-gradient(to top, #ebf5ff 0%, #ffffff 100%);
 
             header {
@@ -571,6 +580,7 @@ $footer: 550px;
 
                     .show_menu {
                         margin-left: 20px;
+                        cursor: pointer;
 
                         i {
                             color: #ffffff;
@@ -613,6 +623,7 @@ $footer: 550px;
                                     color: white;
                                     letter-spacing: 0.5px;
                                     text-shadow: 0 1px 0 #034c8c;
+                                    cursor: pointer;
 
                                     i {
                                         display: flex;
@@ -1294,9 +1305,11 @@ $footer: 550px;
                     border: 0;
                     border-radius: 5px;
                     margin: 0;
+                    flex-wrap: wrap;
 
                     .left{
                         width: 100%;
+                        margin-bottom: 5px;
                     }
                 }
         
@@ -1319,6 +1332,7 @@ $footer: 550px;
         .body {
             padding: 30px;
             width: auto;
+            box-sizing: border-box;
             background-image: linear-gradient(to top, #ebf5ff 0%, #ffffff 100%);
 
             header {
@@ -1356,6 +1370,7 @@ $footer: 550px;
 
                     .show_menu {
                         margin-left: 20px;
+                        cursor: pointer;
 
                         i {
                             color: #ffffff;
@@ -1398,6 +1413,7 @@ $footer: 550px;
                                     color: white;
                                     letter-spacing: 0.5px;
                                     text-shadow: 0 1px 0 #034c8c;
+                                    cursor: pointer;    
 
                                     i {
                                         display: flex;

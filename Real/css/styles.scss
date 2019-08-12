@@ -226,7 +226,7 @@ body {
                         border-radius: 5px;
                         font-family: "BPG Arial";
 
-                        &:last-child{
+                        &:last-child {
                             margin-top: 20px;
                         }
                     }
@@ -251,7 +251,7 @@ body {
                             transition: .3s ease-in-out;
                             margin-right: 15px;
 
-                            &:hover{
+                            &:hover {
                                 box-shadow: 0px 0px 7px 0px rgba(255, 194, 0, 0.75);
                                 background-color: #e4af04;
                             }
@@ -261,7 +261,7 @@ body {
                             background-color: #222428;
                             transition: .3s ease-in-out;
 
-                            &:hover{
+                            &:hover {
                                 box-shadow: 0px 0px 7px 0px rgba(34, 36, 40, 0.75);
                             }
                         }
@@ -327,6 +327,7 @@ body {
                         letter-spacing: 0.5px;
                         font-size: 15px;
                         text-shadow: 0 1px 0 #034c8c;
+                        cursor: pointer;
 
                         i {
                             margin-left: 5px;
@@ -596,6 +597,7 @@ body {
 
                     &:hover .blitz i {
                         display: inline-block;
+                        opacity: 1;
                     }
 
                     &:hover .blitz a {
@@ -611,7 +613,8 @@ body {
                             top: 8px;
                             left: -5px;
                             color: #004aa6;
-                            display: none;
+                            opacity: 0;
+                            transition: .5s ease-in-out
                         }
 
                         a {
@@ -620,27 +623,31 @@ body {
                             height: 30px;
                             background: url("../images/blitz.png") no-repeat center;
                             border-radius: 3px;
-                            transition: .2s ease-in-out;
+                            transition: .5s ease-in-out;
 
 
                         }
                     }
 
                     .hover_container {
-                        display: none;
+                        display: flex;
                         position: absolute;
                         top: 0px;
                         right: 105px;
                         background: white;
-                        transition: .2s ease-in-out;
+                        -webkit-transition: .5s ease-in-out;
+                        transition: .5s ease-in-out;
                         width: 502px;
+                        -ms-flex-wrap: wrap;
                         flex-wrap: wrap;
-                        z-index: 99;
+                        z-index: 1;
+                        transform: translateX(100px);
+                        opacity: 0;
 
 
                         .team {
                             border: 1px solid #eeeeee;
-                            transition: .2s ease-in-out;
+                            transition: .5s ease-in-out;
 
                             a {
                                 display: -webkit-box;
@@ -661,16 +668,30 @@ body {
                                 }
                             }
                         }
-
-                        &:hover {
-                            display: flex;
-                        }
                     }
 
                     &:hover .hover_container {
-                        display: flex;
-                        transition: .2s ease-in-out;
+                        transform: translateX(0);
+                        opacity: 1;
                     }
+
+                    // @mixin keyframes($gamoshla) {
+                    //     @keyframes #{$gamoshla} {
+                    //         @content;
+                    //     }
+                    // }
+
+                    // @include keyframes(gamoshla) {
+                    //     from {
+                    //         transform: translateX(100px);
+                    //         opacity: 0;
+                    //     }
+
+                    //     to {
+                    //         transform: translateX(0);
+                    //         opacity: 1;
+                    //     }
+                    // }
                 }
             }
         }
@@ -1088,10 +1109,12 @@ body {
     }
 
     .reclam_baner {
-        background-image: url('../images/reclam.png');
         width: 100%;
-        height: 100px;
-        background-repeat: no-repeat;
+        max-height: 100px;
+
+        img {
+            width: 100%;
+        }
     }
 
     .web_content {
@@ -1549,15 +1572,17 @@ body {
                         .news_image_container {
                             width: 230px;
                             height: 140px;
-                            
-                            a{
-                                img{
+
+                            a {
+                                img {
                                     height: 140px;
                                 }
                             }
+
                             .comment {
                                 display: none;
                             }
+
                             .video {
                                 background-color: #ffffff;
                                 border-radius: 5px;
@@ -1566,11 +1591,11 @@ body {
                                 left: initial !important;
                                 bottom: 20px;
                                 right: 20px;
-    
+
                                 a {
                                     display: block;
                                     padding: 7px 8px 7px 7px;
-    
+
                                     i {
                                         color: #ff0000;
                                         font-size: 20px;
@@ -1650,6 +1675,7 @@ body {
 
                 .inner_container {
                     width: 635px;
+                    box-sizing: border-box;
                     padding: 20px;
 
                     h3 {
@@ -2001,8 +2027,8 @@ body {
                                     svg {
                                         margin-right: 5px;
 
-                                        g{
-                                            path{
+                                        g {
+                                            path {
                                                 fill: #3b5998;
                                             }
                                         }
@@ -2015,14 +2041,15 @@ body {
                                     &:hover {
                                         background-color: #0559c1;
 
-                                        svg{
-                                            g{
-                                                path{
+                                        svg {
+                                            g {
+                                                path {
                                                     fill: #ffffff;
-    
+
                                                 }
                                             }
                                         }
+
                                         img {
                                             position: absolute;
                                             bottom: -11px;
@@ -2098,9 +2125,10 @@ body {
                                     span {
                                         color: #ffffff;
                                     }
-                                    svg{
-                                        g{
-                                            path{
+
+                                    svg {
+                                        g {
+                                            path {
                                                 fill: #ffffff;
 
                                             }
@@ -2198,7 +2226,8 @@ body {
                                         height: auto;
                                         max-height: 200px;
                                     }
-                                    .redactor_editor img{
+
+                                    .redactor_editor img {
                                         vertical-align: middle;
                                     }
 
@@ -2325,7 +2354,7 @@ body {
                                         }
                                     }
 
-                                    .show{
+                                    .show {
                                         width: 513px;
                                     }
                                 }
@@ -2492,7 +2521,8 @@ body {
                                         height: auto;
                                         max-height: 200px;
                                     }
-                                    .redactor_editor img{
+
+                                    .redactor_editor img {
                                         vertical-align: middle;
                                     }
                                 }
@@ -3156,6 +3186,7 @@ body {
                                 background-repeat: no-repeat;
                                 background-size: cover;
                                 position: relative;
+                                width: 50px;
                                 height: 70px;
                                 overflow: hidden;
                                 padding-top: 20px;
@@ -3182,7 +3213,7 @@ body {
                                     width: auto;
                                     height: 100%;
                                     object-fit: cover;
-                                    margin: 0;
+                                    margin: 0px 5px;
                                 }
                             }
 
@@ -3283,11 +3314,13 @@ body {
                     button {
                         font-family: "Conv_HelveticaNeueLTGEO-55Roman";
                     }
-                    .tab{
-                        .previous{
+
+                    .tab {
+                        .previous {
                             padding: 9px 0;
                         }
-                        .next{
+
+                        .next {
                             padding: 9px 0;
                         }
                     }
@@ -4987,7 +5020,8 @@ body {
                         right: 0;
                         bottom: 0;
                     }
-                    &:hover{
+
+                    &:hover {
                         box-shadow: 0 0 4px rgba(0, 0, 0, 1);
                     }
                 }
@@ -5007,7 +5041,7 @@ body {
                             line-height: 29px;
                             letter-spacing: 0.33px;
 
-                            span{
+                            span {
                                 font-weight: bold;
                             }
                         }

@@ -383,6 +383,7 @@ body {
   letter-spacing: 0.5px;
   font-size: 15px;
   text-shadow: 0 1px 0 #034c8c;
+  cursor: pointer;
 }
 
 .body header nav .menu li a i {
@@ -711,6 +712,7 @@ body {
 
 .body header .bottom_container .right_container .company_icons:hover .blitz i {
   display: inline-block;
+  opacity: 1;
 }
 
 .body header .bottom_container .right_container .company_icons:hover .blitz a {
@@ -727,7 +729,9 @@ body {
   top: 8px;
   left: -5px;
   color: #004aa6;
-  display: none;
+  opacity: 0;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .body header .bottom_container .right_container .company_icons .blitz a {
@@ -736,28 +740,33 @@ body {
   height: 30px;
   background: url("../images/blitz.png") no-repeat center;
   border-radius: 3px;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .body header .bottom_container .right_container .company_icons .hover_container {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   top: 0px;
   right: 105px;
   background: white;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   width: 502px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  z-index: 99;
+  flex-wrap: wrap;
+  z-index: 1;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  opacity: 0;
 }
 
 .body header .bottom_container .right_container .company_icons .hover_container .team {
   border: 1px solid #eeeeee;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .body header .bottom_container .right_container .company_icons .hover_container .team a {
@@ -779,18 +788,10 @@ body {
   margin-right: 5px;
 }
 
-.body header .bottom_container .right_container .company_icons .hover_container:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .body header .bottom_container .right_container .company_icons:hover .hover_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 
 .body .container {
@@ -1293,10 +1294,12 @@ body {
 }
 
 .body .reclam_baner {
-  background-image: url("../images/reclam.png");
   width: 100%;
-  height: 100px;
-  background-repeat: no-repeat;
+  max-height: 100px;
+}
+
+.body .reclam_baner img {
+  width: 100%;
 }
 
 .body .web_content {
@@ -1957,6 +1960,8 @@ body {
 
 .body .web_content .left_right_side .left_side .inner_container {
   width: 635px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px;
 }
 
@@ -3746,6 +3751,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  width: 50px;
   height: 70px;
   overflow: hidden;
   padding-top: 20px;
@@ -3774,7 +3780,7 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 0;
+  margin: 0px 5px;
 }
 
 .body .web_content .left_right_side .right_side .tabcontent .bombardier .soccer .information {
