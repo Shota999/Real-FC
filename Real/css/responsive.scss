@@ -303,7 +303,8 @@ $footer: 550px;
                                 flex-wrap: wrap;
                                 width: 251px;
                                 top: 40px;
-                                right: 0;
+                                // right: 0;
+                                // display: none;
                             }
 
                             .blitz {
@@ -315,6 +316,9 @@ $footer: 550px;
                                     top: 24px;
                                     left: 48px;
                                 }
+                            }
+                            &:hover .hover_container{
+                                right: 0;
                             }
                         }
                     }

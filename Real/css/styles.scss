@@ -640,9 +640,9 @@ body {
                         width: 502px;
                         -ms-flex-wrap: wrap;
                         flex-wrap: wrap;
-                        z-index: 1;
                         transform: translateX(100px);
                         opacity: 0;
+                        z-index: 99;
 
 
                         .team {
@@ -3366,7 +3366,6 @@ body {
                         .hover_container {
                             width: 100%;
                             height: 100%;
-                            display: flex;
                             justify-content: center;
                             align-items: center;
                             position: absolute;
@@ -3420,6 +3419,7 @@ body {
 
                     &:hover .hover_container {
                         opacity: 1;
+                        display: flex;
                     }
 
                     &:hover h3 a {
