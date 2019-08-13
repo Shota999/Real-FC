@@ -307,6 +307,12 @@
   body .body .web_content .left_right_side .left_side .inner_container h3 {
     font-size: 17px;
   }
+  body .body .web_content .left_right_side .left_side .inner_container .comments .comments_container .comment .text .show {
+    width: auto;
+  }
+  body .body .web_content .left_right_side .left_side .inner_container .comments .comments_container .comment .text .show .redactor_box {
+    padding: 15px 100px 15px 15px;
+  }
   body .body .web_content .left_right_side .left_side .inner_container .poll_container .poll_text {
     padding: 10px 10px;
   }

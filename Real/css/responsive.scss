@@ -440,6 +440,21 @@ $footer: 550px;
                                 font-size: 17px;
                             }
 
+                            .comments{
+                                .comments_container{
+                                    .comment{
+                                        .text{
+                                            .show{
+                                                width: auto;
+
+                                                .redactor_box{
+                                                    padding: 15px 100px 15px 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                             .poll_container {
                                 .poll_text {
                                     padding: 10px 10px;
