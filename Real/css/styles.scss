@@ -533,8 +533,6 @@ body {
                             cursor: pointer;
                             background-color: #055bc6;
                             outline: none;
-                            width: 32px;
-                            height: 28px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -542,6 +540,7 @@ body {
                             i {
                                 color: #ffffff;
                                 display: block;
+                                padding: 7px 7px;
                             }
 
                             span {
@@ -605,7 +604,7 @@ body {
                         background-color: #004aa6;
                     }
 
-                    .blitz {
+                    .blitz {    
                         position: relative;
 
                         i {

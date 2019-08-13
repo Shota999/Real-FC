@@ -613,8 +613,6 @@ body {
   cursor: pointer;
   background-color: #055bc6;
   outline: none;
-  width: 32px;
-  height: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -629,6 +627,7 @@ body {
 .body header .bottom_container .left_container .form form button i {
   color: #ffffff;
   display: block;
+  padding: 7px 7px;
 }
 
 .body header .bottom_container .left_container .form form button span {

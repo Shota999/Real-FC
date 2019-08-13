@@ -186,9 +186,6 @@
     display: -ms-flexbox;
     display: flex;
   }
-  body .body header .bottom_container .left_container .form form button {
-    width: 31px;
-  }
   body .body header .bottom_container .left_container .form form input::-webkit-input-placeholder {
     opacity: 1;
   }
@@ -528,9 +525,6 @@
   }
   body .body header .bottom_container .left_container .form {
     margin: 0;
-  }
-  body .body header .bottom_container .left_container .form form button {
-    width: 33px;
   }
   body .body header .bottom_container .left_container .form form input::-webkit-input-placeholder {
     opacity: 0;
@@ -1196,9 +1190,6 @@
   }
   body .body header .bottom_container .left_container .form {
     margin: 0;
-  }
-  body .body header .bottom_container .left_container .form form button {
-    width: 39px;
   }
   body .body header .bottom_container .left_container .form form input::-webkit-input-placeholder {
     opacity: 0;
