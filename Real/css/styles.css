@@ -2405,37 +2405,31 @@ body {
           align-items: center;
 }
 
-.body .web_content .left_right_side .left_side .inner_container .bottom_container s
-.social {
+.body .web_content .left_right_side .left_side .inner_container .bottom_container s .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.body .web_content .left_right_side .left_side .inner_container .bottom_container s
-.social a {
+.body .web_content .left_right_side .left_side .inner_container .bottom_container s .social a {
   display: block;
 }
 
-.body .web_content .left_right_side .left_side .inner_container .bottom_container s
-.social a:first-child {
+.body .web_content .left_right_side .left_side .inner_container .bottom_container s .social a:first-child {
   margin-right: 5px;
 }
 
-.body .web_content .left_right_side .left_side .inner_container .bottom_container s
-.social a i {
+.body .web_content .left_right_side .left_side .inner_container .bottom_container s .social a i {
   padding: 5px 15px;
   border-radius: 3px;
 }
 
-.body .web_content .left_right_side .left_side .inner_container .bottom_container s
-.social a .fa-facebook-square {
+.body .web_content .left_right_side .left_side .inner_container .bottom_container s .social a .fa-facebook-square {
   color: #ffffff;
   background-color: #4267b2;
 }
 
-.body .web_content .left_right_side .left_side .inner_container .bottom_container s
-.social a .fa-twitter {
+.body .web_content .left_right_side .left_side .inner_container .bottom_container s .social a .fa-twitter {
   color: #ffffff;
   background-color: #1da1f2;
 }
