@@ -857,9 +857,11 @@ body {
                         opacity: 1;
                         width: 500px;
                     }
-                    &:hover .blitz{
+
+                    &:hover .blitz {
                         border-color: transparent;
                     }
+
                     &:hover .team {
                         width: calc(calc(100% / 4) - 0px);
                     }
@@ -1902,7 +1904,7 @@ body {
                         text-transform: uppercase;
                     }
 
-                    >.edit.responsive {
+                    .edit.responsive {
                         display: flex;
                         align-items: center;
                         padding-top: 20px;
@@ -1968,7 +1970,7 @@ body {
                         }
 
                     }
-
+                    
                     .poll_container {
                         border: 1px solid #d2d2d2;
                         border-bottom-left-radius: 3px;
@@ -2080,13 +2082,12 @@ body {
                             }
                         }
                     }
-
                     .bottom_container {
                         border: none;
                         margin: 15px 0;
                         display: flex;
                         justify-content: space-between;
-                        align-items: center;
+                        align-items: center;s
 
                         .social {
                             display: flex;
@@ -3805,7 +3806,9 @@ body {
                         }
                     }
                 }
-
+                .margin{
+                    margin-top: 0;
+                }
                 .loss_container {
                     border: 1px solid #d2d2d2;
                     border-bottom-left-radius: 3px;
@@ -5537,7 +5540,8 @@ body {
                     }
                 }
             }
-            p{
+
+            p {
                 margin-left: 10px;
             }
         }

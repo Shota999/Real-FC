@@ -2195,7 +2195,7 @@ body {
   text-transform: uppercase;
 }
 
-.body .web_content .left_right_side .left_side .inner_container > .edit.responsive {
+.body .web_content .left_right_side .left_side .inner_container .edit.responsive {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2206,12 +2206,12 @@ body {
   display: none;
 }
 
-.body .web_content .left_right_side .left_side .inner_container > .edit.responsive a {
+.body .web_content .left_right_side .left_side .inner_container .edit.responsive a {
   display: block;
   margin-right: 30px;
 }
 
-.body .web_content .left_right_side .left_side .inner_container > .edit.responsive i {
+.body .web_content .left_right_side .left_side .inner_container .edit.responsive i {
   padding: 4px;
   border: 1px solid #d2d2d2;
   color: #c8c8c8;
@@ -2405,31 +2405,37 @@ body {
           align-items: center;
 }
 
-.body .web_content .left_right_side .left_side .inner_container .bottom_container .social {
+.body .web_content .left_right_side .left_side .inner_container .bottom_container s
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.body .web_content .left_right_side .left_side .inner_container .bottom_container .social a {
+.body .web_content .left_right_side .left_side .inner_container .bottom_container s
+.social a {
   display: block;
 }
 
-.body .web_content .left_right_side .left_side .inner_container .bottom_container .social a:first-child {
+.body .web_content .left_right_side .left_side .inner_container .bottom_container s
+.social a:first-child {
   margin-right: 5px;
 }
 
-.body .web_content .left_right_side .left_side .inner_container .bottom_container .social a i {
+.body .web_content .left_right_side .left_side .inner_container .bottom_container s
+.social a i {
   padding: 5px 15px;
   border-radius: 3px;
 }
 
-.body .web_content .left_right_side .left_side .inner_container .bottom_container .social a .fa-facebook-square {
+.body .web_content .left_right_side .left_side .inner_container .bottom_container s
+.social a .fa-facebook-square {
   color: #ffffff;
   background-color: #4267b2;
 }
 
-.body .web_content .left_right_side .left_side .inner_container .bottom_container .social a .fa-twitter {
+.body .web_content .left_right_side .left_side .inner_container .bottom_container s
+.social a .fa-twitter {
   color: #ffffff;
   background-color: #1da1f2;
 }
@@ -4441,6 +4447,10 @@ body {
 
 .body .web_content .left_right_side .right_side .poll_container .poll_text .answers {
   margin-top: 15px;
+}
+
+.body .web_content .left_right_side .right_side .margin {
+  margin-top: 0;
 }
 
 .body .web_content .left_right_side .right_side .loss_container {
