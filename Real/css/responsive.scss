@@ -409,12 +409,8 @@ $footer: 550px;
                 .left_right_side {
                     .left_side {
                         width: 100%;
-                        margin: 15px;
                         border: none;
 
-                        .top_container{
-                            margin-top: 15px;
-                        }
                         .container {
                             width: 100%;
 
@@ -442,7 +438,8 @@ $footer: 550px;
                         // Contact Page
 
                         .contact_container {
-                            padding: 0;
+                            padding: 15px;
+                            margin-top: 20px;
 
                             .tabcontent{
                                 .map{
@@ -459,9 +456,7 @@ $footer: 550px;
 
                         .inner_container {
                             width: 100%;
-                            background-color: #ffffff;
-                            padding: 0;
-                            margin-top: 15px;
+                            padding: 15px;
 
                             h3 {
                                 font-size: 17px;
@@ -743,6 +738,7 @@ $footer: 550px;
                             margin: 0;
 
                             form {
+                                padding-left: 15px;
                                 button {
                                     width: 33px;
                                 }
@@ -793,6 +789,7 @@ $footer: 550px;
                         border: none;
                         margin-left: 0;
                         margin-right: 0;
+                        background-color: #ffffff;
         
                         .top_container {
                             width: 100%;
@@ -813,6 +810,10 @@ $footer: 550px;
                                         color: #8c8c8c;
                                         font-size: 13px;
                                     }
+                                }
+                                .hide_container{
+                                    top: 60px;
+                                    left: 15px;
                                 }
                             }
         
@@ -952,7 +953,7 @@ $footer: 550px;
                             width: 100%;
                             background-color: #ffffff;
                             padding: 0;
-                            margin-top: 15px;
+                            padding-top: 15px;
         
                             h3 {
                                 font-size: 17px;
@@ -1127,6 +1128,10 @@ $footer: 550px;
         
                         .title {
                             background-color: #ffffff;
+
+                            .title_image{
+                                margin-top: 10px;
+                            }
                         }
         
                         .text_background {
@@ -1505,6 +1510,17 @@ $footer: 550px;
                                 }
                             }
                         }
+                        .profile{
+                            .profile_popup{
+                                .user_icon{
+                                    width: 15px;
+                                    height: 15px;
+                                    font-size: 8px;
+                                    top: 35px;
+                                    left: 50px;
+                                }
+                            }
+                        }
                     }
 
                     .hidden_menu {
@@ -1763,6 +1779,7 @@ $footer: 550px;
                         border: none;
                         margin-left: 0;
                         margin-right: 0;
+                        background-color: #ffffff;
 
                         .top_container {
                             width: 100%;
@@ -1783,6 +1800,10 @@ $footer: 550px;
                                         color: #8c8c8c;
                                         font-size: 13px;
                                     }
+                                }
+                                .hide_container{
+                                    top: 60px;
+                                    left: 15px;
                                 }
                             }
 
@@ -1919,7 +1940,7 @@ $footer: 550px;
                             width: 100%;
                             background-color: #ffffff;
                             padding: 0;
-                            margin-top: 15px;
+                            padding-top: 15px;
 
                             h3 {
                                 font-size: 17px;
@@ -2135,7 +2156,7 @@ $footer: 550px;
                             border: none;
 
                             .tab {
-                                flex-wrap: wrap;
+                                flex-direction: column;
 
                                 button {
                                     width: 100%;

@@ -173,8 +173,7 @@ body {
   width: 100%;
   border: 1px solid #d2d2d2;
   background-color: #ffffff;
-  padding: 14px 0;
-  border-radius: 5px;
+  padding: 13px 0;
   margin-top: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -200,7 +199,7 @@ body {
 
 .body .popup_container .registration .inside_content form .input_container i {
   background-color: #222428;
-  padding: 17px;
+  padding: 15px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   color: #ffffff;
@@ -610,7 +609,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   color: #76a5de;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.14px;
   line-height: 16.8px;
@@ -629,7 +628,37 @@ body {
   color: #ffffff;
 }
 
-.body header nav .authorization button .user_image {
+.body header nav .authorization .profile_popup {
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #76a5de;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  line-height: 16.8px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.body header nav .authorization .profile_popup p {
+  margin-left: 6px;
+  font-family: 'Conv_HelveticaNeueLTGEO-55Roman';
+}
+
+.body header nav .authorization .profile_popup:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#055cc7), to(#004ba7));
+  background: linear-gradient(to top, #055cc7 0%, #004ba7 100%);
+  color: #ffffff;
+}
+
+.body header nav .authorization .profile_popup .user_image {
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -639,7 +668,7 @@ body {
   margin-right: 13px;
 }
 
-.body header nav .authorization button .user_image img {
+.body header nav .authorization .profile_popup .user_image img {
   width: 100%;
   min-height: 100%;
   -o-object-fit: cover;
@@ -651,7 +680,7 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.body header nav .authorization button .user_icon {
+.body header nav .authorization .profile_popup .user_icon {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -673,10 +702,6 @@ body {
   left: 50px;
 }
 
-.body header nav .authorization .profile_popup {
-  padding: 10px 20px;
-}
-
 .body header nav .authorization .registration p :hover {
   background: transparent;
 }
@@ -690,6 +715,10 @@ body {
 
 .body header nav .authorization .sign_in button :hover {
   background: transparent;
+}
+
+.body header nav .authorization .profile_sign_in {
+  display: none;
 }
 
 .body header .responsive_nav {
@@ -966,8 +995,12 @@ body {
   width: 500px;
 }
 
+.body header .bottom_container .right_container .company_icons:hover .blitz {
+  border-color: transparent;
+}
+
 .body header .bottom_container .right_container .company_icons:hover .team {
-  width: calc( calc( 100% / 4 ) - 0px);
+  width: calc(calc(100% / 4) - 0px);
 }
 
 .body .container {
@@ -1959,7 +1992,7 @@ body {
 }
 
 .body .web_content .left_right_side .left_side .container .news .bottom_container {
-  padding: 20px;
+  padding: 9px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2770,7 +2803,7 @@ body {
   width: 100%;
   position: relative;
   overflow: auto;
-  padding: 15px 100px 15px 35px;
+  padding: 15px 100px 15px 12px;
   outline: none;
   resize: none;
   border: 1px solid #d2d2d2;
@@ -2920,6 +2953,15 @@ body {
   font-weight: 400;
   line-height: 24px;
   margin-top: 3px;
+}
+
+.body .web_content .left_right_side .left_side .inner_container .comments .comments_container .comment .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
 }
 
 .body .web_content .left_right_side .left_side .inner_container .comments .comments_container .comment .text .comment_text {
@@ -3153,7 +3195,7 @@ body {
           box-sizing: border-box;
   position: relative;
   overflow: auto;
-  padding: 15px 100px 15px 35px;
+  padding: 15px 100px 15px 12px;
   outline: none;
   resize: none;
   border: 1px solid #d2d2d2;
@@ -5208,6 +5250,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .body .left_side .top_block .tab button {
@@ -5219,6 +5262,9 @@ body {
   padding: 8px 25px;
   border: none;
   cursor: pointer;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
 }
@@ -6391,6 +6437,10 @@ body {
   font-size: 15px;
   font-weight: 400;
   padding: 30px 0;
+}
+
+.body .left_side .text_container p {
+  margin-left: 10px;
 }
 
 /* width */
