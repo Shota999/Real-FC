@@ -29,10 +29,18 @@
                     <i class="fas fa-bars"></i>
                 </div>
                 <div class="authorization">
-                    <div class="registration">
-                        <button class="registration_popup">
-                            <!-- New linkshi chasma ar chirdeba -->
-                            <i class="fas fa-user-plus"></i>
+
+                    <div class="profile">
+                        <button class="profile_popup">
+                            <div class="user_image">
+                                <img src="images/profile_images/user.png" alt="user">
+                                <div class="user_icon">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="user_name">
+                                სახელი გრძელი გვარი
+                            </div>
                         </button>
                     </div>
                     <div class="sign_in">
@@ -114,18 +122,16 @@
                     <li><a href="#">ფანკლუბი</a></li>
                 </ul>
                 <div class="authorization">
-                    <div class="registration">
-                        <button class="registration_popup">
-                            <!-- New linkshi chasma ar chirdeba -->
-                            <i class="fas fa-user-plus"></i>
-                            <p>რეგისტრაცია</p>
-                        </button>
-                    </div>
-                    <div class="sign_in">
-                        <button class="sign_in_popup">
-                            <!-- New igive wyoba ro qondes i garet gamovitane -->
-                            <i class="fas fa-user"></i>
-                            <p>შესვლა</p>
+                    <div class="profile">
+                        <button class="profile_popup">
+                            <div class="user_image">
+                                <img src="images/profile_images/user.png" alt="user">
+                                
+                            </div>
+                            <div class="user_icon"><i class="fa fa-user"></i></div>
+                            <p>
+                                ჩემი გვერდი
+                            </p>
                         </button>
                     </div>
                 </div>
@@ -189,30 +195,36 @@
                 <div class="right_container">
                     <div class="company_icons">
                         <div class="hover_container">
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                            <div class="row">
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
                             </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                            <div class="row">
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
                             </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
+
+                            
                         </div>
                         <div class="blitz">
                             <i class="fas fa-caret-left"></i>
@@ -304,17 +316,6 @@
                             <div class="right">
                                 <a href="#">
                                     <p>[147] ყველა სიახლის ნახვა</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="left">
-                                <img src="images/profile_images/comment_icon.png" alt="icon">
-                                <p>კომენტარები</p>
-                            </div>
-                            <div class="right">
-                                <a href="#">
-                                    <p>[589] ყველა კომენტარის ნახვა</p>
                                 </a>
                             </div>
                         </div>
@@ -534,10 +535,61 @@
         </div>
 
 
+        <!-- Profile popup -->
+
+        <div class="popup_container profile_popup_container">
+                <div class="overlay"></div>
+                <div class="registration">
+                    <div class="registration_content">
+                        <h3>გამარჯობა, <a href="">ლევან</a> </h3>
+                    </div>
+                    <div class="inside_content">
+                        <div class="container">
+                            <div class="left_side">
+                                <div class="user_image">
+                                    <img src="images/profile_images/user.png" alt="user">
+                                </div>
+                                <div class="user_icon"><i class="fa fa-plus"></i></div>
+                            </div>
+                            <div class="right_side">
+                                    <ul>
+                                        <li>
+                                            <a href="profile.html">
+                                                <i class="fas fa-cog"></i>
+                                                პროფილის ნახვა 
+                                            </a>    
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                <i class="far fa-file-alt"></i>  
+                                                სიახლის დამატება
+                                            </a>    
+                                        </li>
+                                        <li class="logout">
+                                            <a href="#!">
+                                                <i class="fas fa-power-off"></i>  
+                                                გასვლა
+                                            </a>    
+                                        </li>
+
+                                        
+                                    </ul>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="close_container">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+
+
 
         <!-- Registration popup -->
 
         <div class="popup_container show_popup">
+            <div class="overlay"></div>
             <div class="registration">
                 <div class="registration_content">
                     <h3>რეგისტრაცია</h3>
@@ -573,6 +625,7 @@
         <!-- Sign in popup -->
 
         <div class="popup_container sign_in_popup_container">
+            <div class="overlay"></div>
             <div class="registration">
                 <div class="registration_content">
                     <h3>ავტორიზაცია</h3>
@@ -591,7 +644,7 @@
                             </div>
                         </div>
                         <label class="checked">
-                            <input type="checkbox" id="chek" name="password" value="password">
+                            <input type="checkbox" id="check" name="password" value="password">
                             <label for="check">დავამახსოვრებ</label>
                         </label>
                         <div class="button">
@@ -607,9 +660,11 @@
             </div>
         </div>
 
+
         <!-- Information change popup -->
 
         <div class="popup_container information_popup">
+            <div class="overlay"></div>
             <div class="registration">
                 <div class="registration_content">
                     <h3>ინფორმაციის შეცვლა</h3>
@@ -641,7 +696,7 @@
                             <label class="remove_avatar">
                                 <input type="checkbox" name="check" value="video" id="avatar">
                                 <span class="checkmark"><i class="fas fa-circle"></i></span>
-                                <label for="avatar">ავატარის წაშლა</label>
+                                <label for="avatar"> ავატარის წაშლა</label>
                             </label>
                         </div>
                         <button class="registration_button">ცვლილებების შენახვა</button>

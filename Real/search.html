@@ -189,30 +189,36 @@
                 <div class="right_container">
                     <div class="company_icons">
                         <div class="hover_container">
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                            <div class="row">
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
                             </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                            <div class="row">
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
                             </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
+
+                            
                         </div>
                         <div class="blitz">
                             <i class="fas fa-caret-left"></i>
@@ -228,12 +234,6 @@
                 <div class="left_side">
                     <div class="top_container">
                         <div class="news">
-                            <form action="action.php" method="get">
-                                <button><i class="fas fa-search"></i></button>
-                                <input type="text" placeholder="ძიება">
-                            </form>
-                        </div>
-                        <div class="search">
                             <div class="filter">
                                 <div class="left">
                                     <i class="fas fa-chevron-down arrow_down"></i>
@@ -276,6 +276,8 @@
                                     </label>
                                 </form>
                             </div>
+                        </div>
+                        <div class="search">
                             <div class="change_container">
                                 <div class="change grid1 active">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16">
@@ -2500,74 +2502,76 @@
         <!-- Registration popup -->
 
         <div class="popup_container show_popup">
-            <div class="registration">
-                <div class="registration_content">
-                    <h3>რეგისტრაცია</h3>
-                </div>
-                <div class="inside_content">
-                    <form action="action.php" method="get">
-                        <label>
-                            <label for="name">მომხმარებლის სახელი</label>
-                            <input type="text" id="name">
-                        </label>
-                        <label>
-                            <label for="password">პაროლი</label>
-                            <input type="password" id="password">
-                        </label>
-                        <label>
-                            <label for="return_password">გაიმეორე პაროლი</label>
-                            <input type="password" id="return_password">
-                        </label>
-                        <label>
-                            <label for="email">ელ.ფოსტა</label>
-                            <input type="email" id="email">
-                        </label>
-                        <button class="registration_button">რეგისტრაცია</button>
-                        <button class="registration_button">Facebook ავტორიზაცია</button>
-                    </form>
-                </div>
-                <div class="close_container">
-                    <i class="fas fa-times"></i>
+                <div class="overlay"></div>
+                <div class="registration">
+                    <div class="registration_content">
+                        <h3>რეგისტრაცია</h3>
+                    </div>
+                    <div class="inside_content">
+                        <form action="action.php" method="get">
+                            <label>
+                                <label for="name">მომხმარებლის სახელი</label>
+                                <input type="text" id="name">
+                            </label>
+                            <label>
+                                <label for="password">პაროლი</label>
+                                <input type="password" id="password">
+                            </label>
+                            <label>
+                                <label for="return_password">გაიმეორე პაროლი</label>
+                                <input type="password" id="return_password">
+                            </label>
+                            <label>
+                                <label for="email">ელ.ფოსტა</label>
+                                <input type="email" id="email">
+                            </label>
+                            <button class="registration_button">რეგისტრაცია</button>
+                            <button class="registration_button">Facebook ავტორიზაცია</button>
+                        </form>
+                    </div>
+                    <div class="close_container">
+                        <i class="fas fa-times"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Sign in popup -->
-
-        <div class="popup_container sign_in_popup_container">
-            <div class="registration">
-                <div class="registration_content">
-                    <h3>ავტორიზაცია</h3>
-                </div>
-                <div class="inside_content">
-                    <form action="action.php" method="get">
-                        <div class="input_container">
-                            <i class="fas fa-user"></i>
-                            <input type="text" placeholder="სახელი">
-                        </div>
-                        <div class="input_container">
-                            <i class="fas fa-lock"></i>
-                            <input id="password" class="password" type="password" placeholder="პაროლი">
-                            <div class="see_password" id="see_password">
-                                <i class="far fa-eye"></i>
+    
+            <!-- Sign in popup -->
+    
+            <div class="popup_container sign_in_popup_container">
+                <div class="overlay"></div>
+                <div class="registration">
+                    <div class="registration_content">
+                        <h3>ავტორიზაცია</h3>
+                    </div>
+                    <div class="inside_content">
+                        <form action="action.php" method="get">
+                            <div class="input_container">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="სახელი">
                             </div>
-                        </div>
-                        <label class="checked">
-                            <input type="checkbox" id="chek" name="password" value="password">
-                            <label for="check">დავამახსოვრებ</label>
-                        </label>
-                        <div class="button">
-                            <button class="sign_in">შესვლა</button>
-                            <button class="password">პაროლის აღდგენა</button>
-                        </div>
-                        <button class="registration_button">Facebook ავტორიზაცია</button>
-                    </form>
-                </div>
-                <div class="close_container">
-                    <i class="fas fa-times"></i>
+                            <div class="input_container">
+                                <i class="fas fa-lock"></i>
+                                <input id="password" class="password" type="password" placeholder="პაროლი">
+                                <div class="see_password" id="see_password">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </div>
+                            <label class="checked">
+                                <input type="checkbox" id="check" name="password" value="password">
+                                <label for="check">დავამახსოვრებ</label>
+                            </label>
+                            <div class="button">
+                                <button class="sign_in">შესვლა</button>
+                                <button class="password">პაროლის აღდგენა</button>
+                            </div>
+                            <button class="registration_button">Facebook ავტორიზაცია</button>
+                        </form>
+                    </div>
+                    <div class="close_container">
+                        <i class="fas fa-times"></i>
+                    </div>
                 </div>
             </div>
-        </div>
 
     </div>
 

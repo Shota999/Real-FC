@@ -48,6 +48,7 @@ $footer: 550px;
                         }
                     }
                     .right_side{
+                        margin-right: 15px;
                         .tabs_slider{
                             .tabcontent{
                                 .swiper-container{
@@ -72,6 +73,8 @@ $footer: 550px;
             }
         }
     }
+
+
 }
 
 @media (max-width: #{$desktop-l}) {
@@ -123,10 +126,13 @@ $footer: 550px;
 }
 
 @media (max-width: #{$tablet-width}) {
+
+    .news_content .bottom_container .comment {
+        display: none!important;
+    }
     body {
         .body {
             width: 100%;
-
             header {
                 .top_container {
                     height: 130px;
@@ -282,6 +288,9 @@ $footer: 550px;
                         .form {
 
                             form {
+                                button {
+                                    width: 31px;
+                                }
 
                                 input {
                                     &::placeholder {
@@ -300,6 +309,21 @@ $footer: 550px;
                                 flex-wrap: wrap;
                                 width: 251px;
                                 top: 40px;
+                                right: 0;
+                                .row{
+                                    flex-wrap: wrap;
+                                }
+                                .team {
+                                    width: auto;
+                                    height: 0;
+                                }
+                                
+                            }
+                            &:hover .team{
+                                height: 30px;
+                            }
+                            &:hover .hover_container{
+                                width: 251px;
                             }
 
                             .blitz {
@@ -396,14 +420,20 @@ $footer: 550px;
 
                             .news {
                                 width: 49%;
-                                background-color: #ffffff;
+                                
+                                .news_image_container > a{
+                                    height: calc( 40vw / 1.5 );
+                                }
+                                
                             }
 
                             .active {
                                 width: 100%;
+                                
                             }
                         }
 
+                        
 
                         .more {
                             margin: 0;
@@ -437,21 +467,6 @@ $footer: 550px;
                                 font-size: 17px;
                             }
 
-                            .comments{
-                                .comments_container{
-                                    .comment{
-                                        .text{
-                                            .show{
-                                                width: auto;
-
-                                                .redactor_box{
-                                                    padding: 15px 100px 15px 15px;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
                             .poll_container {
                                 .poll_text {
                                     padding: 10px 10px;
@@ -473,6 +488,11 @@ $footer: 550px;
                                 width: 100%;
                                 margin: 0;
                             }
+
+                            .text_container{
+                                padding: 0 10px;
+                            }
+
                         }
 
                         // Team page
@@ -484,7 +504,16 @@ $footer: 550px;
                     }
 
                     .right_side {
-                        display: none;
+                        // display: none;
+                        .poll_container{
+                            display: none;
+                        }
+                        .loss_container{
+                            display: none;
+                        }
+                        .reclam_banner{
+                            display: none;
+                        }
                     }
                 }
 
@@ -555,7 +584,7 @@ $footer: 550px;
 
         .body{
             width: 100%;
-            padding: 30px;
+            padding: 10px;
             box-sizing: border-box;
             background-image: linear-gradient(to top, #ebf5ff 0%, #ffffff 100%);
 
@@ -714,6 +743,9 @@ $footer: 550px;
                             margin: 0;
 
                             form {
+                                button {
+                                    width: 33px;
+                                }
 
                                 input {
                                     &::placeholder {
@@ -759,7 +791,8 @@ $footer: 550px;
                     .left_side {
                         width: 100%;
                         border: none;
-                        margin: 0;
+                        margin-left: 0;
+                        margin-right: 0;
         
                         .top_container {
                             width: 100%;
@@ -793,7 +826,10 @@ $footer: 550px;
         
                             .news {
                                 width: 100%;
-                                background-color: #ffffff;
+
+                                .news_image_container > a{
+                                    height: calc( 90vw / 1.5 );
+                                }
                             }
                         }
         
@@ -970,6 +1006,16 @@ $footer: 550px;
                                     button {
                                         width: 100%;
                                     }
+                                    form .redactor_box{
+                                        padding: 10px 40px 10px 10px;
+                                        .redactor_toolbar{
+                                        width: 60px;
+                                            .redactor_btn_underline, .redactor_btn_fontcolor{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                    
                                 }
         
                                 .switch_comment {
@@ -1254,7 +1300,66 @@ $footer: 550px;
                     }
         
                     .right_side {
-                        display: none;
+                        // display: none;
+                        .blog_container{
+                            padding: 8px 15px;
+                            
+                        }
+                        .tab{
+                            .previous{
+                                padding: 5px 0;
+                            }
+                            button{
+                                font-size: 12px;
+                            }
+                            .active{
+                                font-size: 12px;
+                            }
+                        }
+                        .popular{
+                            padding: 10px 15px;
+                        }
+                        .blog_content{
+                            margin-bottom: 10px;
+                            padding-bottom: 10px;
+                        }
+                        .tabs_slider{
+                            .tabcontent{
+                                .swiper-container{
+                                    .swiper-wrapper{
+                                        .swiper-slide{
+                                            .tabcontent{
+                                                .match_score{
+                                                    span{
+                                                        font-size: 12px;
+                                                        letter-spacing: 0.14px;
+                                                        line-height: 14.8px;
+                                                    }
+                                                   .match{
+                                                       .team{
+                                                           padding: 10px 14px;
+                                                           img{
+                                                               height: 25px;
+                                                           }
+                                                           span{
+                                                            font-size: 12px;
+                                                            letter-spacing: 0.14px;
+                                                            line-height: 14.8px;
+                                                           }
+                                                       }
+                                                       .score{
+                                                            span:first-child{
+                                                                font-size: 20px;
+                                                            }
+                                                       }
+                                                   } 
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }        
                     }
                 }
         
@@ -1283,6 +1388,7 @@ $footer: 550px;
         
                             a {
                                 justify-content: center;
+                                padding: 14px 20px;
                             }
         
                             &:nth-child(3) {
@@ -1294,7 +1400,7 @@ $footer: 550px;
                     .right {
                         width: 98%;
                         background: #fff;
-                        padding: 20px 10px;
+                        padding: 20px 5px 20px 20%;
                         justify-content: space-between;
         
                         .responsive_up {
@@ -1343,11 +1449,11 @@ $footer: 550px;
         padding-top: 0;
 
         .body {
-            padding: 30px;
+            padding: 10px;
             width: auto;
             box-sizing: border-box;
             background-image: linear-gradient(to top, #ebf5ff 0%, #ffffff 100%);
-
+        
             header {
                 .top_container {
                     height: auto;
@@ -1408,7 +1514,7 @@ $footer: 550px;
                         visibility: hidden;
                         opacity: 0;
                         transition: visibility 0s linear 400ms, opacity 400ms;
-                        z-index: 99;
+                        z-index: 999;
                         background-image: linear-gradient(to top, #004aa6 0%, #055cc7 100%);
                         width: 100%;
                         border-bottom-left-radius: 5px;
@@ -1503,6 +1609,9 @@ $footer: 550px;
                             margin: 0;
 
                             form {
+                                button {
+                                    width: 39px;
+                                }
 
                                 input {
                                     &::placeholder {
@@ -1631,6 +1740,15 @@ $footer: 550px;
                 }
             }
 
+            .news{
+                h3 a{
+                    padding: 14px 10px;
+                }
+                .bottom_container{
+                    padding: 14px 10px !important;
+                }
+            }
+
             .reclam_baner {
                 display: none;
             }
@@ -1643,7 +1761,8 @@ $footer: 550px;
                     .left_side {
                         width: 100%;
                         border: none;
-                        margin: 0;
+                        margin-left: 0;
+                        margin-right: 0;
 
                         .top_container {
                             width: 100%;
@@ -2138,7 +2257,7 @@ $footer: 550px;
                     }
 
                     .right_side {
-                        display: none;
+                        // display: none;
                     }
                 }
 
@@ -2175,7 +2294,7 @@ $footer: 550px;
                     .right {
                         width: 100%;
                         background: #fff;
-                        padding: 20px 5px;
+                        padding: 20px 5px 20px 20%;
                         justify-content: space-between;
 
                         .responsive_up {
@@ -2250,6 +2369,10 @@ $footer: 550px;
                         }
                     }
                 }
+            }
+            .edit.responsive{
+                display: flex!important;
+                padding-left: 10px;
             }
         }
     }

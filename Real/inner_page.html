@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="css/redactor.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <style>
+    .comment_form{
+        display: block!important;
+    }
+    </style>
 </head>
 
 <body>
@@ -187,30 +192,36 @@
                 <div class="right_container">
                     <div class="company_icons">
                         <div class="hover_container">
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                            <div class="row">
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
                             </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                            <div class="row">
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
+                                <div class="team">
+                                    <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
+                                </div>
                             </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
-                            <div class="team">
-                                <a href="#"><img src="images/icons/barca.png" alt="juve">mybarca.ge</a>
-                            </div>
+
+                            
                         </div>
                         <div class="blitz">
                             <i class="fas fa-caret-left"></i>
@@ -231,6 +242,19 @@
                             <div class="blitz_image">
                                 <img src="images/inner_page/blitz.png" alt="blitz">
                             </div>
+                        </div>
+                        <div class="edit responsive">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 25 20">
+                                <g>
+                                    <g>
+                                        <path fill="#777"
+                                            d="M6.247 20.003h-6.25V18.44c1.19 0 2.19-1.024 3-3.07L8.818.572h1.642l5.913 14.784c.586 1.464 1.116 2.344 1.59 2.64.475.296.93.444 1.368.444v1.563H9.943V18.44c.846 0 1.371-.082 1.576-.247a.77.77 0 0 0 .307-.627c0-.224-.086-.519-.258-.884l-.173-.44-.534-1.393H5.036l-.365.943c-.26.666-.39 1.136-.39 1.408 0 .46.153.782.46.965.306.183.809.275 1.506.275zm-.614-6.773h4.59L7.872 7.528zM23.273 3.8v12.395h1.729l-2.177 3.807-2.178-3.807H22.4V3.801h-1.753l2.178-3.806 2.177 3.806z" />
+                                    </g>
+                                </g>
+                            </svg>
+
+                            <i class="fas fa-plus font-size-up"></i>
+                            <i class="fas fa-minus font-size-down"></i>
                         </div>
                         <div class="text_container" id="main-content">
                             <p>ხუან მატამ ახალ კონტრაქტს მოაწერა ხელი, რომლის მიხედვითაც ესპანელი კლუბში 2021 წლის
@@ -374,13 +398,11 @@
                                             src="images/inner_page/triangle.png" alt="triangle">
                                     </button>
                                 </div>
-
                             </div>
                             <div id="comment" class="comment tabcontent show_tab active">
                                 <div class="write_comment">
                                     <form action="action.php" method="get">
-                                        <textarea class="textarea" name="text"
-                                            placeholder="დაწერეთ კომენტარი..."></textarea>
+                                        <textarea class="textarea" name="text"></textarea>
                                     </form>
                                     <button>დამატება</button>
                                 </div>
@@ -411,10 +433,6 @@
                                                     <span>პასუხი</span>
                                                 </div>
                                             </div>
-                                            <form action="action.php" method="get" class="comment_form">
-                                                <textarea class="textarea" name="text"
-                                                    placeholder="დაწერეთ კომენტარი..."></textarea>
-                                            </form>
                                         </div>
                                     </div>
                                     <div class="comment">
@@ -443,10 +461,6 @@
                                                         <span>პასუხი</span>
                                                     </div>
                                                 </div>
-                                                <form action="action.php" method="get" class="comment_form">
-                                                    <textarea class="textarea" name="text"
-                                                        placeholder="დაწერეთ პასუხი..."></textarea>
-                                                </form>
                                             </div>
                                             <div class="comment_answer">
                                                 <div class="author">
@@ -460,21 +474,17 @@
                                                         <a href="#">ლევან კვინიკაძე</a>
                                                         <a href="#" class="whom">ბაჩო გოცირიძე</a>
                                                         <p>მეც მაინტერესებს <3</p> </div> <div class="like_answer">
-                                                                <div class="like">
-                                                                    <span>მომწონს</span>
-                                                                    <i class="fas fa-thumbs-up"></i>
-                                                                    <span class="like_number">+2</span>
-                                                                </div>
-                                                                <div class="answer">
-                                                                    <img src="images/inner_page/write_answer.png"
-                                                                        alt="answer">
-                                                                    <span>პასუხი</span>
-                                                                </div>
+                                                        <div class="like">
+                                                            <span>მომწონს</span>
+                                                            <i class="fas fa-thumbs-up"></i>
+                                                            <span class="like_number">+2</span>
+                                                        </div>
+                                                        <div class="answer">
+                                                            <img src="images/inner_page/write_answer.png"
+                                                                alt="answer">
+                                                            <span>პასუხი</span>
+                                                        </div>
                                                     </div>
-                                                    <form action="action.php" method="get" class="comment_form">
-                                                        <textarea name="text" class="textarea"
-                                                            placeholder="დაწერეთ პასუხი..."></textarea>
-                                                    </form>
                                                 </div>
                                             </div>
                                             <div class="comment_answer">
@@ -501,10 +511,6 @@
                                                             <span>პასუხი</span>
                                                         </div>
                                                     </div>
-                                                    <form action="action.php" method="get" class="comment_form">
-                                                        <textarea name="text" class="textarea"
-                                                            placeholder="დაწერეთ პასუხი..."></textarea>
-                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
@@ -535,16 +541,13 @@
                                                     <span>პასუხი</span>
                                                 </div>
                                             </div>
-                                            <form action="action.php" method="get" class="comment_form">
-                                                <textarea name="text" class="textarea"
-                                                    placeholder="დაწერეთ პასუხი..."></textarea>
-                                            </form>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
                             <div id="facebook" class="facebook tabcontent show_tab">
+                                <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
                             </div>
                         </div>
                     </div>
@@ -802,6 +805,7 @@
         <!-- Registration popup -->
 
         <div class="popup_container show_popup">
+            <div class="overlay"></div>
             <div class="registration">
                 <div class="registration_content">
                     <h3>რეგისტრაცია</h3>
@@ -837,6 +841,7 @@
         <!-- Sign in popup -->
 
         <div class="popup_container sign_in_popup_container">
+            <div class="overlay"></div>
             <div class="registration">
                 <div class="registration_content">
                     <h3>ავტორიზაცია</h3>
@@ -855,7 +860,7 @@
                             </div>
                         </div>
                         <label class="checked">
-                            <input type="checkbox" id="chek" name="password" value="password">
+                            <input type="checkbox" id="check" name="password" value="password">
                             <label for="check">დავამახსოვრებ</label>
                         </label>
                         <div class="button">
@@ -873,6 +878,8 @@
 
     </div>
 
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ka_GE/sdk.js#xfbml=1&version=v4.0&appId=384489065484001&autoLogAppEvents=1"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/countdown.js"></script>

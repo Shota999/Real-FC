@@ -3,7 +3,6 @@ $(document).ready(function () {
     // tabs
     $(".openTabs").click(function () {
         let active_element = $(this).parent().parent().nextAll('.active');
-        console.log(active_element)
         let next_active = $("#" + $(this).data('tab'));
         if (active_element && next_active) {
             $(active_element).removeClass('active');
@@ -43,6 +42,12 @@ $(document).ready(function () {
         $(".sign_in_popup_container").addClass("show");
     });
 
+    // Profile popup
+
+    $(".profile_popup").click(function () {
+        $(".profile_popup_container").addClass("show");
+    });
+
     // Information popup
 
     $(".information").click(function () {
@@ -51,12 +56,8 @@ $(document).ready(function () {
 
     // Hide popup on body click
 
-    $('.popup_container').click(function (e) {
-        console.log(e.target.offsetParent.className);
-        
-        if (!e.target.offsetParent || (e.target.offsetParent.className !== 'registration' && e.target.offsetParent.className !== 'input_container')) {
+    $('.overlay').click(function (e) {
             $(".popup_container").removeClass("show");
-        }
     });
 
     // Hide popup
@@ -224,7 +225,7 @@ $(document).ready(function () {
     
     // Timer
     $('#getting-started').countdown('2019/12/29', function (event) {
-        $(this).html(event.strftime('%d დღე %M წთ : %S წამი'));
+        $(this).html(event.strftime('%d <span>დღე :</span> %H <span>სთ :</span> %M <span>წთ :</span> %S <span>წმ</span>'));
     });
 
     // ===== Scroll to Top ==== 
@@ -237,24 +238,27 @@ $(document).ready(function () {
     // Answer comment
 
     $('.answer').click(function () {
-        $(this).parents('.text').find('.comment_form').toggleClass('show');
+        let html = '<form action="action.php" method="get" class="comment_form"><textarea class="textarea" name="text"placeholder="დაწერეთ პასუხი..."></textarea></form>';
+        $(html).insertAfter($(this).parent());
+        redactor();
     });
-    
-    $(document).mouseup(function (e) {
-        var container = $(".comment_form"); // YOUR CONTAINER SELECTOR
 
-        if (!container.is(e.target) // if the target of the click isn't the container...
-            &&
-            container.has(e.target).length === 0) // ... nor a descendant of the container
-        {
-            container.removeClass('show');
-        }
-    });
+    function hideAnswerComment() {
+        $(document).mouseup(function (e) {
+            var container = $(".comment_form"); // YOUR CONTAINER SELECTOR
+    
+            if (!container.is(e.target) // if the target of the click isn't the container...
+                &&
+                container.has(e.target).length === 0) // ... nor a descendant of the container
+            {
+                container.remove();
+            }
+        });
+    }
 
     // Redactor
 
-    $(document).ready(function() {
-
+    function redactor() {
         $('.textarea').redactor({
 
             imageUpload: "{{url('admin/upload')}}?_token=" + "{{csrf_token()}}",
@@ -288,7 +292,14 @@ $(document).ready(function () {
                 }
             }
         });
+    }
 
+    redactor();
+
+    $(document).on('keypress',function(e) {
+        if(e.which == 13 && e.target.className === 'redactor_textarea redactor_editor') {
+            alert('submit');
+        }
     });
 
     // Filter
@@ -310,5 +321,13 @@ $(document).ready(function () {
 
     $(".show_match").click(function () {
         $(".right_container").toggleClass('show');
+    });
+
+    $('.form form input').focus(function() {
+        console.log("focus");
+        $(" .form form button").css({"background-color": "#055bc6", "transition": "0.9s"});
+        
+      }).focusout(function() {
+        $(" .form form button").css({"background-color": "#aaaaaa", "transition": "0.9s"});
     });
 });
