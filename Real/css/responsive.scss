@@ -35,6 +35,8 @@ $footer: 550px;
                 margin-bottom: 15px;
             }
             .web_content{
+                background: #ffffff;
+
                 .left_right_side{
                     .left_side{
                         width: 645px;
@@ -49,6 +51,8 @@ $footer: 550px;
                     }
                     .right_side{
                         margin-right: 15px;
+                        margin-top: 15px;
+
                         .tabs_slider{
                             .tabcontent{
                                 .swiper-container{
@@ -784,12 +788,14 @@ $footer: 550px;
                 width: 100%;
         
                 .left_right_side {
+                    .border{
+                        background-color: #fff!important;
+                    }
                     .left_side {
                         width: 100%;
                         border: none;
                         margin-left: 0;
                         margin-right: 0;
-                        background-color: #ffffff;
         
                         .top_container {
                             width: 100%;
@@ -957,6 +963,7 @@ $footer: 550px;
         
                             h3 {
                                 font-size: 17px;
+                                padding: 0 10px;
                             }
         
                             .bottom_container {
@@ -1072,6 +1079,20 @@ $footer: 550px;
         
                                                     p {
                                                         font-size: 11px;
+                                                    }
+                                                }
+                                                .comment_form{
+                                                    .redactor_box{
+                                                        .redactor_toolbar{
+                                                            width: 60px;
+
+                                                            .redactor_btn_underline{
+                                                                display: none;
+                                                            }
+                                                            .redactor_btn_fontcolor{
+                                                                display: none;
+                                                            }
+                                                        }
                                                     }
                                                 }
                                             }
