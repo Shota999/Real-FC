@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -174,7 +177,6 @@ body {
   border: 1px solid #d2d2d2;
   background-color: #ffffff;
   padding: 14px 0;
-  border-radius: 5px;
   margin-top: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -200,7 +202,7 @@ body {
 
 .body .popup_container .registration .inside_content form .input_container i {
   background-color: #222428;
-  padding: 17px;
+  padding: 16px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   color: #ffffff;
@@ -717,6 +719,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  margin-left: 15px;
 }
 
 .body header .bottom_container .left_container .social {
@@ -1729,10 +1732,6 @@ body {
   opacity: 1;
 }
 
-.body .web_content .left_right_side .left_side .top_container .news form {
-  margin-left: 13px;
-}
-
 .body .web_content .left_right_side .left_side .top_container .news form button {
   border: none;
   background-color: transparent;
@@ -1963,7 +1962,7 @@ body {
 }
 
 .body .web_content .left_right_side .left_side .container .news .bottom_container {
-  padding: 20px;
+  padding: 10px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2774,7 +2773,7 @@ body {
   width: 100%;
   position: relative;
   overflow: auto;
-  padding: 15px 100px 15px 35px;
+  padding: 15px 100px 15px 12px;
   outline: none;
   resize: none;
   border: 1px solid #d2d2d2;
@@ -3157,7 +3156,7 @@ body {
           box-sizing: border-box;
   position: relative;
   overflow: auto;
-  padding: 15px 100px 15px 35px;
+  padding: 15px 100px 15px 12px;
   outline: none;
   resize: none;
   border: 1px solid #d2d2d2;
@@ -3220,7 +3219,7 @@ body {
 }
 
 .body .web_content .left_right_side .left_side .inner_container .comments .comments_container .comment_container .text {
-  width: 100%;
+  width: 95%;
 }
 
 .body .web_content .left_right_side .left_side .profile_top {
@@ -5212,6 +5211,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .body .left_side .top_block .tab button {
@@ -5225,6 +5225,9 @@ body {
   cursor: pointer;
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .body .left_side .top_block .tab button:hover {

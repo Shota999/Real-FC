@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    text-decoration: none;
 }
-
+a{
+    text-decoration: none;    
+}
 :focus {
     outline: none;
 }
@@ -78,6 +79,7 @@ body {
 
             .inside_content {
                 padding: 20px 30px;
+
                 .container{
                     padding: 0;
                     display: flex;
@@ -147,7 +149,6 @@ body {
                         border: 1px solid #d2d2d2;
                         background-color: #ffffff;
                         padding: 14px 0;
-                        border-radius: 5px;
                         margin-top: 10px;
                         box-sizing: border-box;
                         margin-bottom: 14px;
@@ -167,7 +168,7 @@ body {
 
                         i {
                             background-color: #222428;
-                            padding: 17px;
+                            padding: 16px;
                             border-top-left-radius: 5px;
                             border-bottom-left-radius: 5px;
                             color: #ffffff;
@@ -613,6 +614,7 @@ body {
                 display: flex;
                 align-items: center;
                 width: 100%;
+                margin-left: 15px;
 
                 .social {
                     display: flex;
@@ -1456,7 +1458,6 @@ body {
                         }
 
                         form {
-                            margin-left: 13px;
 
                             button {
                                 border: none;
@@ -1663,7 +1664,7 @@ body {
                         }
 
                         .bottom_container {
-                            padding: 20px;
+                            padding: 10px 20px;
                             display: flex;
                             border: none;
                             border-top: 1px solid #d2d2d2;
@@ -2366,7 +2367,7 @@ body {
                                     width: 100%;
                                     position: relative;
                                     overflow: auto;
-                                    padding: 15px 100px 15px 35px;
+                                    padding: 15px 100px 15px 12px;
                                     outline: none;
                                     resize: none;
                                     border: 1px solid #d2d2d2;
@@ -2666,7 +2667,7 @@ body {
                                     box-sizing: border-box;
                                     position: relative;
                                     overflow: auto;
-                                    padding: 15px 100px 15px 35px;
+                                    padding: 15px 100px 15px 12px;
                                     outline: none;
                                     resize: none;
                                     border: 1px solid #d2d2d2;
@@ -2721,7 +2722,7 @@ body {
                             .comment_container{
                                 width: 100%;
                                 .text{
-                                    width: 100%; 
+                                    width: 95%; 
                                 }
 
                             }
@@ -4446,6 +4447,7 @@ body {
                 padding: 5px;
                 border-radius: 20px;
                 display: flex;
+                width: 100%;
 
                 button {
                     color: #999999;
@@ -4457,6 +4459,7 @@ body {
                     border: none;
                     cursor: pointer;
                     transition: .4s ease-in-out;
+                    flex: 1;
 
                     &:hover {
                         color: #0559c1;

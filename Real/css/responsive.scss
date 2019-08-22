@@ -49,6 +49,7 @@ $footer: 550px;
                     }
                     .right_side{
                         margin-right: 15px;
+
                         .tabs_slider{
                             .tabcontent{
                                 .swiper-container{
@@ -327,7 +328,6 @@ $footer: 550px;
                             }
 
                             .blitz {
-                                border: 1px solid #eeeeee;
                                 border-radius: 5px;
 
                                 i {
@@ -407,9 +407,11 @@ $footer: 550px;
                 width: 100%;
 
                 .left_right_side {
+                    .border{
+                        background: #ffffff;
+                    }
                     .left_side {
                         width: 100%;
-                        margin: 15px;
                         border: none;
 
                         .top_container{
@@ -443,6 +445,7 @@ $footer: 550px;
 
                         .contact_container {
                             padding: 0;
+                            margin: 15px;
 
                             .tabcontent{
                                 .map{
@@ -465,6 +468,7 @@ $footer: 550px;
 
                             h3 {
                                 font-size: 17px;
+                                margin: 0 15px;
                             }
 
                             .poll_container {
@@ -814,6 +818,10 @@ $footer: 550px;
                                         font-size: 13px;
                                     }
                                 }
+                                .hide_container{
+                                    top: 60px;
+                                    left: 15px;
+                                }
                             }
         
                             .search {
@@ -1007,7 +1015,7 @@ $footer: 550px;
                                         width: 100%;
                                     }
                                     form .redactor_box{
-                                        padding: 10px 40px 10px 10px;
+                                        padding: 10px 70px 10px 10px;
                                         .redactor_toolbar{
                                         width: 60px;
                                             .redactor_btn_underline, .redactor_btn_fontcolor{
@@ -1071,6 +1079,14 @@ $footer: 550px;
         
                                                     p {
                                                         font-size: 11px;
+                                                    }
+                                                }
+                                                .comment_form{
+                                                    .redactor_toolbar{
+                                                        width: 60px;
+                                                    }
+                                                    .redactor_btn_underline, .redactor_btn_fontcolor{
+                                                        display: none;
                                                     }
                                                 }
                                             }
@@ -1200,6 +1216,7 @@ $footer: 550px;
         
                             p {
                                 font-size: 12px;
+                                margin: 0 10px;
                             }
                         }
         
@@ -1278,6 +1295,7 @@ $footer: 550px;
         
                                 .title_image {
                                     width: 100%;
+                                    margin-top: 15px;
         
                                     img {
                                         height: 160px;
@@ -2135,7 +2153,7 @@ $footer: 550px;
                             border: none;
 
                             .tab {
-                                flex-wrap: wrap;
+                                flex-direction: column;
 
                                 button {
                                     width: 100%;
