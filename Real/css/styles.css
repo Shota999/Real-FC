@@ -974,7 +974,7 @@ body {
 }
 
 .body header .bottom_container .right_container .company_icons:hover .team {
-  width: calc( calc( 100% / 4 ) - 0px);
+  width: calc(calc(100% / 4) - 0px);
 }
 
 .body .container {
