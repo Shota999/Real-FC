@@ -35,8 +35,6 @@ $footer: 550px;
                 margin-bottom: 15px;
             }
             .web_content{
-                background: #ffffff;
-
                 .left_right_side{
                     .left_side{
                         width: 645px;
@@ -51,10 +49,7 @@ $footer: 550px;
                     }
                     .right_side{
                         margin-right: 15px;
-                        margin-top: 15px;
-
                         .tabs_slider{
-                            
                             .tabcontent{
                                 .swiper-container{
                                     .swiper-wrapper{
@@ -414,8 +409,12 @@ $footer: 550px;
                 .left_right_side {
                     .left_side {
                         width: 100%;
+                        margin: 15px;
                         border: none;
 
+                        .top_container{
+                            margin-top: 15px;
+                        }
                         .container {
                             width: 100%;
 
@@ -443,8 +442,7 @@ $footer: 550px;
                         // Contact Page
 
                         .contact_container {
-                            padding: 15px;
-                            margin-top: 20px;
+                            padding: 0;
 
                             .tabcontent{
                                 .map{
@@ -461,7 +459,9 @@ $footer: 550px;
 
                         .inner_container {
                             width: 100%;
-                            padding: 15px;
+                            background-color: #ffffff;
+                            padding: 0;
+                            margin-top: 15px;
 
                             h3 {
                                 font-size: 17px;
@@ -743,7 +743,6 @@ $footer: 550px;
                             margin: 0;
 
                             form {
-                                padding-left: 15px;
                                 button {
                                     width: 33px;
                                 }
@@ -789,9 +788,6 @@ $footer: 550px;
                 width: 100%;
         
                 .left_right_side {
-                    .border{
-                        background-color: #fff!important;
-                    }
                     .left_side {
                         width: 100%;
                         border: none;
@@ -817,10 +813,6 @@ $footer: 550px;
                                         color: #8c8c8c;
                                         font-size: 13px;
                                     }
-                                }
-                                .hide_container{
-                                    top: 60px;
-                                    left: 15px;
                                 }
                             }
         
@@ -960,11 +952,10 @@ $footer: 550px;
                             width: 100%;
                             background-color: #ffffff;
                             padding: 0;
-                            padding-top: 15px;
+                            margin-top: 15px;
         
                             h3 {
                                 font-size: 17px;
-                                padding: 0 10px;
                             }
         
                             .bottom_container {
@@ -1082,20 +1073,6 @@ $footer: 550px;
                                                         font-size: 11px;
                                                     }
                                                 }
-                                                .comment_form{
-                                                    .redactor_box{
-                                                        .redactor_toolbar{
-                                                            width: 60px;
-
-                                                            .redactor_btn_underline{
-                                                                display: none;
-                                                            }
-                                                            .redactor_btn_fontcolor{
-                                                                display: none;
-                                                            }
-                                                        }
-                                                    }
-                                                }
                                             }
                                         }
                                     }
@@ -1150,10 +1127,6 @@ $footer: 550px;
         
                         .title {
                             background-color: #ffffff;
-
-                            .title_image{
-                                margin-top: 10px;
-                            }
                         }
         
                         .text_background {
@@ -1532,17 +1505,6 @@ $footer: 550px;
                                 }
                             }
                         }
-                        .profile{
-                            .profile_popup{
-                                .user_icon{
-                                    width: 15px;
-                                    height: 15px;
-                                    font-size: 8px;
-                                    top: 35px;
-                                    left: 50px;
-                                }
-                            }
-                        }
                     }
 
                     .hidden_menu {
@@ -1801,7 +1763,6 @@ $footer: 550px;
                         border: none;
                         margin-left: 0;
                         margin-right: 0;
-                        background-color: #ffffff;
 
                         .top_container {
                             width: 100%;
@@ -1822,10 +1783,6 @@ $footer: 550px;
                                         color: #8c8c8c;
                                         font-size: 13px;
                                     }
-                                }
-                                .hide_container{
-                                    top: 60px;
-                                    left: 15px;
                                 }
                             }
 
@@ -1962,7 +1919,7 @@ $footer: 550px;
                             width: 100%;
                             background-color: #ffffff;
                             padding: 0;
-                            padding-top: 15px;
+                            margin-top: 15px;
 
                             h3 {
                                 font-size: 17px;
@@ -2178,7 +2135,7 @@ $footer: 550px;
                             border: none;
 
                             .tab {
-                                flex-direction: column;
+                                flex-wrap: wrap;
 
                                 button {
                                     width: 100%;
