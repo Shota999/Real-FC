@@ -3222,8 +3222,8 @@ body {
   width: 100%;
 }
 
-.body .web_content .left_right_side .left_side .inner_container .comments .comments_container .comment_container .text {
-  width: 95%;
+.body .web_content .left_right_side .left_side .inner_container .comments .comments_container .comment_form {
+  word-break: break-word;
 }
 
 .body .web_content .left_right_side .left_side .profile_top {
@@ -3243,6 +3243,8 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .body .web_content .left_right_side .left_side .profile_top .user_image {

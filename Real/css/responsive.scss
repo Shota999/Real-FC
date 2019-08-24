@@ -413,6 +413,7 @@ $footer: 550px;
                     .left_side {
                         width: 100%;
                         border: none;
+                        margin-bottom: 15px;
 
                         .top_container{
                             margin-top: 15px;
@@ -735,8 +736,9 @@ $footer: 550px;
                 }
 
                 .bottom_container {
-                    margin-top: 15px;
+                    margin-top: 10px;
                     border-bottom: none;
+                    padding-bottom: 10px;
 
                     .left_container {
                         .social {
@@ -1014,12 +1016,14 @@ $footer: 550px;
                                     button {
                                         width: 100%;
                                     }
-                                    form .redactor_box{
-                                        padding: 10px 70px 10px 10px;
-                                        .redactor_toolbar{
-                                        width: 60px;
-                                            .redactor_btn_underline, .redactor_btn_fontcolor{
-                                                display: none;
+                                    form {
+                                        .redactor_box{
+                                            padding: 10px 70px 10px 10px;
+                                            .redactor_toolbar{
+                                            width: 60px;
+                                                .redactor_btn_underline, .redactor_btn_fontcolor{
+                                                    display: none;
+                                                }
                                             }
                                         }
                                     }
@@ -1068,7 +1072,6 @@ $footer: 550px;
                                         .comment {
                                             .like_answer {
                                                 flex-wrap: wrap;
-                                                justify-content: center;
                                             }
         
                                             .text {
@@ -1081,13 +1084,14 @@ $footer: 550px;
                                                         font-size: 11px;
                                                     }
                                                 }
-                                                .comment_form{
-                                                    .redactor_toolbar{
-                                                        width: 60px;
-                                                    }
-                                                    .redactor_btn_underline, .redactor_btn_fontcolor{
-                                                        display: none;
-                                                    }
+                                                    
+                                                    
+                                            }
+                                            .redactor_toolbar{
+                                                width: 60px;
+
+                                                .redactor_btn_underline, .redactor_btn_fontcolor{
+                                                    display: none;
                                                 }
                                             }
                                         }

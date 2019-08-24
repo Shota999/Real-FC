@@ -239,7 +239,13 @@ $(document).ready(function () {
 
     $('.answer').click(function () {
         let html = '<form action="action.php" method="get" class="comment_form"><textarea class="textarea" name="text"placeholder="დაწერეთ პასუხი..."></textarea></form>';
-        $(html).insertAfter($(this).parent());
+        $('.comment_form').remove();
+        console.log();
+        if ($(this).closest('.comment_answer').length > 0) {
+            $(html).insertAfter($(this).closest('.comment_answer'));
+        } else {
+            $(html).insertAfter($(this).parent());
+        }
         redactor();
     });
 
