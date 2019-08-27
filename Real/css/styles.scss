@@ -710,7 +710,7 @@ body {
                         }
 
                         input {
-                            padding: 8px;
+                            padding: 7px;
                             border: none;
                             outline: none;
                             width: 100%;
@@ -751,6 +751,8 @@ body {
 
                 .company_icons {
                     position: relative;
+                    height: 26px;
+                    border: 1px solid #eee;
 
                     &:hover .blitz i {
                         display: inline-block;
@@ -777,7 +779,7 @@ body {
                         a {
                             display: inline-block;
                             width: 100px;
-                            height: 30px;
+                            height: 25px;
                             background: url("../images/blitz.png") no-repeat center;
                             border-radius: 3px;
                             transition: .5s ease-in-out;
@@ -1949,9 +1951,8 @@ body {
 
                     .poll_container {
                         border: 1px solid #d2d2d2;
-                        border-bottom-left-radius: 3px;
-                        border-bottom-right-radius: 3px;
                         margin-top: 15px;
+                        border-radius: 5px 5px 0 0;
 
                         .background_container {
                             background-image: url('../images/poll_background.png');
@@ -3782,8 +3783,6 @@ body {
 
                 .loss_container {
                     border: 1px solid #d2d2d2;
-                    border-bottom-left-radius: 3px;
-                    border-bottom-right-radius: 3px;
                     margin-top: 15px;
                     border-radius: 5px 5px 0 0;
 

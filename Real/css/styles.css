@@ -810,7 +810,7 @@ body {
 }
 
 .body header .bottom_container .left_container .form form input {
-  padding: 8px;
+  padding: 7px;
   border: none;
   outline: none;
   width: 100%;
@@ -879,6 +879,8 @@ body {
 
 .body header .bottom_container .right_container .company_icons {
   position: relative;
+  height: 26px;
+  border: 1px solid #eee;
 }
 
 .body header .bottom_container .right_container .company_icons:hover .blitz i {
@@ -908,7 +910,7 @@ body {
 .body header .bottom_container .right_container .company_icons .blitz a {
   display: inline-block;
   width: 100px;
-  height: 30px;
+  height: 25px;
   background: url("../images/blitz.png") no-repeat center;
   border-radius: 3px;
   -webkit-transition: .5s ease-in-out;
@@ -2243,9 +2245,8 @@ body {
 
 .body .web_content .left_right_side .left_side .inner_container .poll_container {
   border: 1px solid #d2d2d2;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
   margin-top: 15px;
+  border-radius: 5px 5px 0 0;
 }
 
 .body .web_content .left_right_side .left_side .inner_container .poll_container .background_container {
@@ -4413,8 +4414,6 @@ body {
 
 .body .web_content .left_right_side .right_side .loss_container {
   border: 1px solid #d2d2d2;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
   margin-top: 15px;
   border-radius: 5px 5px 0 0;
 }

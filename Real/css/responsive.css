@@ -237,7 +237,7 @@
   body .body header .bottom_container .right_container .company_icons .blitz i {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
-    top: 24px;
+    top: 20px;
     left: 48px;
   }
   body .body header .bottom_container .right_container .company_icons:hover .hover_container {
@@ -328,7 +328,6 @@
     width: 100%;
     background-color: #ffffff;
     padding: 0;
-    margin-top: 15px;
   }
   body .body .web_content .left_right_side .left_side .inner_container h3 {
     font-size: 17px;
@@ -342,6 +341,9 @@
   }
   body .body .web_content .left_right_side .left_side .inner_container .poll_container .poll_text .progress .progress_bar span {
     font-size: 10px;
+  }
+  body .body .web_content .left_right_side .left_side .inner_container .poll_container .background_container {
+    padding: 5px 20px 20px;
   }
   body .body .web_content .left_right_side .left_side .inner_container .reclam {
     width: 100%;
@@ -585,13 +587,12 @@
     top: 40px;
   }
   body .body header .bottom_container .right_container .company_icons .blitz {
-    border: 1px solid #eeeeee;
     border-radius: 5px;
   }
   body .body header .bottom_container .right_container .company_icons .blitz i {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
-    top: 24px;
+    top: 20px;
     left: 48px;
   }
   body .body header .bottom_container .right_container .company_icons:hover .hover_container {
@@ -742,7 +743,6 @@
     width: 100%;
     background-color: #ffffff;
     padding: 0;
-    margin-top: 15px;
   }
   body .body .web_content .left_right_side .left_side .inner_container h3 {
     font-size: 17px;
@@ -756,6 +756,7 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    margin-top: 15px;
   }
   body .body .web_content .left_right_side .left_side .inner_container .bottom_container .social i {
     -webkit-box-align: center;
@@ -843,10 +844,13 @@
   body .body .web_content .left_right_side .left_side .inner_container .comments .comment .comments_container .comment .text .comment_text p {
     font-size: 11px;
   }
-  body .body .web_content .left_right_side .left_side .inner_container .comments .comment .comments_container .comment .redactor_toolbar {
+  body .body .web_content .left_right_side .left_side .inner_container .comments .comment .comments_container .comment .redactor_box {
+    padding: 15px 70px 15px 12px;
+  }
+  body .body .web_content .left_right_side .left_side .inner_container .comments .comment .comments_container .comment .redactor_box .redactor_toolbar {
     width: 60px;
   }
-  body .body .web_content .left_right_side .left_side .inner_container .comments .comment .comments_container .comment .redactor_toolbar .redactor_btn_underline, body .body .web_content .left_right_side .left_side .inner_container .comments .comment .comments_container .comment .redactor_toolbar .redactor_btn_fontcolor {
+  body .body .web_content .left_right_side .left_side .inner_container .comments .comment .comments_container .comment .redactor_box .redactor_toolbar .redactor_btn_underline, body .body .web_content .left_right_side .left_side .inner_container .comments .comment .comments_container .comment .redactor_box .redactor_toolbar .redactor_btn_fontcolor {
     display: none;
   }
   body .body .web_content .left_right_side .left_side .inner_container .poll_container .poll_text {
@@ -1096,7 +1100,7 @@
   body .body .web_content .reclam .right {
     width: 98%;
     background: #fff;
-    padding: 20px 5px 20px 20%;
+    padding: 20px 5px 20px 20px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1276,7 +1280,7 @@
     display: block !important;
   }
   body .body header .bottom_container {
-    margin-top: 15px;
+    padding-top: 10px;
     border-bottom: none;
   }
   body .body header .bottom_container .left_container .social {
@@ -1310,13 +1314,12 @@
     top: 40px;
   }
   body .body header .bottom_container .right_container .company_icons .blitz {
-    border: 1px solid #eeeeee;
     border-radius: 5px;
   }
   body .body header .bottom_container .right_container .company_icons .blitz i {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
-    top: 24px;
+    top: 20px;
     left: 48px;
   }
   body .body header .bottom_container .right_container .company_icons:hover .hover_container {
@@ -1544,7 +1547,6 @@
     width: 100%;
     background-color: #ffffff;
     padding: 0;
-    margin-top: 15px;
   }
   body .body .web_content .left_right_side .left_side .inner_container h3 {
     font-size: 17px;
@@ -1845,7 +1847,7 @@
   body .body .web_content .reclam .right {
     width: 100%;
     background: #fff;
-    padding: 20px 5px 20px 20%;
+    padding: 20px 5px 20px 20px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;

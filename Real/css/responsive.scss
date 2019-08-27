@@ -332,7 +332,7 @@ $footer: 550px;
 
                                 i {
                                     transform: rotate(-90deg);
-                                    top: 24px;
+                                    top: 20px;
                                     left: 48px;
                                 }
                             }
@@ -465,7 +465,6 @@ $footer: 550px;
                             width: 100%;
                             background-color: #ffffff;
                             padding: 0;
-                            margin-top: 15px;
 
                             h3 {
                                 font-size: 17px;
@@ -487,6 +486,9 @@ $footer: 550px;
                                             }
                                         }
                                     }
+                                }
+                                .background_container{
+                                    padding: 5px 20px 20px;
                                 }
                             }
                             .reclam{
@@ -773,12 +775,11 @@ $footer: 550px;
                             }
 
                             .blitz {
-                                border: 1px solid #eeeeee;
                                 border-radius: 5px;
 
                                 i {
                                     transform: rotate(-90deg);
-                                    top: 24px;
+                                    top: 20px;
                                     left: 48px;
                                 }
                             }
@@ -962,7 +963,6 @@ $footer: 550px;
                             width: 100%;
                             background-color: #ffffff;
                             padding: 0;
-                            margin-top: 15px;
         
                             h3 {
                                 font-size: 17px;
@@ -974,6 +974,7 @@ $footer: 550px;
                                 .social {
                                     width: 100%;
                                     justify-content: space-evenly;
+                                    margin-top: 15px;
         
                                     i {
                                         align-items: center;
@@ -1087,11 +1088,14 @@ $footer: 550px;
                                                     
                                                     
                                             }
-                                            .redactor_toolbar{
-                                                width: 60px;
-
-                                                .redactor_btn_underline, .redactor_btn_fontcolor{
-                                                    display: none;
+                                            .redactor_box{
+                                                padding: 15px 70px 15px 12px;
+                                                .redactor_toolbar{
+                                                    width: 60px;
+    
+                                                    .redactor_btn_underline, .redactor_btn_fontcolor{
+                                                        display: none;
+                                                    }
                                                 }
                                             }
                                         }
@@ -1422,7 +1426,7 @@ $footer: 550px;
                     .right {
                         width: 98%;
                         background: #fff;
-                        padding: 20px 5px 20px 20%;
+                        padding: 20px 5px 20px 20px;
                         justify-content: space-between;
         
                         .responsive_up {
@@ -1619,7 +1623,7 @@ $footer: 550px;
                 }
 
                 .bottom_container {
-                    margin-top: 15px;
+                    padding-top: 10px;
                     border-bottom: none;
 
                     .left_container {
@@ -1655,12 +1659,11 @@ $footer: 550px;
                             }
 
                             .blitz {
-                                border: 1px solid #eeeeee;
                                 border-radius: 5px;
 
                                 i {
                                     transform: rotate(-90deg);
-                                    top: 24px;
+                                    top: 20px;
                                     left: 48px;
                                 }
                             }
@@ -1941,7 +1944,6 @@ $footer: 550px;
                             width: 100%;
                             background-color: #ffffff;
                             padding: 0;
-                            margin-top: 15px;
 
                             h3 {
                                 font-size: 17px;
@@ -2316,7 +2318,7 @@ $footer: 550px;
                     .right {
                         width: 100%;
                         background: #fff;
-                        padding: 20px 5px 20px 20%;
+                        padding: 20px 5px 20px 20px;
                         justify-content: space-between;
 
                         .responsive_up {
