@@ -529,7 +529,7 @@ body {
                 align-items: center;
                 position: relative;
 
-                button {
+                button{
                     border: none;
                     background: transparent;
                     display: -webkit-box;
@@ -591,13 +591,73 @@ body {
                         position: absolute;
                         top: 30px;
                         left: 50px;
+                    }                    
+                }
+                .profile_popup {
+                    border: none;
+                    background: transparent;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    color: #76a5de;
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: 0.14px;
+                    line-height: 16.8px;
+                    padding: 20px;
+                    cursor: pointer;
+                    padding: 10px 20px;
+
+                    p {
+                        margin-left: 6px;
+                        font-family: 'Conv_HelveticaNeueLTGEO-55Roman';
+                    }
+
+                    &:hover {
+                        background: linear-gradient(to top, #055cc7 0%, #004ba7 100%);
+                        color: #ffffff;
+                    }
+
+                    .user_image {
+                        width: 42px;
+                        height: 42px;
+                        border-radius: 50%;
+                        border: 2px solid white;
+                        overflow: hidden;
+                        position: relative;
+                        margin-right: 13px;
+
+                        img {
+                            width: 100%;
+                            min-height: 100%;
+                            object-fit: cover;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+
+                    }
+
+                    .user_icon {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        border: 2px solid white;
+                        background-color: #fcbf00;
+                        color: white;
+                        font-size: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: 30px;
+                        left: 50px;
                     }
                 }
-
-                .profile_popup {
-                    padding: 10px 20px;
-                }
-
                 .registration {
                     p {
                         :hover {
@@ -2759,7 +2819,8 @@ body {
                                 width: 100%;
 
                             }
-                            .comment_form{
+
+                            .comment_form {
                                 word-break: break-word;
                             }
                         }

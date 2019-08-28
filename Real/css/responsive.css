@@ -306,7 +306,7 @@
     width: 49%;
   }
   body .body .web_content .left_right_side .left_side .container .news .news_image_container > a {
-    height: calc( 40vw / 1.5);
+    height: calc(40vw / 1.5);
   }
   body .body .web_content .left_right_side .left_side .container .active {
     width: 100%;
@@ -646,7 +646,7 @@
     width: 100%;
   }
   body .body .web_content .left_right_side .left_side .container .news .news_image_container > a {
-    height: calc( 90vw / 1.5);
+    height: calc(90vw / 1.5);
   }
   body .body .web_content .left_right_side .left_side .more {
     margin: 0;
@@ -804,7 +804,8 @@
   body .body .web_content .left_right_side .left_side .inner_container .comments .write_comment form .redactor_box .redactor_toolbar {
     width: 60px;
   }
-  body .body .web_content .left_right_side .left_side .inner_container .comments .write_comment form .redactor_box .redactor_toolbar .redactor_btn_underline, body .body .web_content .left_right_side .left_side .inner_container .comments .write_comment form .redactor_box .redactor_toolbar .redactor_btn_fontcolor {
+  body .body .web_content .left_right_side .left_side .inner_container .comments .write_comment form .redactor_box .redactor_toolbar .redactor_btn_underline,
+  body .body .web_content .left_right_side .left_side .inner_container .comments .write_comment form .redactor_box .redactor_toolbar .redactor_btn_fontcolor {
     display: none;
   }
   body .body .web_content .left_right_side .left_side .inner_container .comments .switch_comment .tab {
@@ -850,7 +851,8 @@
   body .body .web_content .left_right_side .left_side .inner_container .comments .comment .comments_container .comment .redactor_box .redactor_toolbar {
     width: 60px;
   }
-  body .body .web_content .left_right_side .left_side .inner_container .comments .comment .comments_container .comment .redactor_box .redactor_toolbar .redactor_btn_underline, body .body .web_content .left_right_side .left_side .inner_container .comments .comment .comments_container .comment .redactor_box .redactor_toolbar .redactor_btn_fontcolor {
+  body .body .web_content .left_right_side .left_side .inner_container .comments .comment .comments_container .comment .redactor_box .redactor_toolbar .redactor_btn_underline,
+  body .body .web_content .left_right_side .left_side .inner_container .comments .comment .comments_container .comment .redactor_box .redactor_toolbar .redactor_btn_fontcolor {
     display: none;
   }
   body .body .web_content .left_right_side .left_side .inner_container .poll_container .poll_text {
